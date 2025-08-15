@@ -1,0 +1,15 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+template1 = GetTemplate(TemplateName="Fluid Flow")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath=GetAbsoluteUserPathName("GitHub/FE12_CAD/Powertrain/Cooling/Components/Radiators/EN-A010X-AA-2x Koolance Radiator Assembly.STEP"))
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+Save(Overwrite=True)
+template2 = GetTemplate(TemplateName="EngData")
+system2 = template2.CreateSystem(
+    Position="Left",
+    RelativeTo=system1)
+Save(Overwrite=True)
