@@ -1,0 +1,125 @@
+Transcript Start Time:  22:28:18, 15 Aug 2025 Mountain Daylight Time 
+Current Directory: "C:\Users\sean8"
+
+Build Time: Jun 16 2025 10:54:33 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/ANSYSS~1/v252/fluent/ntbin/win64/fluent.exe
+
+---------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                               
+---------------------------------------------------------------------------------------
+n0*   DESKTOP-D190TQ3  1/16  Windows-x64  38672  AMD Ryzen 7 7700X 8-Core Processor   
+host  DESKTOP-D190TQ3        Windows-x64  39440  AMD Ryzen 7 7700X 8-Core Processor   
+
+MPI Option Selected: intel
+Selected system interconnect: default
+---------------------------------------------------------------------------------------
+
+Cortex Process ID: 14108 
+License Server Path: () 
+Multicore SMT processors detected. Processor affinity set!
+Reading "C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Radiator Air Flow Sim\test_files\dp0\FFF\MECH\FFF.msh"...
+Buffering for file scan...
+
+   32208 nodes, binary.
+   83804 nodes, binary.
+   18184 mixed wall faces, zone  1, binary.
+  172888 mixed interior faces, zone  2, binary.
+   32805 quadrilateral interface faces, zone  6, binary.
+   32805 quadrilateral interface faces, zone  7, binary.
+   72990 mixed cells, zone  3, binary.
+
+
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+     zones,
+	contact_region_10_mesh_-contact_region_7_mesh_-contact_region_9_mesh_-contact_region_11_mesh_-contact_region_12_mesh_-contact_region_14_mesh_-contact_region_5_mesh_-contact_region_6_mesh_-contact_region_8_mesh_-contact_region_11_mesh_-contact_region_.1
+	contact_region_10_mesh_-contact_region_7_mesh_-contact_region_9_mesh_-contact_region_11_mesh_-contact_region_12_mesh_-contact_region_14_mesh_-contact_region_5_mesh_-contact_region_6_mesh_-contact_region_8_mesh_-contact_region_11_mesh_-contact_region_
+	sys_solid_mesh_
+	interior-sys_solid_mesh_
+	wall-sys_solid_mesh_
+	interior-5
+	wall-8
+	wall-9
+     mesh interfaces,
+     parallel,
+
+Info: At least one many-to-many mesh interface is found in the case file. Such mesh interfaces will not be available in a future release of Fluent. It is recommended to convert to the current default one-to-one mesh interfaces with the following text command:
+/define/mesh-interfaces/one-to-one-pairing? yes
+
+Done.
+
+Preparing mesh for display...
+Note: zone-surface: cannot create surface from sliding interface zone.
+Creating empty surface.
+Note: zone-surface: cannot create surface from sliding interface zone.
+Creating empty surface.
+Done.
+
+Writing Settings file "C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Radiator Air Flow Sim\test_files\dp0\FFF\Fluent\FFF.set"...
+	writing rp variables ... Done.
+	writing domain variables ... Done.
+	writing sys_solid_mesh_ (type fluid) (mixture) ... Done.
+	writing wall-9 (type wall) (mixture) ... Done.
+	writing wall-8 (type wall) (mixture) ... Done.
+	writing interior-5 (type interior) (mixture) ... Done.
+	writing wall-sys_solid_mesh_ (type wall) (mixture) ... Done.
+	writing interior-sys_solid_mesh_ (type interior) (mixture) ... Done.
+	writing contact_region_10_mesh_-contact_region_7_mesh_-contact_region_9_mesh_-contact_region_11_mesh_-contact_region_12_mesh_-contact_region_14_mesh_-contact_region_5_mesh_-contact_region_6_mesh_-contact_region_8_mesh_-contact_region_11_mesh_-contact_region_ (type interface) (mixture) ... Done.
+	writing contact_region_10_mesh_-contact_region_7_mesh_-contact_region_9_mesh_-contact_region_11_mesh_-contact_region_12_mesh_-contact_region_14_mesh_-contact_region_5_mesh_-contact_region_6_mesh_-contact_region_8_mesh_-contact_region_11_mesh_-contact_region_.1 (type interface) (mixture) ... Done.
+	writing sliding-interface contact_region_10_mesh_-contact_region_7_mesh_-contact_region_9_mesh_-contact_region_11_mesh_-contact_region_12_mesh_-contact_region_14_mesh_-contact_region_5_mesh_-contact_region_6_mesh_-contact_region_8_mesh_-contact_region_11_mesh_-contact_region_ ... Done
+	writing zones map name-id ... Done.
+"Updating Setup cell..."
+"Updating Solution cell..."
+Initialization based on settings...
+
+Initialize using the hybrid initialization method.
+
+Checking case topology... 
+-This case has no inlets & no outlets 
+-Case will be initialized with constant parameters
+
+Hybrid initialization is done.
+Writing data to C:\\Users\\sean8\\Documents\\GitHub\\Cooling_Modelling\\Radiator Air Flow Sim\\test_files\\dp0\\FFF\\Fluent\\FFF.ip ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	k
+	omega
+	hyb_init-0
+	hyb_init-1
+Done.
+("Unable to update solution. Number of iterations should be greater than zero.")
+
+Error: Unable to update solution. Number of iterations should be greater than zero.
+Error Object: #f
+
+Performance Timer for 0 iterations on 1 compute node
+  Average wall-clock time per iteration:                0.000 sec
+  Global reductions per iteration:                          0 ops
+  Global reductions time per iteration:                 0.000 sec (0.0%)
+  Message count per iteration:                              0 messages
+  Data transfer per iteration:                          0.000 MB
+  LE solves per iteration:                                  0 solves
+  LE wall-clock time per iteration:                     0.000 sec (0.0%)
+  LE global solves per iteration:                           0 solves
+  LE global wall-clock time per iteration:              0.000 sec (0.0%)
+  LE global matrix maximum size:                            0
+  AMG cycles per iteration:                             0.000 cycles
+  Relaxation sweeps per iteration:                          0 sweeps
+  Relaxation exchanges per iteration:                       0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                                    386
+
+  Total wall-clock time:                                0.000 sec
+
+Transcript Stop Time:  22:28:30, 15 Aug 2025 Mountain Daylight Time 
+Total Transcript Time: 0 Minute 11 Second.
