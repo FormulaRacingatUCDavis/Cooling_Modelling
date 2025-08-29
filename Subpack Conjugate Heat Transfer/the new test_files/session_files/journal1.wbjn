@@ -1,0 +1,14 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+template1 = GetTemplate(TemplateName="Fluid Flow with Fluent Meshing")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+Save(Overwrite=True)
+geometry1.Edit(IsDiscoveryGeometry=True)
+Save(Overwrite=True)
+geometry1.SetFile(FilePath="C:/Users/Owner/Downloads/with holes.dsco")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+Save(Overwrite=True)
