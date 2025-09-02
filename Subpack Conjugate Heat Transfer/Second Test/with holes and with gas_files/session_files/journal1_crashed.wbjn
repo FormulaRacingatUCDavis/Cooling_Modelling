@@ -1,0 +1,234 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+template1 = GetTemplate(TemplateName="Fluid Flow with Fluent Meshing")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+Save(Overwrite=True)
+setup1 = system1.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(Precision="Double", EnvPath={}, RunParallel=True, NumberOfProcessorsMeshing=4, NumberOfProcessors=4))
+tGridData1 = GetDataEntity("/Mesh/TGridData:TGridData")
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)(cx-gui-do cx-activate-item \"Key Behavioral Changes*PanelButtons*PushButton1(OK)\")""")
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"meshing.GlobalSettings.LengthUnit.set_state(r'm')\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.GlobalSettings.AreaUnit.set_state(r'm^2')\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.GlobalSettings.VolumeUnit.set_state(r'm^3')\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+geometry1.Exit()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.790292 -2.73944 0.726766) '(0 0 0) '(0.518251 0.292053 0.536781) 0 0)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'with-holes-solid'],r'BOIGrowthRate': 1.2,r'BOISize': 0.002,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'MaxSize': 0.005,r'MinSize': 0.001,},})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Arguments.set_state({r'CappingRequired': r'No',r'InvokeShareTopology': r'Yes',r'Multizone': r'No',r'NonConformal': r'No',r'SMImprovePreferences': {r'AdvancedImprove': r'no',r'AllowDefeaturing': r'no',r'SIQualityCollapseLimit': 0.85,r'SIQualityIterations': 5,r'SIQualityMaxAngle': 80,r'SIRemoveStep': r'no',r'SIStepQualityLimit': 0,r'SIStepWidth': 0,r'ShowSMImprovePreferences': False,},r'SetupType': r'The geometry consists of both fluid and solid regions and/or voids',r'WallToInternal': r'No',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].UpdateChildTasks(Arguments={r'v1': True,}, SetupTypeChanged=True)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Arguments.set_state({r'InterfaceSelect': r'Manual',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Execute()\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(handle-key \"??\")(cx-use-window-id 51)(handle-key \"x\")(cx-use-window-id 51)(dolly-camera -0.0166922 0.238276 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.310001 -0.643705 -0.263226) '(0 0 0) '(0.597668 -0.531439 0.597163) 0 0)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Boundaries'].Arguments.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Boundaries'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Create Regions'].Arguments.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Create Regions'].Execute()\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.732268 0.2567 -0.459227) '(0 0 0) '(-0.350537 -0.073446 0.245903) 0 0)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Regions'].Arguments.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Regions'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Boundary Layers'].Arguments.set_state({r'LocalPrismPreferences': {r'Continuous': r'Continuous',},r'NumberOfLayers': 10,})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Boundary Layers'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Volume Mesh'].Arguments.set_state({r'VolumeFill': r'polyhedra',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Volume Mesh'].Execute()\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(-0.247091 0.335391 1.01231) '(0 0 0) '(-0.199692 0.296415 -0.159674) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.0154738 -0.318313 -0.712467) '(0 0 0) '(0.262769 -0.370672 0.168489) 0 0)")
+Save(Overwrite=True)
+Copy(
+    FilePath="C:/Users/Owner/Downloads/with holes and with gas.wbpj",
+    NewFilePath="C:/Users/Owner/Downloads/partially saved good.wbpj",
+    Overwrite=True,
+    IncludeBackup=True,
+    RevertToLastSaved=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Project")(cx-gui-do cx-activate-item "Error*OK")(cx-gui-do cx-activate-item "Error*OK")')
+Save(Overwrite=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Project")(cx-gui-do cx-activate-item "Error*OK")(cx-gui-do cx-activate-item "Error*OK")')
+Copy(
+    FilePath="C:/Users/Owner/Downloads/with holes and with gas.wbpj",
+    NewFilePath="C:/Users/Owner/Downloads/partially saved good 2.wbpj",
+    Overwrite=True,
+    IncludeBackup=True,
+    RevertToLastSaved=True)
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11""")
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'with-holes-solid'],r'BOIGrowthRate': 1.2,r'BOISize': 0.02,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'MaxSize': 0.05,r'MinSize': 0.01,},})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.12085 -1.16417 0.921406) '(0 0 0) '(0.257082 0.213448 0.194095) 0 0)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Arguments.set_state({r'CappingRequired': r'No',r'InvokeShareTopology': r'Yes',r'Multizone': r'No',r'NonConformal': r'No',r'SMImprovePreferences': {r'AdvancedImprove': r'no',r'AllowDefeaturing': r'no',r'SIQualityCollapseLimit': 0.85,r'SIQualityIterations': 5,r'SIQualityMaxAngle': 160,r'SIRemoveStep': r'no',r'SIStepQualityLimit': 0,r'SIStepWidth': 0,r'ShowSMImprovePreferences': False,},r'SetupType': r'The geometry consists of both fluid and solid regions and/or voids',r'WallToInternal': r'No',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].UpdateChildTasks(Arguments={r'v1': True,}, SetupTypeChanged=True)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Arguments.set_state({r'InterfaceSelect': r'Manual',})\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Error*OK")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'MaxSize': 0.05,r'MinSize': 0.001,},r'ExecuteShareTopology': r'Yes',r'OriginalZones': [r'with-holes-the-air-region', r'inlet', r'cells.20', r'cells.31', r'cells.42', r'cells.53', r'cells.64', r'cells.69', r'cells.70', r'cells.71', r'cells', r'cells.1', r'cells.2', r'cells.3', r'cells.4', r'cells.5', r'cells.6', r'cells.7', r'cells.8', r'cells.9', r'cells.10', r'cells.11', r'cells.12', r'cells.13', r'cells.14', r'cells.15', r'cells.16', r'cells.17', r'cells.18', r'cells.19', r'cells.21', r'cells.22', r'cells.23', r'cells.24', r'cells.25', r'cells.26', r'cells.27', r'cells.28', r'cells.29', r'cells.30', r'cells.32', r'cells.33', r'cells.34', r'cells.35', r'cells.36', r'cells.37', r'cells.38', r'cells.39', r'cells.40', r'cells.41', r'cells.43', r'cells.44', r'cells.45', r'cells.46', r'cells.47', r'cells.48', r'cells.49', r'cells.50', r'cells.51', r'cells.52', r'cells.54', r'cells.55', r'cells.56', r'cells.57', r'cells.58', r'cells.59', r'cells.60', r'cells.61', r'cells.62', r'cells.63', r'cells.65', r'cells.66', r'cells.67', r'cells.68', r'solid', r'outlet'],})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Revert()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Boundaries'].Arguments.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Boundaries'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Create Regions'].Arguments.set_state({r'NumberOfFlowVolumes': 2,})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Create Regions'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Regions'].Arguments.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Regions'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Boundary Layers'].Arguments.set_state({r'LocalPrismPreferences': {r'Continuous': r'Continuous',},r'NumberOfLayers': 10,})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Boundary Layers'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Volume Mesh'].Arguments.set_state({r'VolumeFill': r'polyhedra',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Volume Mesh'].Execute()\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.217548 -0.497376 0.229515) '(0 0 0) '(0.125026 0.214703 0.401654) 0 0)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Solution)*PushButton1(Switch to Solution)")(cx-gui-do cx-activate-item "Question*OK")(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="(newline)")
+template2 = GetTemplate(TemplateName="EngData")
+system2 = template2.CreateSystem()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Project")(cx-gui-do cx-activate-item "Error*OK")')
+Save(Overwrite=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Project")')
+favorites1 = EngData.LoadFavoriteItems()
+system2.Delete()
+system3 = template2.CreateSystem()
+engineeringData1 = system3.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp1 = material1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Index=-1,
+    Variables=["Thermal Conductivity Z direction"],
+    Values=[["2.21 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Thermal Conductivity Y direction"],
+    Values=[["20.6 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Thermal Conductivity Z direction"],
+    Values=[["1 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Thermal Conductivity Y direction"],
+    Values=[["20.61 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Thermal Conductivity Z direction"],
+    Values=[["2.21 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Thermal Conductivity X direction"],
+    Values=[["20.61 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Temperature"],
+    Values=[["0 [C]"]])
+matlProp2 = material1.GetProperty(Name="Density")
+matlProp2.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Variables=["Density"],
+    Values=[["2682 [kg m^-3]"]])
+material1.DisplayName = "Cell Parameters ortho"
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Temperature"],
+    Values=[["7.8886090522101181E-31 [C]"]])
+matlProp3 = material1.GetProperty(Name="Specific Heat")
+matlProp3.SetVariableProperty(
+    VariableName="Specific Heat",
+    Property="Unit",
+    Value="J kg^-1 K^-1")
+matlProp3.SetData(
+    Variables=["Specific Heat"],
+    Values=[["434 [J kg^-1 K^-1]"]])
+matlProp3.SetData(
+    Variables=["Specific Heat"],
+    Values=[["1360 [J kg^-1 K^-1]"]])
+Save(Overwrite=True)
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Energy (Off)"))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Energy (Off)"))(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-Energy (Off)*On")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))(cx-gui-do cx-set-toggle-button2 "Viscous Model*Table1*ToggleBox1(Model)*Laminar" #t)(cx-gui-do cx-activate-item "Viscous Model*Table1*ToggleBox1(Model)*Laminar")(cx-gui-do cx-activate-item "Viscous Model*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Models|Viscous (Laminar)\"))(cx-use-window-id 51)(cxg-clear-all-selections (cx-active-window))(cxg-add-surfaces-to-selection '(cells.53) (cx-active-window))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Materials|Solid\"))(cx-gui-do cx-list-tree-right-click \"NavigationPane*Frame2*Table1*List_Tree2\" )")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-Solid*New...")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Create/Edit Materials*Table1*Frame1*Frame2*ButtonBox2*PushButton3(User-Defined Database)")(cx-gui-do cx-activate-item "Open Database*PushButton2(Browse)")(cx-gui-do cx-activate-item "Open Database*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton1(Close)")')
+EngData.WriteMaterials(
+    MaterialList=[material1],
+    FilePath="C:/Users/Owner/Downloads/material data test.xml",
+    Format="MatML31",
+    UnitSystem="MKS_STANDARD",
+    ReplaceMaterial=True,
+    OverwriteTarget=True)
+setup1.SendCommand(Command='(cx-use-window-id 51)(cx-use-window-id 51)(handle-key "??")(cx-use-window-id 51)(handle-key "??")(cx-use-window-id 51)(handle-key "??")(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Solid|solid-1"))(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-solid-1*Edit...")')
+setup1.SendCommand(Command="(cx-gui-do cx-activate-item \"Create/Edit Materials*Table1*Frame1*Frame2*ButtonBox2*PushButton3(User-Defined Database)\")(cx-gui-do cx-activate-item \"Open Database*PushButton2(Browse)\")(cx-gui-do cx-set-file-dialog-entries \"Select File\" '( \"C:/Users/Owner/Downloads/material data test.xml\") \"All Files (*)\")(cx-gui-do cx-activate-item \"Quick Edit*Table1*PushButton4(icon_close)\")(cx-gui-do cx-activate-item \"Open Database*PanelButtons*PushButton1(OK)\")(cx-gui-do cx-set-list-selections \"User-Defined Database Materials*Table1*Frame1*List1(Materials)\" '())(cx-gui-do cx-activate-item \"User-Defined Database Materials*Table1*Frame1*List1(Materials)\")(cx-gui-do cx-activate-item \"User-Defined Database Materials*PanelButtons*PushButton1(Close)\")")
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Create/Edit Materials*Table1*Frame1*Table1*DropDownList4(Materials)\" '( 1))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Create/Edit Materials*Table1*Frame1*Table1*DropDownList4(Materials)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-text-entry "Create/Edit Materials*Table1*Frame1*Table1*TextEntry1(Name)" "cells")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Create/Edit Materials*Table1*Frame1*Table1*TextEntry1(Name)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Create/Edit Materials*Table1*Frame1*Frame2*ButtonBox2*PushButton2(GRANTA MDS Database)")(cx-gui-do cx-activate-item "Quick Edit*Table1*PushButton4(icon_close)")(cx-gui-do cx-activate-item "GRANTA MDS Materials*PanelButtons*PushButton1(Close)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Create/Edit Materials*Table2*Table1(Properties)*DropDownList6(Thermal Conductivity)\" '( 9))(cx-gui-do cx-activate-item \"Create/Edit Materials*Table2*Table1(Properties)*DropDownList6(Thermal Conductivity)\")(cx-gui-do cx-activate-item \"Quick Edit*Table1*PushButton4(icon_close)\")(cx-gui-do cx-activate-item \"Quick Edit*Table1*PushButton16(More)\")(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 1)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 2)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 3)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 4)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 5)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 6)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 7)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 8)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 9)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 10)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 1)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 2)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 3)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 4)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 5)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 6)(cx-gui-do cx-activate-tab-index \"Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2\" 0)(cx-gui-do cx-activate-tab-index \"Wall*Frame4\" 1)(cx-gui-do cx-activate-item \"Wall*PanelButtons*PushButton2(Cancel)\")(cx-gui-do cx-set-real-entry-list \"Anisotropic Conduction - Principal Components*Table2(Principal Values)*RealEntry6\" '( 20.61))(cx-gui-do cx-set-real-entry-list \"Anisotropic Conduction - Principal Components*Table2(Principal Values)*RealEntry7\" '( 2.21))(cx-gui-do cx-set-real-entry-list \"Anisotropic Conduction - Principal Components*Table2(Principal Values)*RealEntry8\" '( 2.21))(cx-gui-do cx-activate-item \"Anisotropic Conduction - Principal Components*Table2(Principal Values)*RealEntry8\")(cx-gui-do cx-activate-item \"Quick Edit*Table1*PushButton4(icon_close)\")(cx-gui-do cx-activate-item \"Anisotropic Conduction - Principal Components*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Quick Edit*Table1*PushButton4(icon_close)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-real-entry-list \"Create/Edit Materials*RealEntry10\" '( 2682))(cx-gui-do cx-set-real-entry-list \"Create/Edit Materials*RealEntry12\" '( 1360))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton3(Change/Create)")(cx-gui-do cx-activate-item "Question*OK")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton1(Close)")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Solid|cells"))')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Quick Edit*Table1*PushButton4(icon_close)")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Fluid|solid (fluid, id=44267)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Fluid|with-holes-the-air-region (fluid, id=44204)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Fluid|solid (fluid, id=44267)\"))(cx-use-window-id 51)(cx-use-window-id 51)(cxg-clear-all-selections (cx-active-window))(cxg-add-surfaces-to-selection '(with-holes-the-air-region:1) (cx-active-window))")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Quick Edit*Table1*PushButton4(icon_close)")')
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-use-window-id 51)(cxg-clear-all-selections (cx-active-window))(cxg-add-surfaces-to-selection '(with-holes-the-air-region:1) (cx-active-window))(cx-gui-do cx-activate-item \"Quick Edit*PanelButtons*PushButton1(Close)\")")

@@ -1,0 +1,205 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="FFF")
+setup1 = system1.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1 = GetDataEntity("/Mesh/TGridData:TGridData")
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'fff-solid'],r'BOIGrowthRate': 1.2,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Revert()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-use-window-id 51)(cx-use-window-id 51)(handle-key "control ??")(cx-use-window-id 51)(handle-key "control s")(cx-use-window-id 51)')
+Save(Overwrite=True)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Project")')
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(-0.0214033 -0.288164 0.283315) '(0 0 0) '(0.154301 0.178567 0.19004) 0 0)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'fff-solid'],r'BOIGrowthRate': 1.2,r'BOISize': 0.0005,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'MaxSize': 0.005,r'MinSize': 0.001,},})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Arguments.set_state({r'CappingRequired': r'No',r'InvokeShareTopology': r'Yes',r'Multizone': r'No',r'NonConformal': r'No',r'SMImprovePreferences': {r'AdvancedImprove': r'no',r'AllowDefeaturing': r'no',r'SIQualityCollapseLimit': 0.85,r'SIQualityIterations': 5,r'SIQualityMaxAngle': 80,r'SIRemoveStep': r'no',r'SIStepQualityLimit': 0,r'SIStepWidth': 0,r'ShowSMImprovePreferences': False,},r'SetupType': r'The geometry consists of both fluid and solid regions and/or voids',r'WallToInternal': r'No',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].UpdateChildTasks(Arguments={r'v1': True,}, SetupTypeChanged=True)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Arguments.set_state({r'InterfaceSelect': r'Manual',r'ShareTopologyPreferences': {r'Operation': r'Join-Intersect',},})\")")
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Reset()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: null
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'fff-solid'],r'BOIGrowthRate': 1.2,r'BOISize': 0.002,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'MaxSize': 0.005,r'MinSize': 0.001,},})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Arguments.set_state({r'CappingRequired': r'No',r'InvokeShareTopology': r'Yes',r'Multizone': r'No',r'NonConformal': r'No',r'SMImprovePreferences': {r'AdvancedImprove': r'no',r'AllowDefeaturing': r'no',r'SIQualityCollapseLimit': 0.85,r'SIQualityIterations': 5,r'SIQualityMaxAngle': 80,r'SIRemoveStep': r'no',r'SIStepQualityLimit': 0,r'SIStepWidth': 0,r'ShowSMImprovePreferences': False,},r'SetupType': r'The geometry consists of both fluid and solid regions and/or voids',r'WallToInternal': r'No',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].UpdateChildTasks(Arguments={r'v1': True,}, SetupTypeChanged=True)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Arguments.set_state({r'InterfaceSelect': r'Manual',})\")")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+Save(Overwrite=True)
+geometry1.Exit()
+meshComponent1.Reset()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1.Reset()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: null
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'fff-solid'],r'BOIGrowthRate': 1.2,r'BOISize': 0.003,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'MaxSize': 0.005,r'MinSize': 0.001,},})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Arguments.set_state({r'CappingRequired': r'No',r'InvokeShareTopology': r'Yes',r'Multizone': r'No',r'NonConformal': r'No',r'SMImprovePreferences': {r'AdvancedImprove': r'no',r'AllowDefeaturing': r'no',r'SIQualityCollapseLimit': 0.85,r'SIQualityIterations': 5,r'SIQualityMaxAngle': 80,r'SIRemoveStep': r'no',r'SIStepQualityLimit': 0,r'SIStepWidth': 0,r'ShowSMImprovePreferences': False,},r'SetupType': r'The geometry consists of both fluid and solid regions and/or voids',r'WallToInternal': r'No',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].UpdateChildTasks(Arguments={r'v1': True,}, SetupTypeChanged=True)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Arguments.set_state({r'InterfaceSelect': r'Manual',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['facesize_1'].Revert()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['facesize_1'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOIControlName': r'facesize_1',r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'fff-solid'],r'BOIGrowthRate': 1.2,r'BOISize': 0.03,r'BOIZoneorLabel': r'label',r'CompleteFaceLabelList': [r'fff-solid'],})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['facesize_1'].Execute()\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Error*OK")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state({r'CFDSurfaceMeshControls': {r'MaxSize': 0.01,r'MinSize': 0.005,},r'ExecuteShareTopology': r'Yes',r'OriginalZones': [r'default-default', r'walls', r'inlet', r'default-default.1', r'walls.1', r'inlet.1', r'walls.2', r'cells2.40', r'cells2.51', r'cells2.62', r'cells2.69', r'cells2.70', r'cells2.71', r'cells2', r'cells2.1', r'cells2.2', r'cells2.3', r'cells2.4', r'cells2.5', r'cells2.6', r'cells2.7', r'cells2.8', r'cells2.9', r'cells2.10', r'cells2.11', r'cells2.12', r'cells2.13', r'cells2.14', r'cells2.15', r'cells2.16', r'cells2.17', r'cells2.18', r'cells2.19', r'cells2.20', r'cells2.21', r'cells2.22', r'cells2.23', r'cells2.24', r'cells2.25', r'cells2.26', r'cells2.27', r'cells2.28', r'cells2.29', r'cells2.30', r'cells2.31', r'cells2.32', r'cells2.33', r'cells2.34', r'cells2.35', r'cells2.36', r'cells2.37', r'cells2.38', r'cells2.39', r'cells2.41', r'cells2.42', r'cells2.43', r'cells2.44', r'cells2.45', r'cells2.46', r'cells2.47', r'cells2.48', r'cells2.49', r'cells2.50', r'cells2.52', r'cells2.53', r'cells2.54', r'cells2.55', r'cells2.56', r'cells2.57', r'cells2.58', r'cells2.59', r'cells2.60', r'cells2.61', r'cells2.63', r'cells2.64', r'cells2.65', r'cells2.66', r'cells2.67', r'cells2.68', r'outlet', r'walls.3'],})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+meshComponent1.Reset()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: null
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'fff-solid'],r'BOIGrowthRate': 1.2,r'BOIZoneorLabel': r'label',})\")")
+geometry1.Edit(IsDiscoveryGeometry=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry1.Exit()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Revert()\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+geometry1.SetFile(FilePath=GetAbsoluteUserPathName("GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/the new test_files/dp0/FFF/DM/the new cad.dsco"))
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Arguments.set_state({r'FileName': r'C:\\Users\\Owner\\Documents\\GitHub\\Cooling_Modelling\\Subpack Conjugate Heat Transfer\\the new test_files\\dp0\\FFF\\DM\\FFF.dsco',r'ImportCadPreferences': {r'ShowImportCadPreferences': False,},r'LengthUnit': r'm',r'NumParts': 76,})\")")
+meshComponent1.Reset()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: null
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+meshComponent1.Refresh()
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(%py-exec "preferences.General.StartupMessages.KeyBehavioralChangesMessage.set_state(True)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].Execute()\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].Arguments.set_state({r'AddChild': r'yes',r'BOICellsPerGap': 1,r'BOICurvatureNormalAngle': 18,r'BOIExecution': r'Face Size',r'BOIFaceLabelList': [r'fff-solid'],r'BOIGrowthRate': 1.2,r'BOIZoneorLabel': r'label',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].AddChildAndUpdate(DeferUpdate=False)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Arguments.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Arguments.set_state({r'CappingRequired': r'No',r'InvokeShareTopology': r'Yes',r'Multizone': r'No',r'NonConformal': r'No',r'SMImprovePreferences': {r'AdvancedImprove': r'no',r'AllowDefeaturing': r'no',r'SIQualityCollapseLimit': 0.85,r'SIQualityIterations': 5,r'SIQualityMaxAngle': 80,r'SIRemoveStep': r'no',r'SIStepQualityLimit': 0,r'SIStepWidth': 0,r'ShowSMImprovePreferences': False,},r'SetupType': r'The geometry consists of both fluid and solid regions and/or voids',r'WallToInternal': r'No',})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].UpdateChildTasks(Arguments={r'v1': True,}, SetupTypeChanged=True)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].Execute()\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].Arguments.set_state({r'InterfaceSelect': r'Manual',})\")")
+Save(Overwrite=True)
+Reset()
+Extensions.UnloadExtension(
+    Id="5e7e01a6-8601-11e8-9f8c-28f10e13ffe6",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="5f463412-bd3e-484b-87e7-cbc0a665e474",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="ba012e44-4f35-4a97-aeff-8fe60efc33c9",
+    Version="25.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="7b0e9e84-396d-4099-9602-2ced9dddc253",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="20180725-3f81-49eb-9f31-41364844c769",
+    Version="2025.2",
+    Format="Binary")
+Extensions.UnloadExtension(
+    Id="f3e3da52-fb02-4910-8cc9-980efd047bc6",
+    Version="2023.1",
+    Format="Binary")
