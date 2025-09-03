@@ -2,10 +2,10 @@
 <Storage>
   <Project Version="25.2.1.0">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">4753</timestamp-max>
+    <timestamp-max valType="Int64">7438</timestamp-max>
     <framework-build-version valType="String">25.2.170.0</framework-build-version>
     <external-version-string valType="String">2025 R2</external-version-string>
-    <last-saved-utc valType="String">08/15/2025 05:23:02</last-saved-utc>
+    <last-saved-utc valType="String">08/21/2025 05:33:50</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -13,8 +13,6 @@
     <ReferenceCache>
       <ProjectReferenceList>
         <ReferenceList valType="String">{
-"beac2ce7-fd0c-437e-9415-4881143c21a3": "/FileContainer/FileReference:F2",
-"d6613edc-7c82-46eb-9b22-9418f836c8a4": "/FileContainer/FileReference:F1",
 "a51b62ac-203e-40e3-8a13-e501b0e957f2": "/FileTypesContainer/FileType:GeometryFileType",
 "72b4f50b-b3e0-4629-95fa-0f93eac6ea6f": "/FileTypesContainer/FileType:project",
 "24ae400f-a28d-4fcd-8e71-289298d78cc9": "/FileTypesContainer/FileType:ACTDatabase",
@@ -42,7 +40,11 @@
 "4f740e92-f574-4a20-8082-dbf38e779d7e": "/Schematic/Component:Engineering Data",
 "7f5c6420-a5bb-4ff2-ab9e-ebb8f9b1e96e": "/Schematic/Template:EngData",
 "621d2528-452f-4294-b9ee-39ec46a450dc": "/Schematic/ComponentTemplate:EngDataCellTemplate",
-"5a2d9d9d-04fb-471c-92e4-89b96930cf6e": "/Schematic/System:ENGD"
+"5a2d9d9d-04fb-471c-92e4-89b96930cf6e": "/Schematic/System:ENGD",
+"797f7f13-8e54-466f-90b6-e1ffa95556b0": "/FileContainer/FileReference:F8",
+"a55db503-8cfd-4a99-be87-1040bb877685": "/FileContainer/FileReference:F7",
+"4ae6108f-2d11-4ac0-9a62-699a7d91779f": "/FileContainer/FileReference:F6",
+"b3470491-64ea-4d96-bca5-b517f8c6db2d": "/FileTypesContainer/FileType:MeshFileType"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -126,7 +128,8 @@
 "3ef9baf9-5bf0-4e41-9285-2f185bf7f4de": "/Engineering Data/MaterialPropertyData:Relative Permeability",
 "460529f7-a0be-4f58-8077-c612f3efe3fe": "/Engineering Data/MaterialVariable:Relative Permeability",
 "4182c5a4-fedc-490b-b056-36f0c3263eb6": "/Engineering Data/MaterialProperty:Material Unique Id",
-"50c32e20-67f2-4ba8-acf5-af1869964013": "/Engineering Data/MaterialPropertyData:Material Unique Id"
+"50c32e20-67f2-4ba8-acf5-af1869964013": "/Engineering Data/MaterialPropertyData:Material Unique Id",
+"486f4316-95f9-4803-be6c-94e91f3a0c84": "/Mesh/MechanicalModel:MechanicalModel"
 }</ReferenceList>
         </DesignPointReferenceList>
       </DesignPointReferenceListCollection>
@@ -159,17 +162,17 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4753, "Input": 3423, "Output": 3423}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7275, "Input": 3423, "Output": 3423}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
-      <Object Name="/FileContainer/FileReference:F1" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F7" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1</object-name>
-        <member-data valType="String">{"DisplayText": "EN-A010X-AA-2x Koolance Radiator Assembly.STEP", "FileType": $$a51b62ac-203e-40e3-8a13-e501b0e957f2, "DependentFiles": [], "ContainerAssociations": ["Geometry"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"C:\Users\sean8\Documents\GitHub\FE12_CAD\Powertrain\Cooling\Components\Radiators\EN-A010X-AA-2x Koolance Radiator Assembly.STEP", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F7</object-name>
+        <member-data valType="String">{"DisplayText": "Koolance_reduced_fins.STEP", "FileType": $$a51b62ac-203e-40e3-8a13-e501b0e957f2, "DependentFiles": [], "ContainerAssociations": ["Geometry"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Radiator Air Flow Sim\STEP Files\Koolance_reduced_fins.STEP", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F2" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F8" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F2</object-name>
+        <object-name valType="String">F8</object-name>
         <member-data valType="String">{"DisplayText": "FFF.dsco", "FileType": $$a51b62ac-203e-40e3-8a13-e501b0e957f2, "DependentFiles": [], "ContainerAssociations": ["Geometry"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\DM\FFF.dsco", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
@@ -180,12 +183,17 @@
       <Object Name="/FileContainer/FileReference:F4" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F4</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$24ae400f-a28d-4fcd-8e71-289298d78cc9, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 2}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$24ae400f-a28d-4fcd-8e71-289298d78cc9, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 4}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F5" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F5</object-name>
         <member-data valType="String">{"DisplayText": "EngineeringData.xml", "FileType": $$d0caedfe-2d7f-4357-a136-a1994fdad3d1, "DependentFiles": [], "ContainerAssociations": ["Engineering Data"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\ENGD\ENGD\EngineeringData.xml", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F6" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F6</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.mshdb", "FileType": $$b3470491-64ea-4d96-bca5-b517f8c6db2d, "DependentFiles": [], "ContainerAssociations": ["Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\FFF.mshdb", "ReferenceCount": 1}</member-data>
       </Object>
     </Container>
     <Container Name="Messages" Version="1.0">
@@ -193,9 +201,71 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 3424, "Input": 3424, "Output": 3424}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5467, "Input": 3424, "Output": 3424}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Messages/StoredMessage:Message" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r'Status(StatusCode="Unknown", Detail="Stream removed", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1755748020.786000000","description":"Error received from peer ipv6:[::1]:52649","file":"..\..\..\src\core\lib\surface\call.cc","file_line":953,"grpc_message":"Stream removed","grpc_status":2}")', "Details": """Grpc.Core.RpcException: Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1755748020.786000000\",\"description\":\"Error received from peer ipv6:[::1]:52649\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":953,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Grpc.Core.Internal.AsyncCall`2.UnaryCall(TRequest msg)
+   at Grpc.Core.DefaultCallInvoker.BlockingUnaryCall[TRequest,TResponse](Method`2 method, String host, CallOptions options, TRequest request)
+   at Grpc.Core.Interceptors.InterceptingCallInvoker.&lt;BlockingUnaryCall&gt;b__3_0[TRequest,TResponse](TRequest req, ClientInterceptorContext`2 ctx)
+   at Grpc.Core.ClientBase.ClientBaseConfiguration.ClientBaseConfigurationInterceptor.BlockingUnaryCall[TRequest,TResponse](TRequest request, ClientInterceptorContext`2 context, BlockingUnaryCallContinuation`2 continuation)
+   at Grpc.Core.Interceptors.InterceptingCallInvoker.BlockingUnaryCall[TRequest,TResponse](Method`2 method, String host, CallOptions options, TRequest request)
+   at WBDiscoveryConnectorGenerated.IHelperService.IHelperServiceClient.OpenSCDOC(String request, CallOptions options)
+   at WBDiscoveryConnectorGenerated.IHelperService.IHelperServiceClient.OpenSCDOC(String request, Metadata headers, Nullable`1 deadline, CancellationToken cancellationToken)
+   at Ansys.DesignModeler.Core.Core.Commands.ConnectionService.HelperService.OpenSCDOC(String strSCDOCFile)
+   at Ansys.DesignModeler.Core.Commands.EditGeometry.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1755748020.786000000\",\"description\":\"Error received from peer ipv6:[::1]:52649\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":953,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")
+CommandName: DesignModeler.EditGeometry(GeometryContainer=\"Geometry\", IsDiscoveryGeometry=True)
+   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.DesignModeler.Core.Commands.EditGeometry.InvokeAndWait(IProtectedContext context, DataContainerReference GeometryContainer, Boolean Interactive, Boolean IsSpaceClaimGeometry, Boolean IsDiscoveryGeometry, String StartupArguments)
+   at Ansys.DesignModeler.GUI.EditGeometry.Invoke(GuiOperationContext context)
+   at Ansys.UI.GuiOperationContext.Invoke(GuiOperationMetaData operationData)
+   at Ansys.UI.UIManager.InvokeOperationCore(String pseudoname, OperationDelegate callback, Boolean allowOSMessages, Boolean coreTransaction, Boolean deferredRefreshOnly)
+""", "Association": "", "DateTimeStamp": 08/20/2025 21:47:00, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 1" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 1</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r'Status(StatusCode="Unknown", Detail="Stream removed", DebugException="Grpc.Core.Internal.CoreErrorDetailException: {"created":"@1755748020.786000000","description":"Error received from peer ipv6:[::1]:52649","file":"..\..\..\src\core\lib\surface\call.cc","file_line":953,"grpc_message":"Stream removed","grpc_status":2}")', "Details": """Grpc.Core.RpcException: Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1755748020.786000000\",\"description\":\"Error received from peer ipv6:[::1]:52649\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":953,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Grpc.Core.Internal.AsyncCall`2.UnaryCall(TRequest msg)
+   at Grpc.Core.DefaultCallInvoker.BlockingUnaryCall[TRequest,TResponse](Method`2 method, String host, CallOptions options, TRequest request)
+   at Grpc.Core.Interceptors.InterceptingCallInvoker.&lt;BlockingUnaryCall&gt;b__3_0[TRequest,TResponse](TRequest req, ClientInterceptorContext`2 ctx)
+   at Grpc.Core.ClientBase.ClientBaseConfiguration.ClientBaseConfigurationInterceptor.BlockingUnaryCall[TRequest,TResponse](TRequest request, ClientInterceptorContext`2 context, BlockingUnaryCallContinuation`2 continuation)
+   at Grpc.Core.Interceptors.InterceptingCallInvoker.BlockingUnaryCall[TRequest,TResponse](Method`2 method, String host, CallOptions options, TRequest request)
+   at WBDiscoveryConnectorGenerated.IHelperService.IHelperServiceClient.OpenSCDOC(String request, CallOptions options)
+   at WBDiscoveryConnectorGenerated.IHelperService.IHelperServiceClient.OpenSCDOC(String request, Metadata headers, Nullable`1 deadline, CancellationToken cancellationToken)
+   at Ansys.DesignModeler.Core.Core.Commands.ConnectionService.HelperService.OpenSCDOC(String strSCDOCFile)
+   at Ansys.DesignModeler.Core.Commands.EditGeometry.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Status(StatusCode=\"Unknown\", Detail=\"Stream removed\", DebugException=\"Grpc.Core.Internal.CoreErrorDetailException: {\"created\":\"@1755748020.786000000\",\"description\":\"Error received from peer ipv6:[::1]:52649\",\"file\":\"..\\..\\..\\src\\core\\lib\\surface\\call.cc\",\"file_line\":953,\"grpc_message\":\"Stream removed\",\"grpc_status\":2}\")
+CommandName: DesignModeler.EditGeometry(GeometryContainer=\"Geometry\", IsDiscoveryGeometry=True)
+   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.DesignModeler.Core.Commands.EditGeometry.InvokeAndWait(IProtectedContext context, DataContainerReference GeometryContainer, Boolean Interactive, Boolean IsSpaceClaimGeometry, Boolean IsDiscoveryGeometry, String StartupArguments)
+   at Ansys.DesignModeler.GUI.EditGeometry.Invoke(GuiOperationContext context)
+   at Ansys.UI.GuiOperationContext.Invoke(GuiOperationMetaData operationData)
+   at Ansys.UI.UIManager.InvokeOperationCore(String pseudoname, OperationDelegate callback, Boolean allowOSMessages, Boolean coreTransaction, Boolean deferredRefreshOnly)
+""", "Association": "", "DateTimeStamp": 08/20/2025 21:47:04, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 2" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 2</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Radiator Air Flow Sim\Radiator_Air_Flow_Sim_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 08/20/2025 21:58:04, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
@@ -225,9 +295,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4748, "Input": 4750, "Output": 3430}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5488, "Input": 6084, "Output": 3430}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Schematic/System:FFF" Version="1.0">
         <class-type valType="String">System</class-type>
         <object-name valType="String">FFF</object-name>
@@ -366,7 +436,7 @@
       <Object Name="/Units/UnitSystem:UnitSys" Version="1.0">
         <class-type valType="String">UnitSystem</class-type>
         <object-name valType="String">UnitSys</object-name>
-        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {"Density Derivative wrt Temperature": "kg m^-3 C^-1", "Energy Source Coefficient": "W m^-3 C^-1", "Heat Transfer Coefficient": "W m^-2 C^-1", "Molar Entropy": "J mol^-1 C^-1", "Piezoelectric Strain Coefficient": "A s N^-1", "Piezoelectric Stress Coefficient": "A s m^-2", "Pressure Derivative wrt Temperature": "Pa C^-1", "Seebeck Coefficient": "V C^-1", "Specific Entropy": "J kg^-1 C^-1", "Specific Heat Capacity": "J kg^-1 C^-1", "Stress Per Temperature": "Pa C^-1", "Temperature": "C", "Temperature Difference": "C", "Temperature Gradient": "C m^-1", "InvTemp1": "C^-1", "InvTemp2": "C^-2", "InvTemp3": "C^-3", "InvTemp4": "C^-4", "Thermal Capacitance": "J C^-1", "Thermal Compliance": "W C", "Thermal Conductance": "W C^-1", "Thermal Conductivity": "W m^-1 C^-1", "Thermal Contact Resistance": "W^-1 m^2 C", "Thermal Expansivity": "C^-1"}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
+        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
       </Object>
     </Container>
     <Container Name="HpsContainer" Version="1.0">
