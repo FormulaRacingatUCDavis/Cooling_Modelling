@@ -1,0 +1,2896 @@
+<FluentXMLReport>
+<version>
+Fluent
+Version: 3d, dp, pbns, lam (3d, double precision, pressure-based, laminar)
+Release: 25.2.0
+Title: 
+</version>
+
+<Models>
+
+Models
+------
+
+   Model                        Settings   
+   -------------------------------------
+   Space                        3D         
+   Time                         Steady     
+   Viscous                      Laminar    
+   Heat Transfer                Enabled    
+   Solidification and Melting   Disabled   
+   Radiation                    None       
+   Species                      Disabled   
+   Coupled Dispersed Phase      Disabled   
+   NOx Pollutants               Disabled   
+   SOx Pollutants               Disabled   
+   Soot                         Disabled   
+   Mercury Pollutants           Disabled   
+   Structure                    Disabled   
+   Acoustics                    Disabled   
+   Eulerian Wall Film           Disabled   
+   Potential/Electrochemistry   Disabled   
+   Multiphase                   Disabled   
+
+</Models>
+
+<MaterialProperties>
+Material Properties
+-------------------
+
+   Material: cells2 (solid)
+
+      Property               Units      Method        Value(s)                                                    
+      ---------------------------------------------------------------------------------------------------------
+      Density                kg/m^3     constant      2682                                                        
+      Cp (Specific Heat)     J/(kg K)   constant      1360                                                        
+      Thermal Conductivity   W/(m K)    anisotropic   ((matrix 2.21 0 0 0 2.21 0 0 0 20.61) (k (constant . 1)))   
+
+   Material: cells (solid)
+
+      Property               Units      Method        Value(s)                                                    
+      ---------------------------------------------------------------------------------------------------------
+      Density                kg/m^3     constant      2682                                                        
+      Cp (Specific Heat)     J/(kg K)   constant      1360                                                        
+      Thermal Conductivity   W/(m K)    anisotropic   ((matrix 2.21 0 0 0 2.21 0 0 0 20.61) (k (constant . 1)))   
+
+   Material: air (fluid)
+
+      Property               Units      Method     Value(s)    
+      ------------------------------------------------------
+      Density                kg/m^3     constant   1.276       
+      Cp (Specific Heat)     J/(kg K)   constant   1006.43     
+      Thermal Conductivity   W/(m K)    constant   0.02435     
+      Viscosity              kg/(m s)   constant   1.349e-05   
+
+   Material: aluminum (solid)
+
+      Property               Units      Method     Value(s)   
+      -----------------------------------------------------
+      Density                kg/m^3     constant   2719       
+      Cp (Specific Heat)     J/(kg K)   constant   871        
+      Thermal Conductivity   W/(m K)    constant   202.4      
+
+</MaterialProperties>
+
+<CellZoneConditions>
+Cell Zone Conditions
+--------------------
+
+   Zones
+
+      name                        id      type    material   
+      ----------------------------------------------------
+      with-holes-solid-23         44423   solid   cells2     
+      with-holes-solid-71         44420   solid   cells2     
+      with-holes-solid-70         44417   solid   cells2     
+      with-holes-solid-18         44414   solid   cells2     
+      with-holes-solid-21         44411   solid   cells2     
+      with-holes-solid-20         44408   solid   cells2     
+      with-holes-solid-19         44405   solid   cells2     
+      with-holes-solid-46         44402   solid   cells2     
+      with-holes-solid-57         44399   solid   cells2     
+      with-holes-solid-58         44396   solid   cells2     
+      with-holes-solid-44         44393   solid   cells2     
+      with-holes-solid-69         44390   solid   cells2     
+      with-holes-solid-22         44387   solid   cells2     
+      with-holes-solid-45         44384   solid   cells2     
+      with-holes-solid-47         44381   solid   cells2     
+      with-holes-solid-4          44378   solid   cells2     
+      with-holes-solid-31         44375   solid   cells2     
+      with-holes-solid-6          44372   solid   cells2     
+      with-holes-solid-5          44369   solid   cells2     
+      with-holes-solid-33         44366   solid   cells2     
+      with-holes-solid-7          44363   solid   cells2     
+      with-holes-solid-30         44360   solid   cells2     
+      with-holes-solid-51         44357   solid   cells2     
+      with-holes-solid-63         44354   solid   cells2     
+      with-holes-solid-52         44351   solid   cells2     
+      with-holes-solid-8          44348   solid   cells2     
+      with-holes-solid-32         44345   solid   cells2     
+      with-holes-solid-9          44342   solid   cells2     
+      with-holes-solid-62         44339   solid   cells2     
+      with-holes-solid-50         44336   solid   cells2     
+      with-holes-solid-41         44333   solid   cells2     
+      with-holes-solid-55         44330   solid   cells2     
+      with-holes-solid-15         44327   solid   cells2     
+      with-holes-solid-12         44324   solid   cells2     
+      with-holes-solid-36         44321   solid   cells2     
+      with-holes-solid-65         44318   solid   cells2     
+      with-holes-solid-38         44315   solid   cells2     
+      with-holes-solid-40         44312   solid   cells2     
+      with-holes-solid-14         44309   solid   cells2     
+      with-holes-solid-54         44306   solid   cells2     
+      with-holes-solid-67         44303   solid   cells2     
+      with-holes-solid-66         44300   solid   cells2     
+      with-holes-solid-39         44297   solid   cells2     
+      with-holes-solid-37         44294   solid   cells2     
+      with-holes-solid-13         44291   solid   cells2     
+      with-holes-solid-48         44288   solid   cells2     
+      with-holes-solid-25         44285   solid   cells2     
+      with-holes-solid-59         44282   solid   cells2     
+      with-holes-solid-27         44279   solid   cells2     
+      with-holes-solid-1          44276   solid   cells2     
+      with-holes-solid-24         44273   solid   cells2     
+      with-holes-solid-26         44270   solid   cells2     
+      with-holes-solid-60         44264   solid   cells2     
+      with-holes-solid            44261   solid   cells2     
+      with-holes-solid-53         44258   solid   cells2     
+      with-holes-solid-35         44255   solid   cells2     
+      with-holes-solid-43         44252   solid   cells2     
+      with-holes-solid-68         44249   solid   cells2     
+      with-holes-solid-17         44246   solid   cells2     
+      with-holes-solid-34         44243   solid   cells2     
+      with-holes-solid-29         44240   solid   cells2     
+      with-holes-solid-49         44237   solid   cells2     
+      with-holes-solid-16         44234   solid   cells2     
+      with-holes-solid-2          44231   solid   cells2     
+      with-holes-solid-28         44228   solid   cells2     
+      with-holes-solid-3          44225   solid   cells2     
+      with-holes-solid-56         44222   solid   cells2     
+      with-holes-solid-42         44219   solid   cells2     
+      with-holes-solid-10         44216   solid   cells2     
+      with-holes-solid-61         44213   solid   cells2     
+      with-holes-solid-64         44210   solid   cells2     
+      with-holes-solid-11         44207   solid   cells2     
+      solid                       44267   fluid   air        
+      with-holes-the-air-region   44204   fluid   air        
+
+   Setup Conditions
+
+      with-holes-solid-23
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-71
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-70
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-18
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-21
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-20
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-19
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-46
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-57
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-58
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-44
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-69
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-22
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-45
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-47
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-4
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-31
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-6
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-5
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-33
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-7
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-30
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-51
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-63
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-52
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-8
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-32
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-9
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-62
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-50
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-41
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-55
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-15
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-12
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-36
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-65
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-38
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-40
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-14
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-54
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-67
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-66
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-39
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-37
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-13
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-48
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-25
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-59
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-27
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-1
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-24
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-26
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-60
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-53
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-35
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-43
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-68
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-17
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-34
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-29
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-49
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-16
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-2
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-28
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-3
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-56
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-42
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-10
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-61
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-64
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      with-holes-solid-11
+
+         Condition               Value                                                             
+         ---------------------------------------------------------------------------------------
+         Material Name           cells2                                                            
+         Specify source terms?   yes                                                               
+         Source Terms            ((energy ((constant . 218132.04) (inactive . #f) (profile  ))))   
+         Frame Motion?           no                                                                
+         Mesh Motion?            no                                                                
+
+      solid
+
+         Condition       Value   
+         ---------------------
+         Material Name   air     
+         Frame Motion?   no      
+         Mesh Motion?    no      
+
+      with-holes-the-air-region
+
+         Condition       Value   
+         ---------------------
+         Material Name   air     
+         Frame Motion?   no      
+         Mesh Motion?    no      
+
+</CellZoneConditions>
+
+<BoundaryConditions>
+Boundary Conditions
+-------------------
+
+   Zones
+
+      name                                                   id      type              
+      ------------------------------------------------------------------------------
+      outlet                                                 308     pressure-outlet   
+      inlet                                                  234     velocity-inlet    
+      cells.20                                               235     wall              
+      cells.31                                               236     wall              
+      cells.42                                               237     wall              
+      cells.53                                               238     wall              
+      cells.64                                               239     wall              
+      cells.69                                               240     wall              
+      cells.70                                               241     wall              
+      cells.71                                               242     wall              
+      cells                                                  243     wall              
+      cells.1                                                244     wall              
+      cells.2                                                245     wall              
+      cells.3                                                246     wall              
+      cells.4                                                247     wall              
+      cells.5                                                248     wall              
+      cells.6                                                249     wall              
+      cells.7                                                250     wall              
+      cells.8                                                251     wall              
+      cells.9                                                252     wall              
+      cells.10                                               253     wall              
+      cells.11                                               254     wall              
+      cells.12                                               255     wall              
+      cells.13                                               256     wall              
+      cells.14                                               257     wall              
+      cells.15                                               258     wall              
+      cells.16                                               259     wall              
+      cells.17                                               260     wall              
+      cells.18                                               261     wall              
+      cells.19                                               262     wall              
+      cells.21                                               263     wall              
+      cells.22                                               264     wall              
+      cells.23                                               265     wall              
+      cells.24                                               266     wall              
+      cells.25                                               267     wall              
+      cells.26                                               268     wall              
+      cells.27                                               269     wall              
+      cells.28                                               270     wall              
+      cells.29                                               271     wall              
+      cells.30                                               272     wall              
+      cells.32                                               273     wall              
+      cells.33                                               274     wall              
+      cells.34                                               275     wall              
+      cells.35                                               276     wall              
+      cells.36                                               277     wall              
+      cells.37                                               278     wall              
+      cells.38                                               279     wall              
+      cells.39                                               280     wall              
+      cells.40                                               281     wall              
+      cells.41                                               282     wall              
+      cells.43                                               283     wall              
+      cells.44                                               284     wall              
+      cells.45                                               285     wall              
+      cells.46                                               286     wall              
+      cells.47                                               287     wall              
+      cells.48                                               288     wall              
+      cells.49                                               289     wall              
+      cells.50                                               290     wall              
+      cells.51                                               291     wall              
+      cells.52                                               292     wall              
+      cells.54                                               293     wall              
+      cells.55                                               294     wall              
+      cells.56                                               295     wall              
+      cells.57                                               296     wall              
+      cells.58                                               297     wall              
+      cells.59                                               298     wall              
+      cells.60                                               299     wall              
+      cells.61                                               300     wall              
+      cells.62                                               301     wall              
+      cells.63                                               302     wall              
+      cells.65                                               303     wall              
+      cells.66                                               304     wall              
+      cells.67                                               305     wall              
+      cells.68                                               306     wall              
+      with-holes-solid-20-with-holes-the-air-region          824     wall              
+      with-holes-solid-39-with-holes-the-air-region          938     wall              
+      with-holes-solid-31-with-holes-the-air-region          1052    wall              
+      with-holes-solid-57-with-holes-the-air-region          1166    wall              
+      with-holes-solid-28-with-holes-the-air-region          1280    wall              
+      with-holes-solid-11-with-holes-the-air-region          1394    wall              
+      with-holes-solid-12-with-holes-the-air-region          1508    wall              
+      with-holes-solid-38-with-holes-the-air-region          1622    wall              
+      with-holes-solid-1-with-holes-the-air-region           1736    wall              
+      with-holes-solid-35-with-holes-the-air-region          1828    wall              
+      with-holes-solid-67-with-holes-the-air-region          1942    wall              
+      with-holes-solid-16-with-holes-the-air-region          2056    wall              
+      with-holes-solid-37-with-holes-the-air-region          2700    wall              
+      with-holes-solid-40-with-holes-the-air-region          3051    wall              
+      with-holes-solid-9-with-holes-the-air-region           3420    wall              
+      with-holes-solid-56-with-holes-the-air-region          3772    wall              
+      with-holes-solid-17-with-holes-the-air-region          3868    wall              
+      with-holes-solid-60-with-holes-the-air-region          3982    wall              
+      with-holes-solid-52-with-holes-the-air-region          4096    wall              
+      with-holes-solid-42-with-holes-the-air-region          4468    wall              
+      with-holes-solid-26-with-holes-the-air-region          4821    wall              
+      with-holes-solid-48-with-holes-the-air-region          4917    wall              
+      with-holes-solid-44-with-holes-the-air-region          5267    wall              
+      with-holes-solid-27-with-holes-the-air-region          5362    wall              
+      with-holes-solid-55-with-holes-the-air-region          5749    wall              
+      with-holes-solid-19-with-holes-the-air-region          6117    wall              
+      with-holes-solid-with-holes-the-air-region_1           6213    wall              
+      with-holes-solid-68-with-holes-the-air-region          6563    wall              
+      with-holes-solid-58-with-holes-the-air-region          6917    wall              
+      with-holes-solid-36-with-holes-the-air-region          7255    wall              
+      with-holes-solid-29-with-holes-the-air-region          7867    wall              
+      with-holes-solid-65-with-holes-the-air-region          7944    wall              
+      with-holes-solid-41-with-holes-the-air-region          8316    wall              
+      with-holes-solid-13-with-holes-the-air-region          8669    wall              
+      with-holes-solid-5-with-holes-the-air-region           8765    wall              
+      with-holes-solid-51-with-holes-the-air-region          9151    wall              
+      with-holes-solid-46-with-holes-the-air-region          9505    wall              
+      with-holes-solid-53-with-holes-the-air-region          9806    wall              
+      with-holes-solid-30-with-holes-the-air-region          10115   wall              
+      with-holes-solid-2-with-holes-the-air-region           10289   wall              
+      with-holes-solid-49-with-holes-the-air-region          10642   wall              
+      with-holes-solid-10-with-holes-the-air-region          10995   wall              
+      with-holes-solid-7-with-holes-the-air-region           11622   wall              
+      with-holes-solid-71-with-holes-the-air-region          11699   wall              
+      with-holes-solid-43-with-holes-the-air-region          12063   wall              
+      with-holes-solid-34-with-holes-the-air-region          12386   wall              
+      with-holes-solid-61-with-holes-the-air-region          12710   wall              
+      with-holes-solid-23-with-holes-the-air-region          12806   wall              
+      with-holes-solid-8-with-holes-the-air-region           13110   wall              
+      with-holes-solid-45-with-holes-the-air-region          13464   wall              
+      with-holes-solid-70-with-holes-the-air-region          13833   wall              
+      with-holes-solid-66-with-holes-the-air-region          14437   wall              
+      with-holes-solid-62-with-holes-the-air-region          14786   wall              
+      with-holes-solid-18-with-holes-the-air-region          15383   wall              
+      with-holes-solid-14-with-holes-the-air-region          15977   wall              
+      with-holes-solid-4-with-holes-the-air-region           16329   wall              
+      with-holes-solid-3-with-holes-the-air-region           16700   wall              
+      with-holes-solid-15-with-holes-the-air-region          17248   wall              
+      with-holes-solid-63-with-holes-the-air-region          17598   wall              
+      with-holes-solid-47-with-holes-the-air-region          17966   wall              
+      with-holes-solid-33-with-holes-the-air-region          18524   wall              
+      with-holes-solid-21-with-holes-the-air-region          19117   wall              
+      with-holes-solid-6-with-holes-the-air-region           19724   wall              
+      with-holes-solid-64-with-holes-the-air-region          20332   wall              
+      with-holes-solid-50-with-holes-the-air-region          20941   wall              
+      with-holes-solid-69-with-holes-the-air-region          21447   wall              
+      with-holes-solid-59-with-holes-the-air-region          21798   wall              
+      with-holes-solid-32-with-holes-the-air-region          22415   wall              
+      with-holes-solid-25-with-holes-the-air-region          22750   wall              
+      with-holes-solid-54-with-holes-the-air-region          23354   wall              
+      with-holes-solid-24-with-holes-the-air-region          23675   wall              
+      with-holes-solid-22-with-holes-the-air-region          24021   wall              
+      solid-with-holes-the-air-region_1                      36480   wall              
+      solid:1                                                307     wall              
+      with-holes-the-air-region:1                            233     wall              
+      with-holes-solid-20-with-holes-the-air-region-shadow   74      wall              
+      with-holes-solid-39-with-holes-the-air-region-shadow   73      wall              
+      with-holes-solid-31-with-holes-the-air-region-shadow   72      wall              
+      with-holes-solid-57-with-holes-the-air-region-shadow   71      wall              
+      with-holes-solid-28-with-holes-the-air-region-shadow   70      wall              
+      with-holes-solid-11-with-holes-the-air-region-shadow   69      wall              
+      with-holes-solid-12-with-holes-the-air-region-shadow   68      wall              
+      with-holes-solid-38-with-holes-the-air-region-shadow   67      wall              
+      with-holes-solid-1-with-holes-the-air-region-shadow    66      wall              
+      with-holes-solid-35-with-holes-the-air-region-shadow   65      wall              
+      with-holes-solid-67-with-holes-the-air-region-shadow   64      wall              
+      with-holes-solid-16-with-holes-the-air-region-shadow   63      wall              
+      with-holes-solid-37-with-holes-the-air-region-shadow   62      wall              
+      with-holes-solid-40-with-holes-the-air-region-shadow   61      wall              
+      with-holes-solid-9-with-holes-the-air-region-shadow    60      wall              
+      with-holes-solid-56-with-holes-the-air-region-shadow   59      wall              
+      with-holes-solid-17-with-holes-the-air-region-shadow   58      wall              
+      with-holes-solid-60-with-holes-the-air-region-shadow   57      wall              
+      with-holes-solid-52-with-holes-the-air-region-shadow   56      wall              
+      with-holes-solid-42-with-holes-the-air-region-shadow   55      wall              
+      with-holes-solid-26-with-holes-the-air-region-shadow   54      wall              
+      with-holes-solid-48-with-holes-the-air-region-shadow   53      wall              
+      with-holes-solid-44-with-holes-the-air-region-shadow   52      wall              
+      with-holes-solid-27-with-holes-the-air-region-shadow   51      wall              
+      with-holes-solid-55-with-holes-the-air-region-shadow   50      wall              
+      with-holes-solid-19-with-holes-the-air-region-shadow   49      wall              
+      with-holes-solid-with-holes-the-air-region_1-shadow    48      wall              
+      with-holes-solid-68-with-holes-the-air-region-shadow   47      wall              
+      with-holes-solid-58-with-holes-the-air-region-shadow   46      wall              
+      with-holes-solid-36-with-holes-the-air-region-shadow   45      wall              
+      with-holes-solid-29-with-holes-the-air-region-shadow   44      wall              
+      with-holes-solid-65-with-holes-the-air-region-shadow   43      wall              
+      with-holes-solid-41-with-holes-the-air-region-shadow   42      wall              
+      with-holes-solid-13-with-holes-the-air-region-shadow   41      wall              
+      with-holes-solid-5-with-holes-the-air-region-shadow    40      wall              
+      with-holes-solid-51-with-holes-the-air-region-shadow   39      wall              
+      with-holes-solid-46-with-holes-the-air-region-shadow   38      wall              
+      with-holes-solid-53-with-holes-the-air-region-shadow   37      wall              
+      with-holes-solid-30-with-holes-the-air-region-shadow   36      wall              
+      with-holes-solid-2-with-holes-the-air-region-shadow    35      wall              
+      with-holes-solid-49-with-holes-the-air-region-shadow   34      wall              
+      with-holes-solid-10-with-holes-the-air-region-shadow   33      wall              
+      with-holes-solid-7-with-holes-the-air-region-shadow    32      wall              
+      with-holes-solid-71-with-holes-the-air-region-shadow   31      wall              
+      with-holes-solid-43-with-holes-the-air-region-shadow   30      wall              
+      with-holes-solid-34-with-holes-the-air-region-shadow   29      wall              
+      with-holes-solid-61-with-holes-the-air-region-shadow   28      wall              
+      with-holes-solid-23-with-holes-the-air-region-shadow   27      wall              
+      with-holes-solid-8-with-holes-the-air-region-shadow    26      wall              
+      with-holes-solid-45-with-holes-the-air-region-shadow   25      wall              
+      with-holes-solid-70-with-holes-the-air-region-shadow   24      wall              
+      with-holes-solid-66-with-holes-the-air-region-shadow   23      wall              
+      with-holes-solid-62-with-holes-the-air-region-shadow   22      wall              
+      with-holes-solid-18-with-holes-the-air-region-shadow   21      wall              
+      with-holes-solid-14-with-holes-the-air-region-shadow   20      wall              
+      with-holes-solid-4-with-holes-the-air-region-shadow    19      wall              
+      with-holes-solid-3-with-holes-the-air-region-shadow    18      wall              
+      with-holes-solid-15-with-holes-the-air-region-shadow   17      wall              
+      with-holes-solid-63-with-holes-the-air-region-shadow   16      wall              
+      with-holes-solid-47-with-holes-the-air-region-shadow   15      wall              
+      with-holes-solid-33-with-holes-the-air-region-shadow   14      wall              
+      with-holes-solid-21-with-holes-the-air-region-shadow   13      wall              
+      with-holes-solid-6-with-holes-the-air-region-shadow    12      wall              
+      with-holes-solid-64-with-holes-the-air-region-shadow   11      wall              
+      with-holes-solid-50-with-holes-the-air-region-shadow   10      wall              
+      with-holes-solid-69-with-holes-the-air-region-shadow   9       wall              
+      with-holes-solid-59-with-holes-the-air-region-shadow   8       wall              
+      with-holes-solid-32-with-holes-the-air-region-shadow   7       wall              
+      with-holes-solid-25-with-holes-the-air-region-shadow   6       wall              
+      with-holes-solid-54-with-holes-the-air-region-shadow   5       wall              
+      with-holes-solid-24-with-holes-the-air-region-shadow   4       wall              
+      with-holes-solid-22-with-holes-the-air-region-shadow   3       wall              
+      solid-with-holes-the-air-region_1-shadow               2       wall              
+
+   Setup Conditions
+
+      outlet
+
+         Condition   Value   
+         -----------------
+
+      inlet
+
+         Condition                  Value   
+         --------------------------------
+         Velocity Magnitude [m/s]   25      
+
+      cells.20
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.31
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.42
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.53
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.64
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.69
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.70
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.71
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.1
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.2
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.3
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.4
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.5
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.6
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.7
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.8
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.9
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.10
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.11
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.12
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.13
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.14
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.15
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.16
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.17
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.18
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.19
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.21
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.22
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.23
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.24
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.25
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.26
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.27
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.28
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.29
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.30
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.32
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.33
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.34
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.35
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.36
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.37
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.38
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.39
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.40
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.41
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.43
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.44
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.45
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.46
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.47
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.48
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.49
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.50
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.51
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.52
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.54
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.55
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.56
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.57
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.58
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.59
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.60
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.61
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.62
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.63
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.65
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.66
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.67
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      cells.68
+
+         Condition         Value       
+         ---------------------------
+         Material Name     aluminum    
+         Thermal BC Type   Heat Flux   
+
+      with-holes-solid-20-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-39-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-31-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-57-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-28-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-11-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-12-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-38-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-1-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-35-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-67-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-16-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-37-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-40-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-9-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-56-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-17-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-60-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-52-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-42-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-26-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-48-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-44-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-27-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-55-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-19-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-with-holes-the-air-region_1
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-68-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-58-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-36-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-29-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-65-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-41-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-13-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-5-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-51-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-46-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-53-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-30-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-2-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-49-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-10-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-7-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-71-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-43-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-34-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-61-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-23-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-8-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-45-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-70-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-66-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-62-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-18-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-14-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-4-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-3-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-15-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-63-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-47-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-33-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-21-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-6-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-64-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-50-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-69-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-59-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-32-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-25-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-54-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-24-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-22-with-holes-the-air-region
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      solid-with-holes-the-air-region_1
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      solid:1
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-the-air-region:1
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+      with-holes-solid-20-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-39-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-31-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-57-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-28-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-11-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-12-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-38-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-1-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-35-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-67-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-16-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-37-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-40-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-9-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-56-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-17-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-60-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-52-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-42-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-26-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-48-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-44-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-27-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-55-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-19-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-with-holes-the-air-region_1-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-68-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-58-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-36-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-29-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-65-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-41-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-13-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-5-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-51-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-46-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-53-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-30-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-2-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-49-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-10-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-7-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-71-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-43-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-34-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-61-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-23-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-8-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-45-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-70-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-66-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-62-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-18-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-14-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-4-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-3-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-15-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-63-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-47-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-33-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-21-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-6-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-64-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-50-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-69-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-59-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-32-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-25-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-54-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-24-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      with-holes-solid-22-with-holes-the-air-region-shadow
+
+         Condition         Value      
+         --------------------------
+         Material Name     aluminum   
+         Thermal BC Type   Coupled    
+
+      solid-with-holes-the-air-region_1-shadow
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Coupled           
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+
+</BoundaryConditions>
+
+<SolverSettings>
+Solver Settings
+---------------
+
+   Equations
+
+      Equation   Solved   
+      -----------------
+      Flow       yes      
+      Energy     yes      
+
+   Numerics
+
+      Numeric                         Enabled   
+      ---------------------------------------
+      Absolute Velocity Formulation   yes       
+
+   Pseudo Time Explicit Relaxation Factors
+
+      Variable            Relaxation Factor   
+      -------------------------------------
+      Density             1                   
+      Body Forces         1                   
+      Energy              0.75                
+      Explicit Momentum   0.5                 
+      Explicit Pressure   0.5                 
+
+   Linear Solver
+
+      Variable   Solver Type   Termination Criterion   Residual Reduction Tolerance   
+      -----------------------------------------------------------------------------
+      Flow       F-Cycle       0.1                                                    
+      Energy     F-Cycle       0.1                                                    
+
+   Pressure-Velocity Coupling
+
+      Parameter                               Value     
+      -----------------------------------------------
+      Type                                    Coupled   
+      Pseudo Time Method (Global Time Step)   yes       
+
+   Discretization Scheme
+
+      Variable   Scheme                
+      ------------------------------
+      Pressure   Second Order          
+      Momentum   Second Order Upwind   
+      Energy     Second Order Upwind   
+
+   Solution Limits
+
+      Quantity                         Limit   
+      --------------------------------------
+      Minimum Absolute Pressure [Pa]   1       
+      Maximum Absolute Pressure [Pa]   5e+10   
+      Minimum Static Temperature [K]   1       
+      Maximum Static Temperature [K]   5000    
+
+</SolverSettings>
+
+</FluentXMLReport>

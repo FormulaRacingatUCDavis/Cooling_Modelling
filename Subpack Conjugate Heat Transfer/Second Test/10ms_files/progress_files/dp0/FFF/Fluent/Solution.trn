@@ -1,0 +1,2551 @@
+Transcript Start Time:  20:55:44, 02 Sep 2025 Pacific Daylight Time 
+Current Directory: "C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Second Test"
+
+Build Time: Jun 16 2025 10:42:46 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/ANSYSS~1/v252/fluent/ntbin/win64/fluent.exe
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n3    LAPTOP-DHFQ1JFI  4/16  Windows-x64  19748  AMD Ryzen 7 6800H with Radeon Graphics  
+n2    LAPTOP-DHFQ1JFI  3/16  Windows-x64  13156  AMD Ryzen 7 6800H with Radeon Graphics  
+n1    LAPTOP-DHFQ1JFI  2/16  Windows-x64  20612  AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   LAPTOP-DHFQ1JFI  1/16  Windows-x64  24832  AMD Ryzen 7 6800H with Radeon Graphics  
+host  LAPTOP-DHFQ1JFI        Windows-x64  11940  AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cortex Process ID: 21956 
+License Server Path: () 
+Fast-loading "C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Multicore SMT processors detected. Processor affinity set!
+Reading setting file in cache: "C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Second Test\with holes and with gas_files\dp0\FFF\Fluent\FFF.set"
+
+Reading from LAPTOP-DHFQ1JFI:"C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Second Test\with holes and with gas_files\dp0\FFF\Fluent\FFF.1.msh.h5" in NODE0 mode ...
+  Reading mesh ...
+      547869 cells,    74 cell zones ...
+         383282 polyhedra cells,  zone id: 44204
+           1182 polyhedra cells,  zone id: 44207
+           1266 polyhedra cells,  zone id: 44210
+           1242 polyhedra cells,  zone id: 44213
+           1194 polyhedra cells,  zone id: 44216
+           1202 polyhedra cells,  zone id: 44219
+           1216 polyhedra cells,  zone id: 44222
+           1213 polyhedra cells,  zone id: 44225
+           1199 polyhedra cells,  zone id: 44228
+           1230 polyhedra cells,  zone id: 44231
+           1261 polyhedra cells,  zone id: 44234
+           1256 polyhedra cells,  zone id: 44237
+           1207 polyhedra cells,  zone id: 44240
+           1274 polyhedra cells,  zone id: 44243
+           1213 polyhedra cells,  zone id: 44246
+           1236 polyhedra cells,  zone id: 44249
+           1237 polyhedra cells,  zone id: 44252
+           1188 polyhedra cells,  zone id: 44255
+           1253 polyhedra cells,  zone id: 44258
+           1064 polyhedra cells,  zone id: 44261
+           1214 polyhedra cells,  zone id: 44264
+          77702 polyhedra cells,  zone id: 44267
+           1166 polyhedra cells,  zone id: 44270
+           1184 polyhedra cells,  zone id: 44273
+           1116 polyhedra cells,  zone id: 44276
+           1219 polyhedra cells,  zone id: 44279
+           1218 polyhedra cells,  zone id: 44282
+           1197 polyhedra cells,  zone id: 44285
+           1122 polyhedra cells,  zone id: 44288
+           1250 polyhedra cells,  zone id: 44291
+           1221 polyhedra cells,  zone id: 44294
+           1156 polyhedra cells,  zone id: 44297
+           1283 polyhedra cells,  zone id: 44300
+           1224 polyhedra cells,  zone id: 44303
+           1232 polyhedra cells,  zone id: 44306
+           1272 polyhedra cells,  zone id: 44309
+           1197 polyhedra cells,  zone id: 44312
+           1243 polyhedra cells,  zone id: 44315
+           1229 polyhedra cells,  zone id: 44318
+           1247 polyhedra cells,  zone id: 44321
+           1233 polyhedra cells,  zone id: 44324
+           1227 polyhedra cells,  zone id: 44327
+           1181 polyhedra cells,  zone id: 44330
+           1234 polyhedra cells,  zone id: 44333
+           1205 polyhedra cells,  zone id: 44336
+           1231 polyhedra cells,  zone id: 44339
+           1140 polyhedra cells,  zone id: 44342
+           1208 polyhedra cells,  zone id: 44345
+           1247 polyhedra cells,  zone id: 44348
+           1220 polyhedra cells,  zone id: 44351
+           1177 polyhedra cells,  zone id: 44354
+           1255 polyhedra cells,  zone id: 44357
+           1166 polyhedra cells,  zone id: 44360
+           1262 polyhedra cells,  zone id: 44363
+           1262 polyhedra cells,  zone id: 44366
+           1234 polyhedra cells,  zone id: 44369
+           1203 polyhedra cells,  zone id: 44372
+           1196 polyhedra cells,  zone id: 44375
+           1236 polyhedra cells,  zone id: 44378
+           1149 polyhedra cells,  zone id: 44381
+           1290 polyhedra cells,  zone id: 44384
+           1206 polyhedra cells,  zone id: 44387
+           1157 polyhedra cells,  zone id: 44390
+           1257 polyhedra cells,  zone id: 44393
+           1142 polyhedra cells,  zone id: 44396
+           1145 polyhedra cells,  zone id: 44399
+           1024 polyhedra cells,  zone id: 44402
+           1210 polyhedra cells,  zone id: 44405
+           1218 polyhedra cells,  zone id: 44408
+           1252 polyhedra cells,  zone id: 44411
+           1234 polyhedra cells,  zone id: 44414
+           1091 polyhedra cells,  zone id: 44417
+           1081 polyhedra cells,  zone id: 44420
+           1189 polyhedra cells,  zone id: 44423
+     2617421 faces,   223 face zones ...
+           7053 polygonal interior faces,  zone id: 44422
+           6398 polygonal interior faces,  zone id: 44419
+           6455 polygonal interior faces,  zone id: 44416
+           7334 polygonal interior faces,  zone id: 44413
+           7448 polygonal interior faces,  zone id: 44410
+           7265 polygonal interior faces,  zone id: 44407
+           7208 polygonal interior faces,  zone id: 44404
+           6024 polygonal interior faces,  zone id: 44401
+           6769 polygonal interior faces,  zone id: 44398
+           6781 polygonal interior faces,  zone id: 44395
+           7510 polygonal interior faces,  zone id: 44392
+           6837 polygonal interior faces,  zone id: 44389
+           7171 polygonal interior faces,  zone id: 44386
+           7691 polygonal interior faces,  zone id: 44383
+           6792 polygonal interior faces,  zone id: 44380
+           7348 polygonal interior faces,  zone id: 44377
+           7134 polygonal interior faces,  zone id: 44374
+           7142 polygonal interior faces,  zone id: 44371
+           7315 polygonal interior faces,  zone id: 44368
+           7514 polygonal interior faces,  zone id: 44365
+           7530 polygonal interior faces,  zone id: 44362
+           6904 polygonal interior faces,  zone id: 44359
+           7497 polygonal interior faces,  zone id: 44356
+           6977 polygonal interior faces,  zone id: 44353
+           7285 polygonal interior faces,  zone id: 44350
+           7393 polygonal interior faces,  zone id: 44347
+           7151 polygonal interior faces,  zone id: 44344
+           6755 polygonal interior faces,  zone id: 44341
+           7320 polygonal interior faces,  zone id: 44338
+           7144 polygonal interior faces,  zone id: 44335
+           7359 polygonal interior faces,  zone id: 44332
+           6982 polygonal interior faces,  zone id: 44329
+           7250 polygonal interior faces,  zone id: 44326
+           7348 polygonal interior faces,  zone id: 44323
+           7423 polygonal interior faces,  zone id: 44320
+           7322 polygonal interior faces,  zone id: 44317
+           7439 polygonal interior faces,  zone id: 44314
+           7095 polygonal interior faces,  zone id: 44311
+           7596 polygonal interior faces,  zone id: 44308
+           7314 polygonal interior faces,  zone id: 44305
+           7278 polygonal interior faces,  zone id: 44302
+           7671 polygonal interior faces,  zone id: 44299
+           6850 polygonal interior faces,  zone id: 44296
+           7310 polygonal interior faces,  zone id: 44293
+           7476 polygonal interior faces,  zone id: 44290
+           6671 polygonal interior faces,  zone id: 44287
+           7148 polygonal interior faces,  zone id: 44284
+           7270 polygonal interior faces,  zone id: 44281
+           7278 polygonal interior faces,  zone id: 44278
+           6610 polygonal interior faces,  zone id: 44275
+           7017 polygonal interior faces,  zone id: 44272
+           6903 polygonal interior faces,  zone id: 44269
+         341403 polygonal interior faces,  zone id: 44266
+           7217 polygonal interior faces,  zone id: 44263
+           6272 polygonal interior faces,  zone id: 44260
+           7495 polygonal interior faces,  zone id: 44257
+           7028 polygonal interior faces,  zone id: 44254
+           7403 polygonal interior faces,  zone id: 44251
+           7402 polygonal interior faces,  zone id: 44248
+           7204 polygonal interior faces,  zone id: 44245
+           7623 polygonal interior faces,  zone id: 44242
+           7174 polygonal interior faces,  zone id: 44239
+           7491 polygonal interior faces,  zone id: 44236
+           7529 polygonal interior faces,  zone id: 44233
+           7316 polygonal interior faces,  zone id: 44230
+           7151 polygonal interior faces,  zone id: 44227
+           7206 polygonal interior faces,  zone id: 44224
+           7228 polygonal interior faces,  zone id: 44221
+           7162 polygonal interior faces,  zone id: 44218
+           7077 polygonal interior faces,  zone id: 44215
+           7400 polygonal interior faces,  zone id: 44212
+           7608 polygonal interior faces,  zone id: 44209
+           7072 polygonal interior faces,  zone id: 44206
+        1679015 polygonal interior faces,  zone id: 44203
+          20213 polygonal wall faces,  zone id: 233
+           3585 polygonal wall faces,  zone id: 307
+           2500 polygonal wall faces,  zone id: 36480
+            533 polygonal wall faces,  zone id: 24021
+            527 polygonal wall faces,  zone id: 23675
+            522 polygonal wall faces,  zone id: 23354
+            521 polygonal wall faces,  zone id: 22750
+            525 polygonal wall faces,  zone id: 22415
+            536 polygonal wall faces,  zone id: 21798
+            495 polygonal wall faces,  zone id: 21447
+            516 polygonal wall faces,  zone id: 20941
+            517 polygonal wall faces,  zone id: 20332
+            512 polygonal wall faces,  zone id: 19724
+            534 polygonal wall faces,  zone id: 19117
+            539 polygonal wall faces,  zone id: 18524
+            513 polygonal wall faces,  zone id: 17966
+            500 polygonal wall faces,  zone id: 17598
+            531 polygonal wall faces,  zone id: 17248
+            516 polygonal wall faces,  zone id: 16700
+            525 polygonal wall faces,  zone id: 16329
+            541 polygonal wall faces,  zone id: 15977
+            516 polygonal wall faces,  zone id: 15383
+            516 polygonal wall faces,  zone id: 14786
+            538 polygonal wall faces,  zone id: 14437
+            485 polygonal wall faces,  zone id: 13833
+            540 polygonal wall faces,  zone id: 13464
+            526 polygonal wall faces,  zone id: 13110
+            531 polygonal wall faces,  zone id: 12806
+            521 polygonal wall faces,  zone id: 12710
+            524 polygonal wall faces,  zone id: 12386
+            516 polygonal wall faces,  zone id: 12063
+            472 polygonal wall faces,  zone id: 11699
+            519 polygonal wall faces,  zone id: 11622
+            514 polygonal wall faces,  zone id: 10995
+            527 polygonal wall faces,  zone id: 10642
+            520 polygonal wall faces,  zone id: 10289
+            500 polygonal wall faces,  zone id: 10115
+            522 polygonal wall faces,  zone id: 9806
+            460 polygonal wall faces,  zone id: 9505
+            523 polygonal wall faces,  zone id: 9151
+            528 polygonal wall faces,  zone id: 8765
+            519 polygonal wall faces,  zone id: 8669
+            527 polygonal wall faces,  zone id: 8316
+            521 polygonal wall faces,  zone id: 7944
+            511 polygonal wall faces,  zone id: 7867
+            523 polygonal wall faces,  zone id: 7255
+            489 polygonal wall faces,  zone id: 6917
+            519 polygonal wall faces,  zone id: 6563
+            483 polygonal wall faces,  zone id: 6213
+            512 polygonal wall faces,  zone id: 6117
+            511 polygonal wall faces,  zone id: 5749
+            511 polygonal wall faces,  zone id: 5362
+            519 polygonal wall faces,  zone id: 5267
+            495 polygonal wall faces,  zone id: 4917
+            497 polygonal wall faces,  zone id: 4821
+            503 polygonal wall faces,  zone id: 4468
+            512 polygonal wall faces,  zone id: 4096
+            518 polygonal wall faces,  zone id: 3982
+            516 polygonal wall faces,  zone id: 3868
+            515 polygonal wall faces,  zone id: 3772
+            490 polygonal wall faces,  zone id: 3420
+            517 polygonal wall faces,  zone id: 3051
+            517 polygonal wall faces,  zone id: 2700
+            534 polygonal wall faces,  zone id: 2056
+            520 polygonal wall faces,  zone id: 1942
+            515 polygonal wall faces,  zone id: 1828
+            490 polygonal wall faces,  zone id: 1736
+            515 polygonal wall faces,  zone id: 1622
+            521 polygonal wall faces,  zone id: 1508
+            500 polygonal wall faces,  zone id: 1394
+            512 polygonal wall faces,  zone id: 1280
+            489 polygonal wall faces,  zone id: 1166
+            506 polygonal wall faces,  zone id: 1052
+            491 polygonal wall faces,  zone id: 938
+            515 polygonal wall faces,  zone id: 824
+            145 polygonal wall faces,  zone id: 306
+            142 polygonal wall faces,  zone id: 305
+            170 polygonal wall faces,  zone id: 304
+            170 polygonal wall faces,  zone id: 303
+            172 polygonal wall faces,  zone id: 302
+            176 polygonal wall faces,  zone id: 301
+            175 polygonal wall faces,  zone id: 300
+            173 polygonal wall faces,  zone id: 299
+            169 polygonal wall faces,  zone id: 298
+            178 polygonal wall faces,  zone id: 297
+            177 polygonal wall faces,  zone id: 296
+            172 polygonal wall faces,  zone id: 295
+            149 polygonal wall faces,  zone id: 294
+            165 polygonal wall faces,  zone id: 293
+            169 polygonal wall faces,  zone id: 292
+            169 polygonal wall faces,  zone id: 291
+            169 polygonal wall faces,  zone id: 290
+            177 polygonal wall faces,  zone id: 289
+            174 polygonal wall faces,  zone id: 288
+            171 polygonal wall faces,  zone id: 287
+            176 polygonal wall faces,  zone id: 286
+            171 polygonal wall faces,  zone id: 285
+            174 polygonal wall faces,  zone id: 284
+            148 polygonal wall faces,  zone id: 283
+            147 polygonal wall faces,  zone id: 282
+            143 polygonal wall faces,  zone id: 281
+            180 polygonal wall faces,  zone id: 280
+            172 polygonal wall faces,  zone id: 279
+            179 polygonal wall faces,  zone id: 278
+            171 polygonal wall faces,  zone id: 277
+            165 polygonal wall faces,  zone id: 276
+            171 polygonal wall faces,  zone id: 275
+            173 polygonal wall faces,  zone id: 274
+            174 polygonal wall faces,  zone id: 273
+            170 polygonal wall faces,  zone id: 272
+            173 polygonal wall faces,  zone id: 271
+            173 polygonal wall faces,  zone id: 270
+            178 polygonal wall faces,  zone id: 269
+            173 polygonal wall faces,  zone id: 268
+            170 polygonal wall faces,  zone id: 267
+            170 polygonal wall faces,  zone id: 266
+            169 polygonal wall faces,  zone id: 265
+            171 polygonal wall faces,  zone id: 264
+            169 polygonal wall faces,  zone id: 263
+            169 polygonal wall faces,  zone id: 262
+            164 polygonal wall faces,  zone id: 261
+            144 polygonal wall faces,  zone id: 260
+            140 polygonal wall faces,  zone id: 259
+            149 polygonal wall faces,  zone id: 258
+            146 polygonal wall faces,  zone id: 257
+            171 polygonal wall faces,  zone id: 256
+            174 polygonal wall faces,  zone id: 255
+            170 polygonal wall faces,  zone id: 254
+            181 polygonal wall faces,  zone id: 253
+            173 polygonal wall faces,  zone id: 252
+            171 polygonal wall faces,  zone id: 251
+            174 polygonal wall faces,  zone id: 250
+            171 polygonal wall faces,  zone id: 249
+            173 polygonal wall faces,  zone id: 248
+            172 polygonal wall faces,  zone id: 247
+            171 polygonal wall faces,  zone id: 246
+            170 polygonal wall faces,  zone id: 245
+            174 polygonal wall faces,  zone id: 244
+            173 polygonal wall faces,  zone id: 243
+            183 polygonal wall faces,  zone id: 242
+            174 polygonal wall faces,  zone id: 241
+            172 polygonal wall faces,  zone id: 240
+            172 polygonal wall faces,  zone id: 239
+            175 polygonal wall faces,  zone id: 238
+            177 polygonal wall faces,  zone id: 237
+            146 polygonal wall faces,  zone id: 236
+            139 polygonal wall faces,  zone id: 235
+           4652 polygonal velocity-inlet faces,  zone id: 234
+            116 polygonal pressure-outlet faces,  zone id: 308
+     1862439 nodes,   300 node zones ...
+  Done.
+
+Building...
+     mesh
+	distributing mesh
+		parts....,
+		faces....,
+		nodes....,
+		cells....,
+        bandwidth reduction using Reverse Cuthill-McKee: 111592/4034 = 27.6629
+  Reading boundary layer flags ...
+  Done.
+
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	solid-with-holes-the-air-region_1-shadow
+	with-holes-solid-22-with-holes-the-air-region-shadow
+	with-holes-solid-24-with-holes-the-air-region-shadow
+	with-holes-solid-54-with-holes-the-air-region-shadow
+	with-holes-solid-25-with-holes-the-air-region-shadow
+	with-holes-solid-32-with-holes-the-air-region-shadow
+	with-holes-solid-59-with-holes-the-air-region-shadow
+	with-holes-solid-69-with-holes-the-air-region-shadow
+	with-holes-solid-50-with-holes-the-air-region-shadow
+	with-holes-solid-64-with-holes-the-air-region-shadow
+	with-holes-solid-6-with-holes-the-air-region-shadow
+	with-holes-solid-21-with-holes-the-air-region-shadow
+	with-holes-solid-33-with-holes-the-air-region-shadow
+	with-holes-solid-47-with-holes-the-air-region-shadow
+	with-holes-solid-63-with-holes-the-air-region-shadow
+	with-holes-solid-15-with-holes-the-air-region-shadow
+	with-holes-solid-3-with-holes-the-air-region-shadow
+	with-holes-solid-4-with-holes-the-air-region-shadow
+	with-holes-solid-14-with-holes-the-air-region-shadow
+	with-holes-solid-18-with-holes-the-air-region-shadow
+	with-holes-solid-62-with-holes-the-air-region-shadow
+	with-holes-solid-66-with-holes-the-air-region-shadow
+	with-holes-solid-70-with-holes-the-air-region-shadow
+	with-holes-solid-45-with-holes-the-air-region-shadow
+	with-holes-solid-8-with-holes-the-air-region-shadow
+	with-holes-solid-23-with-holes-the-air-region-shadow
+	with-holes-solid-61-with-holes-the-air-region-shadow
+	with-holes-solid-34-with-holes-the-air-region-shadow
+	with-holes-solid-43-with-holes-the-air-region-shadow
+	with-holes-solid-71-with-holes-the-air-region-shadow
+	with-holes-solid-7-with-holes-the-air-region-shadow
+	with-holes-solid-10-with-holes-the-air-region-shadow
+	with-holes-solid-49-with-holes-the-air-region-shadow
+	with-holes-solid-2-with-holes-the-air-region-shadow
+	with-holes-solid-30-with-holes-the-air-region-shadow
+	with-holes-solid-53-with-holes-the-air-region-shadow
+	with-holes-solid-46-with-holes-the-air-region-shadow
+	with-holes-solid-51-with-holes-the-air-region-shadow
+	with-holes-solid-5-with-holes-the-air-region-shadow
+	with-holes-solid-13-with-holes-the-air-region-shadow
+	with-holes-solid-41-with-holes-the-air-region-shadow
+	with-holes-solid-65-with-holes-the-air-region-shadow
+	with-holes-solid-29-with-holes-the-air-region-shadow
+	with-holes-solid-36-with-holes-the-air-region-shadow
+	with-holes-solid-58-with-holes-the-air-region-shadow
+	with-holes-solid-68-with-holes-the-air-region-shadow
+	with-holes-solid-with-holes-the-air-region_1-shadow
+	with-holes-solid-19-with-holes-the-air-region-shadow
+	with-holes-solid-55-with-holes-the-air-region-shadow
+	with-holes-solid-27-with-holes-the-air-region-shadow
+	with-holes-solid-44-with-holes-the-air-region-shadow
+	with-holes-solid-48-with-holes-the-air-region-shadow
+	with-holes-solid-26-with-holes-the-air-region-shadow
+	with-holes-solid-42-with-holes-the-air-region-shadow
+	with-holes-solid-52-with-holes-the-air-region-shadow
+	with-holes-solid-60-with-holes-the-air-region-shadow
+	with-holes-solid-17-with-holes-the-air-region-shadow
+	with-holes-solid-56-with-holes-the-air-region-shadow
+	with-holes-solid-9-with-holes-the-air-region-shadow
+	with-holes-solid-40-with-holes-the-air-region-shadow
+	with-holes-solid-37-with-holes-the-air-region-shadow
+	with-holes-solid-16-with-holes-the-air-region-shadow
+	with-holes-solid-67-with-holes-the-air-region-shadow
+	with-holes-solid-35-with-holes-the-air-region-shadow
+	with-holes-solid-1-with-holes-the-air-region-shadow
+	with-holes-solid-38-with-holes-the-air-region-shadow
+	with-holes-solid-12-with-holes-the-air-region-shadow
+	with-holes-solid-11-with-holes-the-air-region-shadow
+	with-holes-solid-28-with-holes-the-air-region-shadow
+	with-holes-solid-57-with-holes-the-air-region-shadow
+	with-holes-solid-31-with-holes-the-air-region-shadow
+	with-holes-solid-39-with-holes-the-air-region-shadow
+	with-holes-solid-20-with-holes-the-air-region-shadow
+	Skipping thread 157 of domain 1 (not referenced by grid).
+	Skipping thread 158 of domain 1 (not referenced by grid).
+	Skipping thread 159 of domain 1 (not referenced by grid).
+	Skipping thread 160 of domain 1 (not referenced by grid).
+	Skipping thread 161 of domain 1 (not referenced by grid).
+	Skipping thread 162 of domain 1 (not referenced by grid).
+	Skipping thread 163 of domain 1 (not referenced by grid).
+	Skipping thread 164 of domain 1 (not referenced by grid).
+	Skipping thread 165 of domain 1 (not referenced by grid).
+	Skipping thread 166 of domain 1 (not referenced by grid).
+	Skipping thread 167 of domain 1 (not referenced by grid).
+	Skipping thread 168 of domain 1 (not referenced by grid).
+	Skipping thread 169 of domain 1 (not referenced by grid).
+	Skipping thread 170 of domain 1 (not referenced by grid).
+	Skipping thread 171 of domain 1 (not referenced by grid).
+	Skipping thread 172 of domain 1 (not referenced by grid).
+	Skipping thread 173 of domain 1 (not referenced by grid).
+	Skipping thread 174 of domain 1 (not referenced by grid).
+	Skipping thread 175 of domain 1 (not referenced by grid).
+	Skipping thread 176 of domain 1 (not referenced by grid).
+	Skipping thread 177 of domain 1 (not referenced by grid).
+	Skipping thread 178 of domain 1 (not referenced by grid).
+	Skipping thread 179 of domain 1 (not referenced by grid).
+	Skipping thread 180 of domain 1 (not referenced by grid).
+	Skipping thread 181 of domain 1 (not referenced by grid).
+	Skipping thread 182 of domain 1 (not referenced by grid).
+	Skipping thread 183 of domain 1 (not referenced by grid).
+	Skipping thread 184 of domain 1 (not referenced by grid).
+	Skipping thread 185 of domain 1 (not referenced by grid).
+	Skipping thread 186 of domain 1 (not referenced by grid).
+	Skipping thread 187 of domain 1 (not referenced by grid).
+	Skipping thread 188 of domain 1 (not referenced by grid).
+	Skipping thread 189 of domain 1 (not referenced by grid).
+	Skipping thread 190 of domain 1 (not referenced by grid).
+	Skipping thread 191 of domain 1 (not referenced by grid).
+	Skipping thread 192 of domain 1 (not referenced by grid).
+	Skipping thread 193 of domain 1 (not referenced by grid).
+	Skipping thread 194 of domain 1 (not referenced by grid).
+	Skipping thread 195 of domain 1 (not referenced by grid).
+	Skipping thread 196 of domain 1 (not referenced by grid).
+	Skipping thread 197 of domain 1 (not referenced by grid).
+	Skipping thread 198 of domain 1 (not referenced by grid).
+	Skipping thread 199 of domain 1 (not referenced by grid).
+	Skipping thread 200 of domain 1 (not referenced by grid).
+	Skipping thread 201 of domain 1 (not referenced by grid).
+	Skipping thread 202 of domain 1 (not referenced by grid).
+	Skipping thread 203 of domain 1 (not referenced by grid).
+	Skipping thread 204 of domain 1 (not referenced by grid).
+	Skipping thread 205 of domain 1 (not referenced by grid).
+	Skipping thread 206 of domain 1 (not referenced by grid).
+	Skipping thread 207 of domain 1 (not referenced by grid).
+	Skipping thread 208 of domain 1 (not referenced by grid).
+	Skipping thread 209 of domain 1 (not referenced by grid).
+	Skipping thread 210 of domain 1 (not referenced by grid).
+	Skipping thread 211 of domain 1 (not referenced by grid).
+	Skipping thread 212 of domain 1 (not referenced by grid).
+	Skipping thread 213 of domain 1 (not referenced by grid).
+	Skipping thread 214 of domain 1 (not referenced by grid).
+	Skipping thread 215 of domain 1 (not referenced by grid).
+	Skipping thread 216 of domain 1 (not referenced by grid).
+	Skipping thread 217 of domain 1 (not referenced by grid).
+	Skipping thread 218 of domain 1 (not referenced by grid).
+	Skipping thread 219 of domain 1 (not referenced by grid).
+	Skipping thread 220 of domain 1 (not referenced by grid).
+	Skipping thread 221 of domain 1 (not referenced by grid).
+	Skipping thread 222 of domain 1 (not referenced by grid).
+	Skipping thread 223 of domain 1 (not referenced by grid).
+	Skipping thread 224 of domain 1 (not referenced by grid).
+	Skipping thread 225 of domain 1 (not referenced by grid).
+	Skipping thread 226 of domain 1 (not referenced by grid).
+	Skipping thread 227 of domain 1 (not referenced by grid).
+	Skipping thread 228 of domain 1 (not referenced by grid).
+	Skipping thread 229 of domain 1 (not referenced by grid).
+	Skipping thread 230 of domain 1 (not referenced by grid).
+	Skipping thread 231 of domain 1 (not referenced by grid).
+	Skipping thread 232 of domain 1 (not referenced by grid).
+	Skipping thread 315 of domain 1 (not referenced by grid).
+	Skipping thread 321 of domain 1 (not referenced by grid).
+	Skipping thread 327 of domain 1 (not referenced by grid).
+	Skipping thread 333 of domain 1 (not referenced by grid).
+	Skipping thread 339 of domain 1 (not referenced by grid).
+	Skipping thread 345 of domain 1 (not referenced by grid).
+	Skipping thread 351 of domain 1 (not referenced by grid).
+	Skipping thread 357 of domain 1 (not referenced by grid).
+	Skipping thread 363 of domain 1 (not referenced by grid).
+	Skipping thread 369 of domain 1 (not referenced by grid).
+	Skipping thread 375 of domain 1 (not referenced by grid).
+	Skipping thread 381 of domain 1 (not referenced by grid).
+	Skipping thread 387 of domain 1 (not referenced by grid).
+	Skipping thread 393 of domain 1 (not referenced by grid).
+	Skipping thread 399 of domain 1 (not referenced by grid).
+	Skipping thread 405 of domain 1 (not referenced by grid).
+	Skipping thread 411 of domain 1 (not referenced by grid).
+	Skipping thread 417 of domain 1 (not referenced by grid).
+	Skipping thread 423 of domain 1 (not referenced by grid).
+	Skipping thread 429 of domain 1 (not referenced by grid).
+	Skipping thread 435 of domain 1 (not referenced by grid).
+	Skipping thread 441 of domain 1 (not referenced by grid).
+	Skipping thread 447 of domain 1 (not referenced by grid).
+	Skipping thread 453 of domain 1 (not referenced by grid).
+	Skipping thread 459 of domain 1 (not referenced by grid).
+	Skipping thread 465 of domain 1 (not referenced by grid).
+	Skipping thread 471 of domain 1 (not referenced by grid).
+	Skipping thread 477 of domain 1 (not referenced by grid).
+	Skipping thread 483 of domain 1 (not referenced by grid).
+	Skipping thread 489 of domain 1 (not referenced by grid).
+	Skipping thread 495 of domain 1 (not referenced by grid).
+	Skipping thread 501 of domain 1 (not referenced by grid).
+	Skipping thread 507 of domain 1 (not referenced by grid).
+	Skipping thread 513 of domain 1 (not referenced by grid).
+	Skipping thread 519 of domain 1 (not referenced by grid).
+	Skipping thread 525 of domain 1 (not referenced by grid).
+	Skipping thread 531 of domain 1 (not referenced by grid).
+	Skipping thread 537 of domain 1 (not referenced by grid).
+	Skipping thread 543 of domain 1 (not referenced by grid).
+	Skipping thread 549 of domain 1 (not referenced by grid).
+	Skipping thread 555 of domain 1 (not referenced by grid).
+	Skipping thread 561 of domain 1 (not referenced by grid).
+	Skipping thread 567 of domain 1 (not referenced by grid).
+	Skipping thread 573 of domain 1 (not referenced by grid).
+	Skipping thread 579 of domain 1 (not referenced by grid).
+	Skipping thread 585 of domain 1 (not referenced by grid).
+	Skipping thread 591 of domain 1 (not referenced by grid).
+	Skipping thread 597 of domain 1 (not referenced by grid).
+	Skipping thread 603 of domain 1 (not referenced by grid).
+	Skipping thread 609 of domain 1 (not referenced by grid).
+	Skipping thread 615 of domain 1 (not referenced by grid).
+	Skipping thread 621 of domain 1 (not referenced by grid).
+	Skipping thread 627 of domain 1 (not referenced by grid).
+	Skipping thread 633 of domain 1 (not referenced by grid).
+	Skipping thread 639 of domain 1 (not referenced by grid).
+	Skipping thread 645 of domain 1 (not referenced by grid).
+	Skipping thread 651 of domain 1 (not referenced by grid).
+	Skipping thread 657 of domain 1 (not referenced by grid).
+	Skipping thread 663 of domain 1 (not referenced by grid).
+	Skipping thread 669 of domain 1 (not referenced by grid).
+	Skipping thread 675 of domain 1 (not referenced by grid).
+	Skipping thread 681 of domain 1 (not referenced by grid).
+	Skipping thread 687 of domain 1 (not referenced by grid).
+	Skipping thread 693 of domain 1 (not referenced by grid).
+	Skipping thread 699 of domain 1 (not referenced by grid).
+	Skipping thread 705 of domain 1 (not referenced by grid).
+	Skipping thread 711 of domain 1 (not referenced by grid).
+	Skipping thread 717 of domain 1 (not referenced by grid).
+	Skipping thread 723 of domain 1 (not referenced by grid).
+	Skipping thread 729 of domain 1 (not referenced by grid).
+	Skipping thread 735 of domain 1 (not referenced by grid).
+	Skipping thread 741 of domain 1 (not referenced by grid).
+	Skipping thread 37806 of domain 1 (not referenced by grid).
+	Skipping thread 37807 of domain 1 (not referenced by grid).
+	Skipping thread 37809 of domain 1 (not referenced by grid).
+	Skipping thread 37811 of domain 1 (not referenced by grid).
+	Skipping thread 37812 of domain 1 (not referenced by grid).
+	Skipping thread 37814 of domain 1 (not referenced by grid).
+	Skipping thread 37816 of domain 1 (not referenced by grid).
+	Skipping thread 37818 of domain 1 (not referenced by grid).
+	Skipping thread 37820 of domain 1 (not referenced by grid).
+	Skipping thread 37822 of domain 1 (not referenced by grid).
+	Skipping thread 37824 of domain 1 (not referenced by grid).
+	Skipping thread 37826 of domain 1 (not referenced by grid).
+	Skipping thread 37828 of domain 1 (not referenced by grid).
+	Skipping thread 37830 of domain 1 (not referenced by grid).
+	Skipping thread 37832 of domain 1 (not referenced by grid).
+	Skipping thread 37834 of domain 1 (not referenced by grid).
+	Skipping thread 37836 of domain 1 (not referenced by grid).
+	Skipping thread 37838 of domain 1 (not referenced by grid).
+	Skipping thread 37840 of domain 1 (not referenced by grid).
+	Skipping thread 37842 of domain 1 (not referenced by grid).
+	Skipping thread 37844 of domain 1 (not referenced by grid).
+	Skipping thread 37846 of domain 1 (not referenced by grid).
+	Skipping thread 37848 of domain 1 (not referenced by grid).
+	Skipping thread 37850 of domain 1 (not referenced by grid).
+	Skipping thread 37852 of domain 1 (not referenced by grid).
+	Skipping thread 37854 of domain 1 (not referenced by grid).
+	Skipping thread 37856 of domain 1 (not referenced by grid).
+	Skipping thread 37858 of domain 1 (not referenced by grid).
+	Skipping thread 37860 of domain 1 (not referenced by grid).
+	Skipping thread 37862 of domain 1 (not referenced by grid).
+	Skipping thread 37864 of domain 1 (not referenced by grid).
+	Skipping thread 37866 of domain 1 (not referenced by grid).
+	Skipping thread 37868 of domain 1 (not referenced by grid).
+	Skipping thread 37870 of domain 1 (not referenced by grid).
+	Skipping thread 37872 of domain 1 (not referenced by grid).
+	Skipping thread 37874 of domain 1 (not referenced by grid).
+	Skipping thread 37876 of domain 1 (not referenced by grid).
+	Skipping thread 37878 of domain 1 (not referenced by grid).
+	Skipping thread 37880 of domain 1 (not referenced by grid).
+	Skipping thread 37882 of domain 1 (not referenced by grid).
+	Skipping thread 37884 of domain 1 (not referenced by grid).
+	Skipping thread 37886 of domain 1 (not referenced by grid).
+	Skipping thread 37888 of domain 1 (not referenced by grid).
+	Skipping thread 37890 of domain 1 (not referenced by grid).
+	Skipping thread 37892 of domain 1 (not referenced by grid).
+	Skipping thread 37894 of domain 1 (not referenced by grid).
+	Skipping thread 37896 of domain 1 (not referenced by grid).
+	Skipping thread 37898 of domain 1 (not referenced by grid).
+	Skipping thread 37900 of domain 1 (not referenced by grid).
+	Skipping thread 37902 of domain 1 (not referenced by grid).
+	Skipping thread 37904 of domain 1 (not referenced by grid).
+	Skipping thread 37906 of domain 1 (not referenced by grid).
+	Skipping thread 37908 of domain 1 (not referenced by grid).
+	Skipping thread 37910 of domain 1 (not referenced by grid).
+	Skipping thread 37912 of domain 1 (not referenced by grid).
+	Skipping thread 37914 of domain 1 (not referenced by grid).
+	Skipping thread 37916 of domain 1 (not referenced by grid).
+	Skipping thread 37918 of domain 1 (not referenced by grid).
+	Skipping thread 37920 of domain 1 (not referenced by grid).
+	Skipping thread 37922 of domain 1 (not referenced by grid).
+	Skipping thread 37924 of domain 1 (not referenced by grid).
+	Skipping thread 37926 of domain 1 (not referenced by grid).
+	Skipping thread 37928 of domain 1 (not referenced by grid).
+	Skipping thread 37930 of domain 1 (not referenced by grid).
+	Skipping thread 37932 of domain 1 (not referenced by grid).
+	Skipping thread 37934 of domain 1 (not referenced by grid).
+	Skipping thread 37936 of domain 1 (not referenced by grid).
+	Skipping thread 37938 of domain 1 (not referenced by grid).
+	Skipping thread 37940 of domain 1 (not referenced by grid).
+	Skipping thread 37942 of domain 1 (not referenced by grid).
+	Skipping thread 37944 of domain 1 (not referenced by grid).
+	Skipping thread 37946 of domain 1 (not referenced by grid).
+	Skipping thread 37948 of domain 1 (not referenced by grid).
+	Skipping thread 37950 of domain 1 (not referenced by grid).
+	Skipping thread 37952 of domain 1 (not referenced by grid).
+	Skipping thread 37954 of domain 1 (not referenced by grid).
+	Skipping thread 37956 of domain 1 (not referenced by grid).
+	Skipping thread 37958 of domain 1 (not referenced by grid).
+	Skipping thread 37960 of domain 1 (not referenced by grid).
+	Skipping thread 37962 of domain 1 (not referenced by grid).
+	Skipping thread 37964 of domain 1 (not referenced by grid).
+	Skipping thread 37966 of domain 1 (not referenced by grid).
+	Skipping thread 37968 of domain 1 (not referenced by grid).
+	Skipping thread 37970 of domain 1 (not referenced by grid).
+	Skipping thread 37972 of domain 1 (not referenced by grid).
+	Skipping thread 37974 of domain 1 (not referenced by grid).
+	Skipping thread 37976 of domain 1 (not referenced by grid).
+	Skipping thread 37978 of domain 1 (not referenced by grid).
+	Skipping thread 37980 of domain 1 (not referenced by grid).
+	Skipping thread 37982 of domain 1 (not referenced by grid).
+	Skipping thread 37984 of domain 1 (not referenced by grid).
+	Skipping thread 37986 of domain 1 (not referenced by grid).
+	Skipping thread 37988 of domain 1 (not referenced by grid).
+	Skipping thread 37990 of domain 1 (not referenced by grid).
+	Skipping thread 37992 of domain 1 (not referenced by grid).
+	Skipping thread 37994 of domain 1 (not referenced by grid).
+	Skipping thread 37996 of domain 1 (not referenced by grid).
+	Skipping thread 37998 of domain 1 (not referenced by grid).
+	Skipping thread 38000 of domain 1 (not referenced by grid).
+	Skipping thread 38002 of domain 1 (not referenced by grid).
+	Skipping thread 38004 of domain 1 (not referenced by grid).
+	Skipping thread 38006 of domain 1 (not referenced by grid).
+	Skipping thread 38008 of domain 1 (not referenced by grid).
+	Skipping thread 38010 of domain 1 (not referenced by grid).
+	Skipping thread 38012 of domain 1 (not referenced by grid).
+	Skipping thread 38014 of domain 1 (not referenced by grid).
+	Skipping thread 38016 of domain 1 (not referenced by grid).
+	Skipping thread 38018 of domain 1 (not referenced by grid).
+	Skipping thread 38020 of domain 1 (not referenced by grid).
+	Skipping thread 38022 of domain 1 (not referenced by grid).
+	Skipping thread 38024 of domain 1 (not referenced by grid).
+	Skipping thread 38026 of domain 1 (not referenced by grid).
+	Skipping thread 38028 of domain 1 (not referenced by grid).
+	Skipping thread 38030 of domain 1 (not referenced by grid).
+	Skipping thread 38032 of domain 1 (not referenced by grid).
+	Skipping thread 38034 of domain 1 (not referenced by grid).
+	Skipping thread 38036 of domain 1 (not referenced by grid).
+	Skipping thread 38038 of domain 1 (not referenced by grid).
+	Skipping thread 38040 of domain 1 (not referenced by grid).
+	Skipping thread 38042 of domain 1 (not referenced by grid).
+	Skipping thread 38044 of domain 1 (not referenced by grid).
+	Skipping thread 38046 of domain 1 (not referenced by grid).
+	Skipping thread 38048 of domain 1 (not referenced by grid).
+	Skipping thread 38050 of domain 1 (not referenced by grid).
+	Skipping thread 38052 of domain 1 (not referenced by grid).
+	Skipping thread 38054 of domain 1 (not referenced by grid).
+	Skipping thread 38056 of domain 1 (not referenced by grid).
+	Skipping thread 38058 of domain 1 (not referenced by grid).
+	Skipping thread 38060 of domain 1 (not referenced by grid).
+	Skipping thread 38062 of domain 1 (not referenced by grid).
+	Skipping thread 38064 of domain 1 (not referenced by grid).
+	Skipping thread 38066 of domain 1 (not referenced by grid).
+	Skipping thread 38068 of domain 1 (not referenced by grid).
+	Skipping thread 38070 of domain 1 (not referenced by grid).
+	Skipping thread 38072 of domain 1 (not referenced by grid).
+	Skipping thread 38074 of domain 1 (not referenced by grid).
+	Skipping thread 38076 of domain 1 (not referenced by grid).
+	Skipping thread 38078 of domain 1 (not referenced by grid).
+	Skipping thread 38080 of domain 1 (not referenced by grid).
+	Skipping thread 38082 of domain 1 (not referenced by grid).
+	Skipping thread 38084 of domain 1 (not referenced by grid).
+	Skipping thread 38086 of domain 1 (not referenced by grid).
+	Skipping thread 38088 of domain 1 (not referenced by grid).
+	Skipping thread 38090 of domain 1 (not referenced by grid).
+	Skipping thread 38092 of domain 1 (not referenced by grid).
+	Skipping thread 38094 of domain 1 (not referenced by grid).
+	Skipping thread 38096 of domain 1 (not referenced by grid).
+	Skipping thread 38098 of domain 1 (not referenced by grid).
+	Skipping thread 38100 of domain 1 (not referenced by grid).
+	Skipping thread 38102 of domain 1 (not referenced by grid).
+	Skipping thread 38104 of domain 1 (not referenced by grid).
+	interior--with-holes-solid-23
+	interior--with-holes-solid-71
+	interior--with-holes-solid-70
+	interior--with-holes-solid-18
+	interior--with-holes-solid-21
+	interior--with-holes-solid-20
+	interior--with-holes-solid-19
+	interior--with-holes-solid-46
+	interior--with-holes-solid-57
+	interior--with-holes-solid-58
+	interior--with-holes-solid-44
+	interior--with-holes-solid-69
+	interior--with-holes-solid-22
+	interior--with-holes-solid-45
+	interior--with-holes-solid-47
+	interior--with-holes-solid-4
+	interior--with-holes-solid-31
+	interior--with-holes-solid-6
+	interior--with-holes-solid-5
+	interior--with-holes-solid-33
+	interior--with-holes-solid-7
+	interior--with-holes-solid-30
+	interior--with-holes-solid-51
+	interior--with-holes-solid-63
+	interior--with-holes-solid-52
+	interior--with-holes-solid-8
+	interior--with-holes-solid-32
+	interior--with-holes-solid-9
+	interior--with-holes-solid-62
+	interior--with-holes-solid-50
+	interior--with-holes-solid-41
+	interior--with-holes-solid-55
+	interior--with-holes-solid-15
+	interior--with-holes-solid-12
+	interior--with-holes-solid-36
+	interior--with-holes-solid-65
+	interior--with-holes-solid-38
+	interior--with-holes-solid-40
+	interior--with-holes-solid-14
+	interior--with-holes-solid-54
+	interior--with-holes-solid-67
+	interior--with-holes-solid-66
+	interior--with-holes-solid-39
+	interior--with-holes-solid-37
+	interior--with-holes-solid-13
+	interior--with-holes-solid-48
+	interior--with-holes-solid-25
+	interior--with-holes-solid-59
+	interior--with-holes-solid-27
+	interior--with-holes-solid-1
+	interior--with-holes-solid-24
+	interior--with-holes-solid-26
+	interior--solid
+	interior--with-holes-solid-60
+	interior--with-holes-solid
+	interior--with-holes-solid-53
+	interior--with-holes-solid-35
+	interior--with-holes-solid-43
+	interior--with-holes-solid-68
+	interior--with-holes-solid-17
+	interior--with-holes-solid-34
+	interior--with-holes-solid-29
+	interior--with-holes-solid-49
+	interior--with-holes-solid-16
+	interior--with-holes-solid-2
+	interior--with-holes-solid-28
+	interior--with-holes-solid-3
+	interior--with-holes-solid-56
+	interior--with-holes-solid-42
+	interior--with-holes-solid-10
+	interior--with-holes-solid-61
+	interior--with-holes-solid-64
+	interior--with-holes-solid-11
+	interior--with-holes-the-air-region
+	with-holes-the-air-region:1
+	solid:1
+	solid-with-holes-the-air-region_1
+	with-holes-solid-22-with-holes-the-air-region
+	with-holes-solid-24-with-holes-the-air-region
+	with-holes-solid-54-with-holes-the-air-region
+	with-holes-solid-25-with-holes-the-air-region
+	with-holes-solid-32-with-holes-the-air-region
+	with-holes-solid-59-with-holes-the-air-region
+	with-holes-solid-69-with-holes-the-air-region
+	with-holes-solid-50-with-holes-the-air-region
+	with-holes-solid-64-with-holes-the-air-region
+	with-holes-solid-6-with-holes-the-air-region
+	with-holes-solid-21-with-holes-the-air-region
+	with-holes-solid-33-with-holes-the-air-region
+	with-holes-solid-47-with-holes-the-air-region
+	with-holes-solid-63-with-holes-the-air-region
+	with-holes-solid-15-with-holes-the-air-region
+	with-holes-solid-3-with-holes-the-air-region
+	with-holes-solid-4-with-holes-the-air-region
+	with-holes-solid-14-with-holes-the-air-region
+	with-holes-solid-18-with-holes-the-air-region
+	with-holes-solid-62-with-holes-the-air-region
+	with-holes-solid-66-with-holes-the-air-region
+	with-holes-solid-70-with-holes-the-air-region
+	with-holes-solid-45-with-holes-the-air-region
+	with-holes-solid-8-with-holes-the-air-region
+	with-holes-solid-23-with-holes-the-air-region
+	with-holes-solid-61-with-holes-the-air-region
+	with-holes-solid-34-with-holes-the-air-region
+	with-holes-solid-43-with-holes-the-air-region
+	with-holes-solid-71-with-holes-the-air-region
+	with-holes-solid-7-with-holes-the-air-region
+	with-holes-solid-10-with-holes-the-air-region
+	with-holes-solid-49-with-holes-the-air-region
+	with-holes-solid-2-with-holes-the-air-region
+	with-holes-solid-30-with-holes-the-air-region
+	with-holes-solid-53-with-holes-the-air-region
+	with-holes-solid-46-with-holes-the-air-region
+	with-holes-solid-51-with-holes-the-air-region
+	with-holes-solid-5-with-holes-the-air-region
+	with-holes-solid-13-with-holes-the-air-region
+	with-holes-solid-41-with-holes-the-air-region
+	with-holes-solid-65-with-holes-the-air-region
+	with-holes-solid-29-with-holes-the-air-region
+	with-holes-solid-36-with-holes-the-air-region
+	with-holes-solid-58-with-holes-the-air-region
+	with-holes-solid-68-with-holes-the-air-region
+	with-holes-solid-with-holes-the-air-region_1
+	with-holes-solid-19-with-holes-the-air-region
+	with-holes-solid-55-with-holes-the-air-region
+	with-holes-solid-27-with-holes-the-air-region
+	with-holes-solid-44-with-holes-the-air-region
+	with-holes-solid-48-with-holes-the-air-region
+	with-holes-solid-26-with-holes-the-air-region
+	with-holes-solid-42-with-holes-the-air-region
+	with-holes-solid-52-with-holes-the-air-region
+	with-holes-solid-60-with-holes-the-air-region
+	with-holes-solid-17-with-holes-the-air-region
+	with-holes-solid-56-with-holes-the-air-region
+	with-holes-solid-9-with-holes-the-air-region
+	with-holes-solid-40-with-holes-the-air-region
+	with-holes-solid-37-with-holes-the-air-region
+	with-holes-solid-16-with-holes-the-air-region
+	with-holes-solid-67-with-holes-the-air-region
+	with-holes-solid-35-with-holes-the-air-region
+	with-holes-solid-1-with-holes-the-air-region
+	with-holes-solid-38-with-holes-the-air-region
+	with-holes-solid-12-with-holes-the-air-region
+	with-holes-solid-11-with-holes-the-air-region
+	with-holes-solid-28-with-holes-the-air-region
+	with-holes-solid-57-with-holes-the-air-region
+	with-holes-solid-31-with-holes-the-air-region
+	with-holes-solid-39-with-holes-the-air-region
+	with-holes-solid-20-with-holes-the-air-region
+	cells.68
+	cells.67
+	cells.66
+	cells.65
+	cells.63
+	cells.62
+	cells.61
+	cells.60
+	cells.59
+	cells.58
+	cells.57
+	cells.56
+	cells.55
+	cells.54
+	cells.52
+	cells.51
+	cells.50
+	cells.49
+	cells.48
+	cells.47
+	cells.46
+	cells.45
+	cells.44
+	cells.43
+	cells.41
+	cells.40
+	cells.39
+	cells.38
+	cells.37
+	cells.36
+	cells.35
+	cells.34
+	cells.33
+	cells.32
+	cells.30
+	cells.29
+	cells.28
+	cells.27
+	cells.26
+	cells.25
+	cells.24
+	cells.23
+	cells.22
+	cells.21
+	cells.19
+	cells.18
+	cells.17
+	cells.16
+	cells.15
+	cells.14
+	cells.13
+	cells.12
+	cells.11
+	cells.10
+	cells.9
+	cells.8
+	cells.7
+	cells.6
+	cells.5
+	cells.4
+	cells.3
+	cells.2
+	cells.1
+	cells
+	cells.71
+	cells.70
+	cells.69
+	cells.64
+	cells.53
+	cells.42
+	cells.31
+	cells.20
+	inlet
+	outlet
+	with-holes-the-air-region
+	solid
+	with-holes-solid-11
+	with-holes-solid-64
+	with-holes-solid-61
+	with-holes-solid-10
+	with-holes-solid-42
+	with-holes-solid-56
+	with-holes-solid-3
+	with-holes-solid-28
+	with-holes-solid-2
+	with-holes-solid-16
+	with-holes-solid-49
+	with-holes-solid-29
+	with-holes-solid-34
+	with-holes-solid-17
+	with-holes-solid-68
+	with-holes-solid-43
+	with-holes-solid-35
+	with-holes-solid-53
+	with-holes-solid
+	with-holes-solid-60
+	with-holes-solid-26
+	with-holes-solid-24
+	with-holes-solid-1
+	with-holes-solid-27
+	with-holes-solid-59
+	with-holes-solid-25
+	with-holes-solid-48
+	with-holes-solid-13
+	with-holes-solid-37
+	with-holes-solid-39
+	with-holes-solid-66
+	with-holes-solid-67
+	with-holes-solid-54
+	with-holes-solid-14
+	with-holes-solid-40
+	with-holes-solid-38
+	with-holes-solid-65
+	with-holes-solid-36
+	with-holes-solid-12
+	with-holes-solid-15
+	with-holes-solid-55
+	with-holes-solid-41
+	with-holes-solid-50
+	with-holes-solid-62
+	with-holes-solid-9
+	with-holes-solid-32
+	with-holes-solid-8
+	with-holes-solid-52
+	with-holes-solid-63
+	with-holes-solid-51
+	with-holes-solid-30
+	with-holes-solid-7
+	with-holes-solid-33
+	with-holes-solid-5
+	with-holes-solid-6
+	with-holes-solid-31
+	with-holes-solid-4
+	with-holes-solid-47
+	with-holes-solid-45
+	with-holes-solid-22
+	with-holes-solid-69
+	with-holes-solid-44
+	with-holes-solid-58
+	with-holes-solid-57
+	with-holes-solid-46
+	with-holes-solid-19
+	with-holes-solid-20
+	with-holes-solid-21
+	with-holes-solid-18
+	with-holes-solid-70
+	with-holes-solid-71
+	with-holes-solid-23Setting with-holes-solid-23 (mixture) ... Done.
+Setting with-holes-solid-71 (mixture) ... Done.
+Setting with-holes-solid-70 (mixture) ... Done.
+Setting with-holes-solid-18 (mixture) ... Done.
+Setting with-holes-solid-21 (mixture) ... Done.
+Setting with-holes-solid-20 (mixture) ... Done.
+Setting with-holes-solid-19 (mixture) ... Done.
+Setting with-holes-solid-46 (mixture) ... Done.
+Setting with-holes-solid-57 (mixture) ... Done.
+Setting with-holes-solid-58 (mixture) ... Done.
+Setting with-holes-solid-44 (mixture) ... Done.
+Setting with-holes-solid-69 (mixture) ... Done.
+Setting with-holes-solid-22 (mixture) ... Done.
+Setting with-holes-solid-45 (mixture) ... Done.
+Setting with-holes-solid-47 (mixture) ... Done.
+Setting with-holes-solid-4 (mixture) ... Done.
+Setting with-holes-solid-31 (mixture) ... Done.
+Setting with-holes-solid-6 (mixture) ... Done.
+Setting with-holes-solid-5 (mixture) ... Done.
+Setting with-holes-solid-33 (mixture) ... Done.
+Setting with-holes-solid-7 (mixture) ... Done.
+Setting with-holes-solid-30 (mixture) ... Done.
+Setting with-holes-solid-51 (mixture) ... Done.
+Setting with-holes-solid-63 (mixture) ... Done.
+Setting with-holes-solid-52 (mixture) ... Done.
+Setting with-holes-solid-8 (mixture) ... Done.
+Setting with-holes-solid-32 (mixture) ... Done.
+Setting with-holes-solid-9 (mixture) ... Done.
+Setting with-holes-solid-62 (mixture) ... Done.
+Setting with-holes-solid-50 (mixture) ... Done.
+Setting with-holes-solid-41 (mixture) ... Done.
+Setting with-holes-solid-55 (mixture) ... Done.
+Setting with-holes-solid-15 (mixture) ... Done.
+Setting with-holes-solid-12 (mixture) ... Done.
+Setting with-holes-solid-36 (mixture) ... Done.
+Setting with-holes-solid-65 (mixture) ... Done.
+Setting with-holes-solid-38 (mixture) ... Done.
+Setting with-holes-solid-40 (mixture) ... Done.
+Setting with-holes-solid-14 (mixture) ... Done.
+Setting with-holes-solid-54 (mixture) ... Done.
+Setting with-holes-solid-67 (mixture) ... Done.
+Setting with-holes-solid-66 (mixture) ... Done.
+Setting with-holes-solid-39 (mixture) ... Done.
+Setting with-holes-solid-37 (mixture) ... Done.
+Setting with-holes-solid-13 (mixture) ... Done.
+Setting with-holes-solid-48 (mixture) ... Done.
+Setting with-holes-solid-25 (mixture) ... Done.
+Setting with-holes-solid-59 (mixture) ... Done.
+Setting with-holes-solid-27 (mixture) ... Done.
+Setting with-holes-solid-1 (mixture) ... Done.
+Setting with-holes-solid-24 (mixture) ... Done.
+Setting with-holes-solid-26 (mixture) ... Done.
+Setting with-holes-solid-60 (mixture) ... Done.
+Setting with-holes-solid (mixture) ... Done.
+Setting with-holes-solid-53 (mixture) ... Done.
+Setting with-holes-solid-35 (mixture) ... Done.
+Setting with-holes-solid-43 (mixture) ... Done.
+Setting with-holes-solid-68 (mixture) ... Done.
+Setting with-holes-solid-17 (mixture) ... Done.
+Setting with-holes-solid-34 (mixture) ... Done.
+Setting with-holes-solid-29 (mixture) ... Done.
+Setting with-holes-solid-49 (mixture) ... Done.
+Setting with-holes-solid-16 (mixture) ... Done.
+Setting with-holes-solid-2 (mixture) ... Done.
+Setting with-holes-solid-28 (mixture) ... Done.
+Setting with-holes-solid-3 (mixture) ... Done.
+Setting with-holes-solid-56 (mixture) ... Done.
+Setting with-holes-solid-42 (mixture) ... Done.
+Setting with-holes-solid-10 (mixture) ... Done.
+Setting with-holes-solid-61 (mixture) ... Done.
+Setting with-holes-solid-64 (mixture) ... Done.
+Setting with-holes-solid-11 (mixture) ... Done.
+Setting solid (mixture) ... Done.
+Setting with-holes-the-air-region (mixture) ... Done.
+ Setting zone id of with-holes-solid-23 to 44423.
+ Setting zone id of with-holes-solid-71 to 44420.
+ Setting zone id of with-holes-solid-70 to 44417.
+ Setting zone id of with-holes-solid-18 to 44414.
+ Setting zone id of with-holes-solid-21 to 44411.
+ Setting zone id of with-holes-solid-20 to 44408.
+ Setting zone id of with-holes-solid-19 to 44405.
+ Setting zone id of with-holes-solid-46 to 44402.
+ Setting zone id of with-holes-solid-57 to 44399.
+ Setting zone id of with-holes-solid-58 to 44396.
+ Setting zone id of with-holes-solid-44 to 44393.
+ Setting zone id of with-holes-solid-69 to 44390.
+ Setting zone id of with-holes-solid-22 to 44387.
+ Setting zone id of with-holes-solid-45 to 44384.
+ Setting zone id of with-holes-solid-47 to 44381.
+ Setting zone id of with-holes-solid-4 to 44378.
+ Setting zone id of with-holes-solid-31 to 44375.
+ Setting zone id of with-holes-solid-6 to 44372.
+ Setting zone id of with-holes-solid-5 to 44369.
+ Setting zone id of with-holes-solid-33 to 44366.
+ Setting zone id of with-holes-solid-7 to 44363.
+ Setting zone id of with-holes-solid-30 to 44360.
+ Setting zone id of with-holes-solid-51 to 44357.
+ Setting zone id of with-holes-solid-63 to 44354.
+ Setting zone id of with-holes-solid-52 to 44351.
+ Setting zone id of with-holes-solid-8 to 44348.
+ Setting zone id of with-holes-solid-32 to 44345.
+ Setting zone id of with-holes-solid-9 to 44342.
+ Setting zone id of with-holes-solid-62 to 44339.
+ Setting zone id of with-holes-solid-50 to 44336.
+ Setting zone id of with-holes-solid-41 to 44333.
+ Setting zone id of with-holes-solid-55 to 44330.
+ Setting zone id of with-holes-solid-15 to 44327.
+ Setting zone id of with-holes-solid-12 to 44324.
+ Setting zone id of with-holes-solid-36 to 44321.
+ Setting zone id of with-holes-solid-65 to 44318.
+ Setting zone id of with-holes-solid-38 to 44315.
+ Setting zone id of with-holes-solid-40 to 44312.
+ Setting zone id of with-holes-solid-14 to 44309.
+ Setting zone id of with-holes-solid-54 to 44306.
+ Setting zone id of with-holes-solid-67 to 44303.
+ Setting zone id of with-holes-solid-66 to 44300.
+ Setting zone id of with-holes-solid-39 to 44297.
+ Setting zone id of with-holes-solid-37 to 44294.
+ Setting zone id of with-holes-solid-13 to 44291.
+ Setting zone id of with-holes-solid-48 to 44288.
+ Setting zone id of with-holes-solid-25 to 44285.
+ Setting zone id of with-holes-solid-59 to 44282.
+ Setting zone id of with-holes-solid-27 to 44279.
+ Setting zone id of with-holes-solid-1 to 44276.
+ Setting zone id of with-holes-solid-24 to 44273.
+ Setting zone id of with-holes-solid-26 to 44270.
+ Setting zone id of with-holes-solid-60 to 44264.
+ Setting zone id of with-holes-solid to 44261.
+ Setting zone id of with-holes-solid-53 to 44258.
+ Setting zone id of with-holes-solid-35 to 44255.
+ Setting zone id of with-holes-solid-43 to 44252.
+ Setting zone id of with-holes-solid-68 to 44249.
+ Setting zone id of with-holes-solid-17 to 44246.
+ Setting zone id of with-holes-solid-34 to 44243.
+ Setting zone id of with-holes-solid-29 to 44240.
+ Setting zone id of with-holes-solid-49 to 44237.
+ Setting zone id of with-holes-solid-16 to 44234.
+ Setting zone id of with-holes-solid-2 to 44231.
+ Setting zone id of with-holes-solid-28 to 44228.
+ Setting zone id of with-holes-solid-3 to 44225.
+ Setting zone id of with-holes-solid-56 to 44222.
+ Setting zone id of with-holes-solid-42 to 44219.
+ Setting zone id of with-holes-solid-10 to 44216.
+ Setting zone id of with-holes-solid-61 to 44213.
+ Setting zone id of with-holes-solid-64 to 44210.
+ Setting zone id of with-holes-solid-11 to 44207.
+ Setting zone id of solid to 44267.
+ Setting zone id of with-holes-the-air-region to 44204.
+ Setting zone id of outlet to 308.
+ Setting zone id of inlet to 234.
+ Setting zone id of cells.20 to 235.
+ Setting zone id of cells.31 to 236.
+ Setting zone id of cells.42 to 237.
+ Setting zone id of cells.53 to 238.
+ Setting zone id of cells.64 to 239.
+ Setting zone id of cells.69 to 240.
+ Setting zone id of cells.70 to 241.
+ Setting zone id of cells.71 to 242.
+ Setting zone id of cells to 243.
+ Setting zone id of cells.1 to 244.
+ Setting zone id of cells.2 to 245.
+ Setting zone id of cells.3 to 246.
+ Setting zone id of cells.4 to 247.
+ Setting zone id of cells.5 to 248.
+ Setting zone id of cells.6 to 249.
+ Setting zone id of cells.7 to 250.
+ Setting zone id of cells.8 to 251.
+ Setting zone id of cells.9 to 252.
+ Setting zone id of cells.10 to 253.
+ Setting zone id of cells.11 to 254.
+ Setting zone id of cells.12 to 255.
+ Setting zone id of cells.13 to 256.
+ Setting zone id of cells.14 to 257.
+ Setting zone id of cells.15 to 258.
+ Setting zone id of cells.16 to 259.
+ Setting zone id of cells.17 to 260.
+ Setting zone id of cells.18 to 261.
+ Setting zone id of cells.19 to 262.
+ Setting zone id of cells.21 to 263.
+ Setting zone id of cells.22 to 264.
+ Setting zone id of cells.23 to 265.
+ Setting zone id of cells.24 to 266.
+ Setting zone id of cells.25 to 267.
+ Setting zone id of cells.26 to 268.
+ Setting zone id of cells.27 to 269.
+ Setting zone id of cells.28 to 270.
+ Setting zone id of cells.29 to 271.
+ Setting zone id of cells.30 to 272.
+ Setting zone id of cells.32 to 273.
+ Setting zone id of cells.33 to 274.
+ Setting zone id of cells.34 to 275.
+ Setting zone id of cells.35 to 276.
+ Setting zone id of cells.36 to 277.
+ Setting zone id of cells.37 to 278.
+ Setting zone id of cells.38 to 279.
+ Setting zone id of cells.39 to 280.
+ Setting zone id of cells.40 to 281.
+ Setting zone id of cells.41 to 282.
+ Setting zone id of cells.43 to 283.
+ Setting zone id of cells.44 to 284.
+ Setting zone id of cells.45 to 285.
+ Setting zone id of cells.46 to 286.
+ Setting zone id of cells.47 to 287.
+ Setting zone id of cells.48 to 288.
+ Setting zone id of cells.49 to 289.
+ Setting zone id of cells.50 to 290.
+ Setting zone id of cells.51 to 291.
+ Setting zone id of cells.52 to 292.
+ Setting zone id of cells.54 to 293.
+ Setting zone id of cells.55 to 294.
+ Setting zone id of cells.56 to 295.
+ Setting zone id of cells.57 to 296.
+ Setting zone id of cells.58 to 297.
+ Setting zone id of cells.59 to 298.
+ Setting zone id of cells.60 to 299.
+ Setting zone id of cells.61 to 300.
+ Setting zone id of cells.62 to 301.
+ Setting zone id of cells.63 to 302.
+ Setting zone id of cells.65 to 303.
+ Setting zone id of cells.66 to 304.
+ Setting zone id of cells.67 to 305.
+ Setting zone id of cells.68 to 306.
+ Setting zone id of with-holes-solid-20-with-holes-the-air-region to 824.
+ Setting zone id of with-holes-solid-39-with-holes-the-air-region to 938.
+ Setting zone id of with-holes-solid-31-with-holes-the-air-region to 1052.
+ Setting zone id of with-holes-solid-57-with-holes-the-air-region to 1166.
+ Setting zone id of with-holes-solid-28-with-holes-the-air-region to 1280.
+ Setting zone id of with-holes-solid-11-with-holes-the-air-region to 1394.
+ Setting zone id of with-holes-solid-12-with-holes-the-air-region to 1508.
+ Setting zone id of with-holes-solid-38-with-holes-the-air-region to 1622.
+ Setting zone id of with-holes-solid-1-with-holes-the-air-region to 1736.
+ Setting zone id of with-holes-solid-35-with-holes-the-air-region to 1828.
+ Setting zone id of with-holes-solid-67-with-holes-the-air-region to 1942.
+ Setting zone id of with-holes-solid-16-with-holes-the-air-region to 2056.
+ Setting zone id of with-holes-solid-37-with-holes-the-air-region to 2700.
+ Setting zone id of with-holes-solid-40-with-holes-the-air-region to 3051.
+ Setting zone id of with-holes-solid-9-with-holes-the-air-region to 3420.
+ Setting zone id of with-holes-solid-56-with-holes-the-air-region to 3772.
+ Setting zone id of with-holes-solid-17-with-holes-the-air-region to 3868.
+ Setting zone id of with-holes-solid-60-with-holes-the-air-region to 3982.
+ Setting zone id of with-holes-solid-52-with-holes-the-air-region to 4096.
+ Setting zone id of with-holes-solid-42-with-holes-the-air-region to 4468.
+ Setting zone id of with-holes-solid-26-with-holes-the-air-region to 4821.
+ Setting zone id of with-holes-solid-48-with-holes-the-air-region to 4917.
+ Setting zone id of with-holes-solid-44-with-holes-the-air-region to 5267.
+ Setting zone id of with-holes-solid-27-with-holes-the-air-region to 5362.
+ Setting zone id of with-holes-solid-55-with-holes-the-air-region to 5749.
+ Setting zone id of with-holes-solid-19-with-holes-the-air-region to 6117.
+ Setting zone id of with-holes-solid-with-holes-the-air-region_1 to 6213.
+ Setting zone id of with-holes-solid-68-with-holes-the-air-region to 6563.
+ Setting zone id of with-holes-solid-58-with-holes-the-air-region to 6917.
+ Setting zone id of with-holes-solid-36-with-holes-the-air-region to 7255.
+ Setting zone id of with-holes-solid-29-with-holes-the-air-region to 7867.
+ Setting zone id of with-holes-solid-65-with-holes-the-air-region to 7944.
+ Setting zone id of with-holes-solid-41-with-holes-the-air-region to 8316.
+ Setting zone id of with-holes-solid-13-with-holes-the-air-region to 8669.
+ Setting zone id of with-holes-solid-5-with-holes-the-air-region to 8765.
+ Setting zone id of with-holes-solid-51-with-holes-the-air-region to 9151.
+ Setting zone id of with-holes-solid-46-with-holes-the-air-region to 9505.
+ Setting zone id of with-holes-solid-53-with-holes-the-air-region to 9806.
+ Setting zone id of with-holes-solid-30-with-holes-the-air-region to 10115.
+ Setting zone id of with-holes-solid-2-with-holes-the-air-region to 10289.
+ Setting zone id of with-holes-solid-49-with-holes-the-air-region to 10642.
+ Setting zone id of with-holes-solid-10-with-holes-the-air-region to 10995.
+ Setting zone id of with-holes-solid-7-with-holes-the-air-region to 11622.
+ Setting zone id of with-holes-solid-71-with-holes-the-air-region to 11699.
+ Setting zone id of with-holes-solid-43-with-holes-the-air-region to 12063.
+ Setting zone id of with-holes-solid-34-with-holes-the-air-region to 12386.
+ Setting zone id of with-holes-solid-61-with-holes-the-air-region to 12710.
+ Setting zone id of with-holes-solid-23-with-holes-the-air-region to 12806.
+ Setting zone id of with-holes-solid-8-with-holes-the-air-region to 13110.
+ Setting zone id of with-holes-solid-45-with-holes-the-air-region to 13464.
+ Setting zone id of with-holes-solid-70-with-holes-the-air-region to 13833.
+ Setting zone id of with-holes-solid-66-with-holes-the-air-region to 14437.
+ Setting zone id of with-holes-solid-62-with-holes-the-air-region to 14786.
+ Setting zone id of with-holes-solid-18-with-holes-the-air-region to 15383.
+ Setting zone id of with-holes-solid-14-with-holes-the-air-region to 15977.
+ Setting zone id of with-holes-solid-4-with-holes-the-air-region to 16329.
+ Setting zone id of with-holes-solid-3-with-holes-the-air-region to 16700.
+ Setting zone id of with-holes-solid-15-with-holes-the-air-region to 17248.
+ Setting zone id of with-holes-solid-63-with-holes-the-air-region to 17598.
+ Setting zone id of with-holes-solid-47-with-holes-the-air-region to 17966.
+ Setting zone id of with-holes-solid-33-with-holes-the-air-region to 18524.
+ Setting zone id of with-holes-solid-21-with-holes-the-air-region to 19117.
+ Setting zone id of with-holes-solid-6-with-holes-the-air-region to 19724.
+ Setting zone id of with-holes-solid-64-with-holes-the-air-region to 20332.
+ Setting zone id of with-holes-solid-50-with-holes-the-air-region to 20941.
+ Setting zone id of with-holes-solid-69-with-holes-the-air-region to 21447.
+ Setting zone id of with-holes-solid-59-with-holes-the-air-region to 21798.
+ Setting zone id of with-holes-solid-32-with-holes-the-air-region to 22415.
+ Setting zone id of with-holes-solid-25-with-holes-the-air-region to 22750.
+ Setting zone id of with-holes-solid-54-with-holes-the-air-region to 23354.
+ Setting zone id of with-holes-solid-24-with-holes-the-air-region to 23675.
+ Setting zone id of with-holes-solid-22-with-holes-the-air-region to 24021.
+ Setting zone id of solid-with-holes-the-air-region_1 to 36480.
+ Setting zone id of solid:1 to 307.
+ Setting zone id of with-holes-the-air-region:1 to 233.
+ Setting zone id of interior--with-holes-the-air-region to 44203.
+ Setting zone id of interior--with-holes-solid-11 to 44206.
+ Setting zone id of interior--with-holes-solid-64 to 44209.
+ Setting zone id of interior--with-holes-solid-61 to 44212.
+ Setting zone id of interior--with-holes-solid-10 to 44215.
+ Setting zone id of interior--with-holes-solid-42 to 44218.
+ Setting zone id of interior--with-holes-solid-56 to 44221.
+ Setting zone id of interior--with-holes-solid-3 to 44224.
+ Setting zone id of interior--with-holes-solid-28 to 44227.
+ Setting zone id of interior--with-holes-solid-2 to 44230.
+ Setting zone id of interior--with-holes-solid-16 to 44233.
+ Setting zone id of interior--with-holes-solid-49 to 44236.
+ Setting zone id of interior--with-holes-solid-29 to 44239.
+ Setting zone id of interior--with-holes-solid-34 to 44242.
+ Setting zone id of interior--with-holes-solid-17 to 44245.
+ Setting zone id of interior--with-holes-solid-68 to 44248.
+ Setting zone id of interior--with-holes-solid-43 to 44251.
+ Setting zone id of interior--with-holes-solid-35 to 44254.
+ Setting zone id of interior--with-holes-solid-53 to 44257.
+ Setting zone id of interior--with-holes-solid to 44260.
+ Setting zone id of interior--with-holes-solid-60 to 44263.
+ Setting zone id of interior--solid to 44266.
+ Setting zone id of interior--with-holes-solid-26 to 44269.
+ Setting zone id of interior--with-holes-solid-24 to 44272.
+ Setting zone id of interior--with-holes-solid-1 to 44275.
+ Setting zone id of interior--with-holes-solid-27 to 44278.
+ Setting zone id of interior--with-holes-solid-59 to 44281.
+ Setting zone id of interior--with-holes-solid-25 to 44284.
+ Setting zone id of interior--with-holes-solid-48 to 44287.
+ Setting zone id of interior--with-holes-solid-13 to 44290.
+ Setting zone id of interior--with-holes-solid-37 to 44293.
+ Setting zone id of interior--with-holes-solid-39 to 44296.
+ Setting zone id of interior--with-holes-solid-66 to 44299.
+ Setting zone id of interior--with-holes-solid-67 to 44302.
+ Setting zone id of interior--with-holes-solid-54 to 44305.
+ Setting zone id of interior--with-holes-solid-14 to 44308.
+ Setting zone id of interior--with-holes-solid-40 to 44311.
+ Setting zone id of interior--with-holes-solid-38 to 44314.
+ Setting zone id of interior--with-holes-solid-65 to 44317.
+ Setting zone id of interior--with-holes-solid-36 to 44320.
+ Setting zone id of interior--with-holes-solid-12 to 44323.
+ Setting zone id of interior--with-holes-solid-15 to 44326.
+ Setting zone id of interior--with-holes-solid-55 to 44329.
+ Setting zone id of interior--with-holes-solid-41 to 44332.
+ Setting zone id of interior--with-holes-solid-50 to 44335.
+ Setting zone id of interior--with-holes-solid-62 to 44338.
+ Setting zone id of interior--with-holes-solid-9 to 44341.
+ Setting zone id of interior--with-holes-solid-32 to 44344.
+ Setting zone id of interior--with-holes-solid-8 to 44347.
+ Setting zone id of interior--with-holes-solid-52 to 44350.
+ Setting zone id of interior--with-holes-solid-63 to 44353.
+ Setting zone id of interior--with-holes-solid-51 to 44356.
+ Setting zone id of interior--with-holes-solid-30 to 44359.
+ Setting zone id of interior--with-holes-solid-7 to 44362.
+ Setting zone id of interior--with-holes-solid-33 to 44365.
+ Setting zone id of interior--with-holes-solid-5 to 44368.
+ Setting zone id of interior--with-holes-solid-6 to 44371.
+ Setting zone id of interior--with-holes-solid-31 to 44374.
+ Setting zone id of interior--with-holes-solid-4 to 44377.
+ Setting zone id of interior--with-holes-solid-47 to 44380.
+ Setting zone id of interior--with-holes-solid-45 to 44383.
+ Setting zone id of interior--with-holes-solid-22 to 44386.
+ Setting zone id of interior--with-holes-solid-69 to 44389.
+ Setting zone id of interior--with-holes-solid-44 to 44392.
+ Setting zone id of interior--with-holes-solid-58 to 44395.
+ Setting zone id of interior--with-holes-solid-57 to 44398.
+ Setting zone id of interior--with-holes-solid-46 to 44401.
+ Setting zone id of interior--with-holes-solid-19 to 44404.
+ Setting zone id of interior--with-holes-solid-20 to 44407.
+ Setting zone id of interior--with-holes-solid-21 to 44410.
+ Setting zone id of interior--with-holes-solid-18 to 44413.
+ Setting zone id of interior--with-holes-solid-70 to 44416.
+ Setting zone id of interior--with-holes-solid-71 to 44419.
+ Setting zone id of interior--with-holes-solid-23 to 44422.
+ Setting zone id of with-holes-solid-20-with-holes-the-air-region-shadow to 74.
+ Setting zone id of with-holes-solid-39-with-holes-the-air-region-shadow to 73.
+ Setting zone id of with-holes-solid-31-with-holes-the-air-region-shadow to 72.
+ Setting zone id of with-holes-solid-57-with-holes-the-air-region-shadow to 71.
+ Setting zone id of with-holes-solid-28-with-holes-the-air-region-shadow to 70.
+ Setting zone id of with-holes-solid-11-with-holes-the-air-region-shadow to 69.
+ Setting zone id of with-holes-solid-12-with-holes-the-air-region-shadow to 68.
+ Setting zone id of with-holes-solid-38-with-holes-the-air-region-shadow to 67.
+ Setting zone id of with-holes-solid-1-with-holes-the-air-region-shadow to 66.
+ Setting zone id of with-holes-solid-35-with-holes-the-air-region-shadow to 65.
+ Setting zone id of with-holes-solid-67-with-holes-the-air-region-shadow to 64.
+ Setting zone id of with-holes-solid-16-with-holes-the-air-region-shadow to 63.
+ Setting zone id of with-holes-solid-37-with-holes-the-air-region-shadow to 62.
+ Setting zone id of with-holes-solid-40-with-holes-the-air-region-shadow to 61.
+ Setting zone id of with-holes-solid-9-with-holes-the-air-region-shadow to 60.
+ Setting zone id of with-holes-solid-56-with-holes-the-air-region-shadow to 59.
+ Setting zone id of with-holes-solid-17-with-holes-the-air-region-shadow to 58.
+ Setting zone id of with-holes-solid-60-with-holes-the-air-region-shadow to 57.
+ Setting zone id of with-holes-solid-52-with-holes-the-air-region-shadow to 56.
+ Setting zone id of with-holes-solid-42-with-holes-the-air-region-shadow to 55.
+ Setting zone id of with-holes-solid-26-with-holes-the-air-region-shadow to 54.
+ Setting zone id of with-holes-solid-48-with-holes-the-air-region-shadow to 53.
+ Setting zone id of with-holes-solid-44-with-holes-the-air-region-shadow to 52.
+ Setting zone id of with-holes-solid-27-with-holes-the-air-region-shadow to 51.
+ Setting zone id of with-holes-solid-55-with-holes-the-air-region-shadow to 50.
+ Setting zone id of with-holes-solid-19-with-holes-the-air-region-shadow to 49.
+ Setting zone id of with-holes-solid-with-holes-the-air-region_1-shadow to 48.
+ Setting zone id of with-holes-solid-68-with-holes-the-air-region-shadow to 47.
+ Setting zone id of with-holes-solid-58-with-holes-the-air-region-shadow to 46.
+ Setting zone id of with-holes-solid-36-with-holes-the-air-region-shadow to 45.
+ Setting zone id of with-holes-solid-29-with-holes-the-air-region-shadow to 44.
+ Setting zone id of with-holes-solid-65-with-holes-the-air-region-shadow to 43.
+ Setting zone id of with-holes-solid-41-with-holes-the-air-region-shadow to 42.
+ Setting zone id of with-holes-solid-13-with-holes-the-air-region-shadow to 41.
+ Setting zone id of with-holes-solid-5-with-holes-the-air-region-shadow to 40.
+ Setting zone id of with-holes-solid-51-with-holes-the-air-region-shadow to 39.
+ Setting zone id of with-holes-solid-46-with-holes-the-air-region-shadow to 38.
+ Setting zone id of with-holes-solid-53-with-holes-the-air-region-shadow to 37.
+ Setting zone id of with-holes-solid-30-with-holes-the-air-region-shadow to 36.
+ Setting zone id of with-holes-solid-2-with-holes-the-air-region-shadow to 35.
+ Setting zone id of with-holes-solid-49-with-holes-the-air-region-shadow to 34.
+ Setting zone id of with-holes-solid-10-with-holes-the-air-region-shadow to 33.
+ Setting zone id of with-holes-solid-7-with-holes-the-air-region-shadow to 32.
+ Setting zone id of with-holes-solid-71-with-holes-the-air-region-shadow to 31.
+ Setting zone id of with-holes-solid-43-with-holes-the-air-region-shadow to 30.
+ Setting zone id of with-holes-solid-34-with-holes-the-air-region-shadow to 29.
+ Setting zone id of with-holes-solid-61-with-holes-the-air-region-shadow to 28.
+ Setting zone id of with-holes-solid-23-with-holes-the-air-region-shadow to 27.
+ Setting zone id of with-holes-solid-8-with-holes-the-air-region-shadow to 26.
+ Setting zone id of with-holes-solid-45-with-holes-the-air-region-shadow to 25.
+ Setting zone id of with-holes-solid-70-with-holes-the-air-region-shadow to 24.
+ Setting zone id of with-holes-solid-66-with-holes-the-air-region-shadow to 23.
+ Setting zone id of with-holes-solid-62-with-holes-the-air-region-shadow to 22.
+ Setting zone id of with-holes-solid-18-with-holes-the-air-region-shadow to 21.
+ Setting zone id of with-holes-solid-14-with-holes-the-air-region-shadow to 20.
+ Setting zone id of with-holes-solid-4-with-holes-the-air-region-shadow to 19.
+ Setting zone id of with-holes-solid-3-with-holes-the-air-region-shadow to 18.
+ Setting zone id of with-holes-solid-15-with-holes-the-air-region-shadow to 17.
+ Setting zone id of with-holes-solid-63-with-holes-the-air-region-shadow to 16.
+ Setting zone id of with-holes-solid-47-with-holes-the-air-region-shadow to 15.
+ Setting zone id of with-holes-solid-33-with-holes-the-air-region-shadow to 14.
+ Setting zone id of with-holes-solid-21-with-holes-the-air-region-shadow to 13.
+ Setting zone id of with-holes-solid-6-with-holes-the-air-region-shadow to 12.
+ Setting zone id of with-holes-solid-64-with-holes-the-air-region-shadow to 11.
+ Setting zone id of with-holes-solid-50-with-holes-the-air-region-shadow to 10.
+ Setting zone id of with-holes-solid-69-with-holes-the-air-region-shadow to 9.
+ Setting zone id of with-holes-solid-59-with-holes-the-air-region-shadow to 8.
+ Setting zone id of with-holes-solid-32-with-holes-the-air-region-shadow to 7.
+ Setting zone id of with-holes-solid-25-with-holes-the-air-region-shadow to 6.
+ Setting zone id of with-holes-solid-54-with-holes-the-air-region-shadow to 5.
+ Setting zone id of with-holes-solid-24-with-holes-the-air-region-shadow to 4.
+ Setting zone id of with-holes-solid-22-with-holes-the-air-region-shadow to 3.
+ Setting zone id of solid-with-holes-the-air-region_1-shadow to 2.
+Done.
+Setting with-holes-solid-23 (mixture) ... Done.
+Setting with-holes-solid-71 (mixture) ... Done.
+Setting with-holes-solid-70 (mixture) ... Done.
+Setting with-holes-solid-18 (mixture) ... Done.
+Setting with-holes-solid-21 (mixture) ... Done.
+Setting with-holes-solid-20 (mixture) ... Done.
+Setting with-holes-solid-19 (mixture) ... Done.
+Setting with-holes-solid-46 (mixture) ... Done.
+Setting with-holes-solid-57 (mixture) ... Done.
+Setting with-holes-solid-58 (mixture) ... Done.
+Setting with-holes-solid-44 (mixture) ... Done.
+Setting with-holes-solid-69 (mixture) ... Done.
+Setting with-holes-solid-22 (mixture) ... Done.
+Setting with-holes-solid-45 (mixture) ... Done.
+Setting with-holes-solid-47 (mixture) ... Done.
+Setting with-holes-solid-4 (mixture) ... Done.
+Setting with-holes-solid-31 (mixture) ... Done.
+Setting with-holes-solid-6 (mixture) ... Done.
+Setting with-holes-solid-5 (mixture) ... Done.
+Setting with-holes-solid-33 (mixture) ... Done.
+Setting with-holes-solid-7 (mixture) ... Done.
+Setting with-holes-solid-30 (mixture) ... Done.
+Setting with-holes-solid-51 (mixture) ... Done.
+Setting with-holes-solid-63 (mixture) ... Done.
+Setting with-holes-solid-52 (mixture) ... Done.
+Setting with-holes-solid-8 (mixture) ... Done.
+Setting with-holes-solid-32 (mixture) ... Done.
+Setting with-holes-solid-9 (mixture) ... Done.
+Setting with-holes-solid-62 (mixture) ... Done.
+Setting with-holes-solid-50 (mixture) ... Done.
+Setting with-holes-solid-41 (mixture) ... Done.
+Setting with-holes-solid-55 (mixture) ... Done.
+Setting with-holes-solid-15 (mixture) ... Done.
+Setting with-holes-solid-12 (mixture) ... Done.
+Setting with-holes-solid-36 (mixture) ... Done.
+Setting with-holes-solid-65 (mixture) ... Done.
+Setting with-holes-solid-38 (mixture) ... Done.
+Setting with-holes-solid-40 (mixture) ... Done.
+Setting with-holes-solid-14 (mixture) ... Done.
+Setting with-holes-solid-54 (mixture) ... Done.
+Setting with-holes-solid-67 (mixture) ... Done.
+Setting with-holes-solid-66 (mixture) ... Done.
+Setting with-holes-solid-39 (mixture) ... Done.
+Setting with-holes-solid-37 (mixture) ... Done.
+Setting with-holes-solid-13 (mixture) ... Done.
+Setting with-holes-solid-48 (mixture) ... Done.
+Setting with-holes-solid-25 (mixture) ... Done.
+Setting with-holes-solid-59 (mixture) ... Done.
+Setting with-holes-solid-27 (mixture) ... Done.
+Setting with-holes-solid-1 (mixture) ... Done.
+Setting with-holes-solid-24 (mixture) ... Done.
+Setting with-holes-solid-26 (mixture) ... Done.
+Setting with-holes-solid-60 (mixture) ... Done.
+Setting with-holes-solid (mixture) ... Done.
+Setting with-holes-solid-53 (mixture) ... Done.
+Setting with-holes-solid-35 (mixture) ... Done.
+Setting with-holes-solid-43 (mixture) ... Done.
+Setting with-holes-solid-68 (mixture) ... Done.
+Setting with-holes-solid-17 (mixture) ... Done.
+Setting with-holes-solid-34 (mixture) ... Done.
+Setting with-holes-solid-29 (mixture) ... Done.
+Setting with-holes-solid-49 (mixture) ... Done.
+Setting with-holes-solid-16 (mixture) ... Done.
+Setting with-holes-solid-2 (mixture) ... Done.
+Setting with-holes-solid-28 (mixture) ... Done.
+Setting with-holes-solid-3 (mixture) ... Done.
+Setting with-holes-solid-56 (mixture) ... Done.
+Setting with-holes-solid-42 (mixture) ... Done.
+Setting with-holes-solid-10 (mixture) ... Done.
+Setting with-holes-solid-61 (mixture) ... Done.
+Setting with-holes-solid-64 (mixture) ... Done.
+Setting with-holes-solid-11 (mixture) ... Done.
+Setting solid (mixture) ... Done.
+Setting with-holes-the-air-region (mixture) ... Done.
+Setting interior--with-holes-solid-23 (mixture) ... Done.
+Setting interior--with-holes-solid-71 (mixture) ... Done.
+Setting interior--with-holes-solid-70 (mixture) ... Done.
+Setting interior--with-holes-solid-18 (mixture) ... Done.
+Setting interior--with-holes-solid-21 (mixture) ... Done.
+Setting interior--with-holes-solid-20 (mixture) ... Done.
+Setting interior--with-holes-solid-19 (mixture) ... Done.
+Setting interior--with-holes-solid-46 (mixture) ... Done.
+Setting interior--with-holes-solid-57 (mixture) ... Done.
+Setting interior--with-holes-solid-58 (mixture) ... Done.
+Setting interior--with-holes-solid-44 (mixture) ... Done.
+Setting interior--with-holes-solid-69 (mixture) ... Done.
+Setting interior--with-holes-solid-22 (mixture) ... Done.
+Setting interior--with-holes-solid-45 (mixture) ... Done.
+Setting interior--with-holes-solid-47 (mixture) ... Done.
+Setting interior--with-holes-solid-4 (mixture) ... Done.
+Setting interior--with-holes-solid-31 (mixture) ... Done.
+Setting interior--with-holes-solid-6 (mixture) ... Done.
+Setting interior--with-holes-solid-5 (mixture) ... Done.
+Setting interior--with-holes-solid-33 (mixture) ... Done.
+Setting interior--with-holes-solid-7 (mixture) ... Done.
+Setting interior--with-holes-solid-30 (mixture) ... Done.
+Setting interior--with-holes-solid-51 (mixture) ... Done.
+Setting interior--with-holes-solid-63 (mixture) ... Done.
+Setting interior--with-holes-solid-52 (mixture) ... Done.
+Setting interior--with-holes-solid-8 (mixture) ... Done.
+Setting interior--with-holes-solid-32 (mixture) ... Done.
+Setting interior--with-holes-solid-9 (mixture) ... Done.
+Setting interior--with-holes-solid-62 (mixture) ... Done.
+Setting interior--with-holes-solid-50 (mixture) ... Done.
+Setting interior--with-holes-solid-41 (mixture) ... Done.
+Setting interior--with-holes-solid-55 (mixture) ... Done.
+Setting interior--with-holes-solid-15 (mixture) ... Done.
+Setting interior--with-holes-solid-12 (mixture) ... Done.
+Setting interior--with-holes-solid-36 (mixture) ... Done.
+Setting interior--with-holes-solid-65 (mixture) ... Done.
+Setting interior--with-holes-solid-38 (mixture) ... Done.
+Setting interior--with-holes-solid-40 (mixture) ... Done.
+Setting interior--with-holes-solid-14 (mixture) ... Done.
+Setting interior--with-holes-solid-54 (mixture) ... Done.
+Setting interior--with-holes-solid-67 (mixture) ... Done.
+Setting interior--with-holes-solid-66 (mixture) ... Done.
+Setting interior--with-holes-solid-39 (mixture) ... Done.
+Setting interior--with-holes-solid-37 (mixture) ... Done.
+Setting interior--with-holes-solid-13 (mixture) ... Done.
+Setting interior--with-holes-solid-48 (mixture) ... Done.
+Setting interior--with-holes-solid-25 (mixture) ... Done.
+Setting interior--with-holes-solid-59 (mixture) ... Done.
+Setting interior--with-holes-solid-27 (mixture) ... Done.
+Setting interior--with-holes-solid-1 (mixture) ... Done.
+Setting interior--with-holes-solid-24 (mixture) ... Done.
+Setting interior--with-holes-solid-26 (mixture) ... Done.
+Setting interior--solid (mixture) ... Done.
+Setting interior--with-holes-solid-60 (mixture) ... Done.
+Setting interior--with-holes-solid (mixture) ... Done.
+Setting interior--with-holes-solid-53 (mixture) ... Done.
+Setting interior--with-holes-solid-35 (mixture) ... Done.
+Setting interior--with-holes-solid-43 (mixture) ... Done.
+Setting interior--with-holes-solid-68 (mixture) ... Done.
+Setting interior--with-holes-solid-17 (mixture) ... Done.
+Setting interior--with-holes-solid-34 (mixture) ... Done.
+Setting interior--with-holes-solid-29 (mixture) ... Done.
+Setting interior--with-holes-solid-49 (mixture) ... Done.
+Setting interior--with-holes-solid-16 (mixture) ... Done.
+Setting interior--with-holes-solid-2 (mixture) ... Done.
+Setting interior--with-holes-solid-28 (mixture) ... Done.
+Setting interior--with-holes-solid-3 (mixture) ... Done.
+Setting interior--with-holes-solid-56 (mixture) ... Done.
+Setting interior--with-holes-solid-42 (mixture) ... Done.
+Setting interior--with-holes-solid-10 (mixture) ... Done.
+Setting interior--with-holes-solid-61 (mixture) ... Done.
+Setting interior--with-holes-solid-64 (mixture) ... Done.
+Setting interior--with-holes-solid-11 (mixture) ... Done.
+Setting interior--with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-the-air-region:1 (mixture) ... Done.
+Setting solid:1 (mixture) ... Done.
+Setting solid-with-holes-the-air-region_1 (mixture) ... Done.
+Setting with-holes-solid-22-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-24-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-54-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-25-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-32-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-59-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-69-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-50-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-64-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-6-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-21-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-33-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-47-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-63-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-15-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-3-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-4-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-14-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-18-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-62-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-66-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-70-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-45-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-8-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-23-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-61-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-34-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-43-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-71-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-7-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-10-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-49-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-2-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-30-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-53-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-46-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-51-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-5-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-13-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-41-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-65-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-29-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-36-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-58-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-68-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-with-holes-the-air-region_1 (mixture) ... Done.
+Setting with-holes-solid-19-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-55-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-27-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-44-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-48-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-26-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-42-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-52-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-60-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-17-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-56-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-9-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-40-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-37-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-16-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-67-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-35-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-1-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-38-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-12-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-11-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-28-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-57-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-31-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-39-with-holes-the-air-region (mixture) ... Done.
+Setting with-holes-solid-20-with-holes-the-air-region (mixture) ... Done.
+Setting cells.68 (mixture) ... Done.
+Setting cells.67 (mixture) ... Done.
+Setting cells.66 (mixture) ... Done.
+Setting cells.65 (mixture) ... Done.
+Setting cells.63 (mixture) ... Done.
+Setting cells.62 (mixture) ... Done.
+Setting cells.61 (mixture) ... Done.
+Setting cells.60 (mixture) ... Done.
+Setting cells.59 (mixture) ... Done.
+Setting cells.58 (mixture) ... Done.
+Setting cells.57 (mixture) ... Done.
+Setting cells.56 (mixture) ... Done.
+Setting cells.55 (mixture) ... Done.
+Setting cells.54 (mixture) ... Done.
+Setting cells.52 (mixture) ... Done.
+Setting cells.51 (mixture) ... Done.
+Setting cells.50 (mixture) ... Done.
+Setting cells.49 (mixture) ... Done.
+Setting cells.48 (mixture) ... Done.
+Setting cells.47 (mixture) ... Done.
+Setting cells.46 (mixture) ... Done.
+Setting cells.45 (mixture) ... Done.
+Setting cells.44 (mixture) ... Done.
+Setting cells.43 (mixture) ... Done.
+Setting cells.41 (mixture) ... Done.
+Setting cells.40 (mixture) ... Done.
+Setting cells.39 (mixture) ... Done.
+Setting cells.38 (mixture) ... Done.
+Setting cells.37 (mixture) ... Done.
+Setting cells.36 (mixture) ... Done.
+Setting cells.35 (mixture) ... Done.
+Setting cells.34 (mixture) ... Done.
+Setting cells.33 (mixture) ... Done.
+Setting cells.32 (mixture) ... Done.
+Setting cells.30 (mixture) ... Done.
+Setting cells.29 (mixture) ... Done.
+Setting cells.28 (mixture) ... Done.
+Setting cells.27 (mixture) ... Done.
+Setting cells.26 (mixture) ... Done.
+Setting cells.25 (mixture) ... Done.
+Setting cells.24 (mixture) ... Done.
+Setting cells.23 (mixture) ... Done.
+Setting cells.22 (mixture) ... Done.
+Setting cells.21 (mixture) ... Done.
+Setting cells.19 (mixture) ... Done.
+Setting cells.18 (mixture) ... Done.
+Setting cells.17 (mixture) ... Done.
+Setting cells.16 (mixture) ... Done.
+Setting cells.15 (mixture) ... Done.
+Setting cells.14 (mixture) ... Done.
+Setting cells.13 (mixture) ... Done.
+Setting cells.12 (mixture) ... Done.
+Setting cells.11 (mixture) ... Done.
+Setting cells.10 (mixture) ... Done.
+Setting cells.9 (mixture) ... Done.
+Setting cells.8 (mixture) ... Done.
+Setting cells.7 (mixture) ... Done.
+Setting cells.6 (mixture) ... Done.
+Setting cells.5 (mixture) ... Done.
+Setting cells.4 (mixture) ... Done.
+Setting cells.3 (mixture) ... Done.
+Setting cells.2 (mixture) ... Done.
+Setting cells.1 (mixture) ... Done.
+Setting cells (mixture) ... Done.
+Setting cells.71 (mixture) ... Done.
+Setting cells.70 (mixture) ... Done.
+Setting cells.69 (mixture) ... Done.
+Setting cells.64 (mixture) ... Done.
+Setting cells.53 (mixture) ... Done.
+Setting cells.42 (mixture) ... Done.
+Setting cells.31 (mixture) ... Done.
+Setting cells.20 (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting solid-with-holes-the-air-region_1-shadow (mixture) ... Done.
+Setting with-holes-solid-22-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-24-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-54-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-25-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-32-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-59-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-69-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-50-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-64-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-6-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-21-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-33-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-47-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-63-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-15-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-3-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-4-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-14-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-18-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-62-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-66-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-70-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-45-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-8-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-23-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-61-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-34-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-43-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-71-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-7-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-10-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-49-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-2-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-30-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-53-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-46-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-51-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-5-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-13-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-41-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-65-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-29-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-36-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-58-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-68-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-with-holes-the-air-region_1-shadow (mixture) ... Done.
+Setting with-holes-solid-19-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-55-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-27-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-44-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-48-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-26-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-42-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-52-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-60-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-17-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-56-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-9-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-40-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-37-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-16-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-67-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-35-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-1-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-38-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-12-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-11-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-28-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-57-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-31-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-39-with-holes-the-air-region-shadow (mixture) ... Done.
+Setting with-holes-solid-20-with-holes-the-air-region-shadow (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+
+Setting Post Processing and Surfaces information ...	 Done.
+"Updating Setup cell..."
+"Updating Solution cell..."
+Reading C:\\Users\\Owner\\Documents\\GitHub\\Cooling_Modelling\\Subpack Conjugate Heat Transfer\\Second Test\\with holes and with gas_files\\dp0\\FFF\\Fluent\\FFF.ip...
+Reading IP data ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	hyb_init-0
+	hyb_init-1
+  Done.
+  Initializing values...
+  Done.
+
+Error: No journal response to dialog box message:'Animation object history exists.
+Do you want to clear the history?'
+. Internally, cancelled the dialog.
+
+Writing to LAPTOP-DHFQ1JFI:"C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Second Test\with holes and with gas_files\dp0\FFF\Fluent\FFF.1-Setup-Output.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+      547869 cells,    74 zones ...
+     2656955 faces,   296 zones ...
+     1743459 nodes,     1 zone  ...
+  Done.
+
+  Writing boundary layer flags ...
+  Done.
+Done.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    10  5.5594e-01  4.7939e-03  4.8452e-03  2.3346e-03  8.4476e-05  0:54:10  490
+
+ Reversed flow on 54 faces (40.3% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    20  5.1414e-01  5.7615e-03  5.4620e-03  2.2253e-03  9.1561e-05  0:54:34  480
+
+ Reversed flow on 45 faces (36.3% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    30  5.4404e-01  4.9094e-03  4.6498e-03  2.0137e-03  7.8383e-05  0:55:18  470
+
+ Reversed flow on 45 faces (37.6% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    40  5.6368e-01  4.6205e-03  4.9555e-03  2.5798e-03  1.1371e-04  0:57:16  460
+
+ Reversed flow on 48 faces (43.4% area) of pressure-outlet 308.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+ temperature limited to 1.000000e+00 in 109 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 3361 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 76 cells on zone 44207 in domain 1
+  temperature limited to 5.000000e+03 in 3 cells on zone 44249 in domain 1
+  temperature limited to 5.000000e+03 in 56 cells on zone 44255 in domain 1
+  temperature limited to 5.000000e+03 in 1 cells on zone 44291 in domain 1
+  temperature limited to 5.000000e+03 in 1 cells on zone 44303 in domain 1
+  temperature limited to 5.000000e+03 in 141 cells on zone 44342 in domain 1
+  temperature limited to 5.000000e+03 in 268 cells on zone 44366 in domain 1
+  temperature limited to 1.000000e+00 in 23 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 73 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    50  5.5784e+00  1.4354e-02  1.4562e-02  4.5707e-03  3.1802e-03  0:52:14  450
+
+ Reversed flow on 95 faces (84.8% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    60  1.3651e+00  4.3942e-03  5.3279e-03  3.0727e-03  6.7867e-04  0:45:07  440
+
+ Reversed flow on 83 faces (63.8% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    70  7.2943e-01  6.3540e-03  6.5932e-03  2.8305e-03  1.4024e-04  0:45:57  430
+
+ Reversed flow on 84 faces (63.4% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    80  4.8650e-01  3.0995e-03  3.5903e-03  1.3588e-03  1.1260e-04  0:48:55  420
+
+ Reversed flow on 91 faces (69.3% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+    90  5.2514e-01  4.1135e-03  4.6514e-03  1.6358e-03  8.4495e-05  0:50:44  410
+
+ Reversed flow on 93 faces (71.3% area) of pressure-outlet 308.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   100  5.5295e-01  4.2253e-03  4.6559e-03  1.6683e-03  9.6208e-05  0:51:34  400
+
+ Reversed flow on 95 faces (73.2% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   110  5.0403e-01  4.0171e-03  4.4597e-03  1.5776e-03  8.2484e-05  0:51:54  390
+
+ Reversed flow on 96 faces (74.1% area) of pressure-outlet 308.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+        Stabilizing temperature to enhance linear solver robustness.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   120  4.2620e+01  2.1594e-01  1.1584e-01  4.1823e-02  2.3544e-03  0:51:13  380
+
+ Reversed flow on 111 faces (95.9% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 28 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   130  9.3423e+00  4.4326e-02  2.9611e-02  1.6947e-02  1.1366e-03  0:43:56  370
+
+ Reversed flow on 83 faces (67.4% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   140  2.6465e+00  1.2683e-02  1.0416e-02  7.9637e-03  3.1491e-04  0:37:57  360
+
+ Reversed flow on 84 faces (65.0% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   150  1.1606e+00  7.0005e-03  7.5228e-03  3.6953e-03  1.4436e-04  0:33:52  350
+
+ Reversed flow on 86 faces (65.3% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   160  6.6454e-01  4.7371e-03  5.1995e-03  2.0064e-03  9.8949e-05  0:35:39  340
+
+ Reversed flow on 91 faces (69.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 84 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   170  5.8161e-01  4.6147e-03  4.9764e-03  1.8055e-03  8.5524e-05  0:35:55  330
+
+ Reversed flow on 94 faces (72.6% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 19 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 102 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 9 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 121 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   180  5.3899e-01  4.3658e-03  4.7786e-03  1.6796e-03  1.4787e-04  0:36:35  320
+
+ Reversed flow on 95 faces (73.2% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 9 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 116 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   190  5.0408e-01  4.1635e-03  4.5113e-03  1.5541e-03  8.7928e-05  0:35:50  310
+
+ Reversed flow on 94 faces (72.3% area) of pressure-outlet 308.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+        Stabilizing temperature to enhance linear solver robustness.
+ temperature limited to 1.000000e+00 in 1225 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 362977 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 1182 cells on zone 44207 in domain 1
+  temperature limited to 5.000000e+03 in 1266 cells on zone 44210 in domain 1
+  temperature limited to 5.000000e+03 in 1242 cells on zone 44213 in domain 1
+  temperature limited to 5.000000e+03 in 1194 cells on zone 44216 in domain 1
+  temperature limited to 5.000000e+03 in 1202 cells on zone 44219 in domain 1
+  temperature limited to 5.000000e+03 in 1216 cells on zone 44222 in domain 1
+  temperature limited to 5.000000e+03 in 1213 cells on zone 44225 in domain 1
+  temperature limited to 5.000000e+03 in 1199 cells on zone 44228 in domain 1
+  temperature limited to 5.000000e+03 in 1230 cells on zone 44231 in domain 1
+  temperature limited to 5.000000e+03 in 1261 cells on zone 44234 in domain 1
+  temperature limited to 5.000000e+03 in 1256 cells on zone 44237 in domain 1
+  temperature limited to 5.000000e+03 in 1207 cells on zone 44240 in domain 1
+  temperature limited to 5.000000e+03 in 1274 cells on zone 44243 in domain 1
+  temperature limited to 5.000000e+03 in 1213 cells on zone 44246 in domain 1
+  temperature limited to 5.000000e+03 in 1236 cells on zone 44249 in domain 1
+  temperature limited to 5.000000e+03 in 1237 cells on zone 44252 in domain 1
+  temperature limited to 5.000000e+03 in 1188 cells on zone 44255 in domain 1
+  temperature limited to 5.000000e+03 in 1253 cells on zone 44258 in domain 1
+  temperature limited to 5.000000e+03 in 1064 cells on zone 44261 in domain 1
+  temperature limited to 5.000000e+03 in 1214 cells on zone 44264 in domain 1
+  temperature limited to 5.000000e+03 in 9538 cells on zone 44267 in domain 1
+  temperature limited to 5.000000e+03 in 1166 cells on zone 44270 in domain 1
+  temperature limited to 5.000000e+03 in 1184 cells on zone 44273 in domain 1
+  temperature limited to 5.000000e+03 in 1116 cells on zone 44276 in domain 1
+  temperature limited to 5.000000e+03 in 1219 cells on zone 44279 in domain 1
+  temperature limited to 5.000000e+03 in 1218 cells on zone 44282 in domain 1
+  temperature limited to 5.000000e+03 in 1197 cells on zone 44285 in domain 1
+  temperature limited to 5.000000e+03 in 1122 cells on zone 44288 in domain 1
+  temperature limited to 5.000000e+03 in 1250 cells on zone 44291 in domain 1
+  temperature limited to 5.000000e+03 in 1221 cells on zone 44294 in domain 1
+  temperature limited to 5.000000e+03 in 1156 cells on zone 44297 in domain 1
+  temperature limited to 5.000000e+03 in 1283 cells on zone 44300 in domain 1
+  temperature limited to 5.000000e+03 in 1224 cells on zone 44303 in domain 1
+  temperature limited to 5.000000e+03 in 1232 cells on zone 44306 in domain 1
+  temperature limited to 5.000000e+03 in 1272 cells on zone 44309 in domain 1
+  temperature limited to 5.000000e+03 in 1197 cells on zone 44312 in domain 1
+  temperature limited to 5.000000e+03 in 1243 cells on zone 44315 in domain 1
+  temperature limited to 5.000000e+03 in 1229 cells on zone 44318 in domain 1
+  temperature limited to 5.000000e+03 in 1247 cells on zone 44321 in domain 1
+  temperature limited to 5.000000e+03 in 1233 cells on zone 44324 in domain 1
+  temperature limited to 5.000000e+03 in 1227 cells on zone 44327 in domain 1
+  temperature limited to 5.000000e+03 in 1181 cells on zone 44330 in domain 1
+  temperature limited to 5.000000e+03 in 1234 cells on zone 44333 in domain 1
+  temperature limited to 5.000000e+03 in 1205 cells on zone 44336 in domain 1
+  temperature limited to 5.000000e+03 in 1231 cells on zone 44339 in domain 1
+  temperature limited to 5.000000e+03 in 1140 cells on zone 44342 in domain 1
+  temperature limited to 5.000000e+03 in 1208 cells on zone 44345 in domain 1
+  temperature limited to 5.000000e+03 in 1247 cells on zone 44348 in domain 1
+  temperature limited to 5.000000e+03 in 1123 cells on zone 44351 in domain 1
+  temperature limited to 5.000000e+03 in 1177 cells on zone 44354 in domain 1
+  temperature limited to 5.000000e+03 in 1255 cells on zone 44357 in domain 1
+  temperature limited to 5.000000e+03 in 1166 cells on zone 44360 in domain 1
+  temperature limited to 5.000000e+03 in 1262 cells on zone 44363 in domain 1
+  temperature limited to 5.000000e+03 in 1262 cells on zone 44366 in domain 1
+  temperature limited to 5.000000e+03 in 1234 cells on zone 44369 in domain 1
+  temperature limited to 5.000000e+03 in 1203 cells on zone 44372 in domain 1
+  temperature limited to 5.000000e+03 in 1196 cells on zone 44375 in domain 1
+  temperature limited to 5.000000e+03 in 1236 cells on zone 44378 in domain 1
+  temperature limited to 5.000000e+03 in 1149 cells on zone 44381 in domain 1
+  temperature limited to 5.000000e+03 in 1290 cells on zone 44384 in domain 1
+  temperature limited to 5.000000e+03 in 1206 cells on zone 44387 in domain 1
+  temperature limited to 5.000000e+03 in 1157 cells on zone 44390 in domain 1
+  temperature limited to 5.000000e+03 in 1257 cells on zone 44393 in domain 1
+  temperature limited to 5.000000e+03 in 1142 cells on zone 44396 in domain 1
+  temperature limited to 5.000000e+03 in 1145 cells on zone 44399 in domain 1
+  temperature limited to 5.000000e+03 in 1024 cells on zone 44402 in domain 1
+  temperature limited to 5.000000e+03 in 1210 cells on zone 44405 in domain 1
+  temperature limited to 5.000000e+03 in 1218 cells on zone 44408 in domain 1
+  temperature limited to 5.000000e+03 in 1252 cells on zone 44411 in domain 1
+  temperature limited to 5.000000e+03 in 1234 cells on zone 44414 in domain 1
+  temperature limited to 1.000000e+00 in 4 cells on zone 44417 in domain 1
+  temperature limited to 5.000000e+03 in 946 cells on zone 44417 in domain 1
+  temperature limited to 5.000000e+03 in 1081 cells on zone 44420 in domain 1
+  temperature limited to 5.000000e+03 in 1189 cells on zone 44423 in domain 1
+  temperature limited to 1.000000e+00 in 2 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   200  1.5711e+04  7.6700e-02  3.8670e-02  3.3291e-02  6.0527e-04  0:35:55  300
+
+ Reversed flow on 91 faces (69.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 2 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   210  1.6308e+03  2.4142e-02  2.2493e-02  1.8172e-02  8.5737e-04  0:29:42  290
+
+ Reversed flow on 91 faces (69.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 2 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 5 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   220  2.6353e+02  1.5669e-02  1.7058e-02  1.5169e-02  8.2600e-04  0:24:47  280
+
+ Reversed flow on 92 faces (70.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 10 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 43 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 49 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 115 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 114 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 101 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 58 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 38 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 21 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 23 cells on zone 44204 in domain 1
+ 
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   230  7.9351e+01  1.4440e-02  1.5221e-02  1.4413e-02  1.0163e-03  0:20:56  270
+
+ Reversed flow on 92 faces (70.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 51 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 19 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 36 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 20 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 2 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 7 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 9 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 9 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   240  3.0861e+01  1.5496e-02  1.5559e-02  1.4476e-02  1.6594e-03  0:18:00  260
+
+ Reversed flow on 92 faces (70.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 15 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 20 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 17 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 17 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   250  1.1204e+01  1.3519e-02  1.4515e-02  1.3686e-02  2.4858e-03  0:15:43  250
+
+ Reversed flow on 93 faces (71.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   260  3.4022e+00  8.1968e-03  9.5398e-03  7.9708e-03  3.6697e-03  0:14:06  240
+
+ Reversed flow on 94 faces (72.1% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   270  1.0730e+00  3.6641e-03  4.7923e-03  3.1817e-03  4.5889e-03  0:12:44  230
+
+ Reversed flow on 94 faces (72.1% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   280  7.5842e-01  5.1859e-03  6.0238e-03  2.4436e-03  1.4523e-03  0:13:56  220
+
+ Reversed flow on 95 faces (73.0% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 65 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 4 cells on zone 44267 in domain 1
+         Stabilizing pressure coupled to enhance linear solver robustness.
+        Stabilizing temperature to enhance linear solver robustness.
+ temperature limited to 1.000000e+00 in 188990 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 171232 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 1182 cells on zone 44207 in domain 1
+  temperature limited to 5.000000e+03 in 1266 cells on zone 44210 in domain 1
+  temperature limited to 1.000000e+00 in 1214 cells on zone 44213 in domain 1
+  temperature limited to 5.000000e+03 in 6 cells on zone 44213 in domain 1
+  temperature limited to 5.000000e+03 in 1191 cells on zone 44216 in domain 1
+  temperature limited to 5.000000e+03 in 1202 cells on zone 44219 in domain 1
+  temperature limited to 5.000000e+03 in 1216 cells on zone 44222 in domain 1
+  temperature limited to 1.000000e+00 in 1213 cells on zone 44225 in domain 1
+  temperature limited to 1.000000e+00 in 551 cells on zone 44228 in domain 1
+  temperature limited to 5.000000e+03 in 531 cells on zone 44228 in domain 1
+  temperature limited to 1.000000e+00 in 1230 cells on zone 44231 in domain 1
+  temperature limited to 5.000000e+03 in 1261 cells on zone 44234 in domain 1
+  temperature limited to 1.000000e+00 in 828 cells on zone 44237 in domain 1
+  temperature limited to 5.000000e+03 in 300 cells on zone 44237 in domain 1
+  temperature limited to 1.000000e+00 in 1207 cells on zone 44240 in domain 1
+  temperature limited to 1.000000e+00 in 222 cells on zone 44243 in domain 1
+  temperature limited to 5.000000e+03 in 109 cells on zone 44243 in domain 1
+  temperature limited to 5.000000e+03 in 1213 cells on zone 44246 in domain 1
+  temperature limited to 5.000000e+03 in 1236 cells on zone 44249 in domain 1
+  temperature limited to 5.000000e+03 in 1237 cells on zone 44252 in domain 1
+  temperature limited to 5.000000e+03 in 1188 cells on zone 44255 in domain 1
+  temperature limited to 5.000000e+03 in 1253 cells on zone 44258 in domain 1
+  temperature limited to 1.000000e+00 in 1064 cells on zone 44261 in domain 1
+  temperature limited to 1.000000e+00 in 1214 cells on zone 44264 in domain 1
+  temperature limited to 1.000000e+00 in 34961 cells on zone 44267 in domain 1
+  temperature limited to 5.000000e+03 in 9 cells on zone 44267 in domain 1
+  temperature limited to 1.000000e+00 in 625 cells on zone 44270 in domain 1
+  temperature limited to 5.000000e+03 in 454 cells on zone 44270 in domain 1
+  temperature limited to 1.000000e+00 in 1162 cells on zone 44273 in domain 1
+  temperature limited to 5.000000e+03 in 14 cells on zone 44273 in domain 1
+  temperature limited to 1.000000e+00 in 1116 cells on zone 44276 in domain 1
+  temperature limited to 1.000000e+00 in 1219 cells on zone 44279 in domain 1
+  temperature limited to 1.000000e+00 in 1218 cells on zone 44282 in domain 1
+  temperature limited to 1.000000e+00 in 1197 cells on zone 44285 in domain 1
+  temperature limited to 1.000000e+00 in 1062 cells on zone 44288 in domain 1
+  temperature limited to 5.000000e+03 in 50 cells on zone 44288 in domain 1
+  temperature limited to 5.000000e+03 in 1250 cells on zone 44291 in domain 1
+  temperature limited to 5.000000e+03 in 1221 cells on zone 44294 in domain 1
+  temperature limited to 5.000000e+03 in 1156 cells on zone 44297 in domain 1
+  temperature limited to 5.000000e+03 in 1283 cells on zone 44300 in domain 1
+  temperature limited to 5.000000e+03 in 1224 cells on zone 44303 in domain 1
+  temperature limited to 5.000000e+03 in 1232 cells on zone 44306 in domain 1
+  temperature limited to 5.000000e+03 in 1272 cells on zone 44309 in domain 1
+  temperature limited to 5.000000e+03 in 1197 cells on zone 44312 in domain 1
+  temperature limited to 5.000000e+03 in 1243 cells on zone 44315 in domain 1
+  temperature limited to 5.000000e+03 in 1229 cells on zone 44318 in domain 1
+  temperature limited to 5.000000e+03 in 1247 cells on zone 44321 in domain 1
+  temperature limited to 5.000000e+03 in 1233 cells on zone 44324 in domain 1
+  temperature limited to 5.000000e+03 in 1227 cells on zone 44327 in domain 1
+  temperature limited to 5.000000e+03 in 1181 cells on zone 44330 in domain 1
+  temperature limited to 5.000000e+03 in 1234 cells on zone 44333 in domain 1
+  temperature limited to 1.000000e+00 in 1137 cells on zone 44336 in domain 1
+  temperature limited to 5.000000e+03 in 15 cells on zone 44336 in domain 1
+  temperature limited to 5.000000e+03 in 1231 cells on zone 44339 in domain 1
+  temperature limited to 5.000000e+03 in 1140 cells on zone 44342 in domain 1
+  temperature limited to 1.000000e+00 in 1208 cells on zone 44345 in domain 1
+  temperature limited to 1.000000e+00 in 587 cells on zone 44348 in domain 1
+  temperature limited to 5.000000e+03 in 92 cells on zone 44348 in domain 1
+  temperature limited to 5.000000e+03 in 1220 cells on zone 44351 in domain 1
+  temperature limited to 5.000000e+03 in 1177 cells on zone 44354 in domain 1
+  temperature limited to 5.000000e+03 in 1252 cells on zone 44357 in domain 1
+  temperature limited to 1.000000e+00 in 1092 cells on zone 44360 in domain 1
+  temperature limited to 5.000000e+03 in 6 cells on zone 44360 in domain 1
+  temperature limited to 1.000000e+00 in 30 cells on zone 44363 in domain 1
+  temperature limited to 5.000000e+03 in 1121 cells on zone 44363 in domain 1
+  temperature limited to 1.000000e+00 in 539 cells on zone 44366 in domain 1
+  temperature limited to 5.000000e+03 in 507 cells on zone 44366 in domain 1
+  temperature limited to 1.000000e+00 in 1234 cells on zone 44369 in domain 1
+  temperature limited to 1.000000e+00 in 1203 cells on zone 44372 in domain 1
+  temperature limited to 1.000000e+00 in 1196 cells on zone 44375 in domain 1
+  temperature limited to 1.000000e+00 in 1236 cells on zone 44378 in domain 1
+  temperature limited to 5.000000e+03 in 1149 cells on zone 44381 in domain 1
+  temperature limited to 5.000000e+03 in 1290 cells on zone 44384 in domain 1
+  temperature limited to 5.000000e+03 in 1206 cells on zone 44387 in domain 1
+  temperature limited to 5.000000e+03 in 1157 cells on zone 44390 in domain 1
+  temperature limited to 5.000000e+03 in 1257 cells on zone 44393 in domain 1
+  temperature limited to 5.000000e+03 in 1142 cells on zone 44396 in domain 1
+  temperature limited to 5.000000e+03 in 1145 cells on zone 44399 in domain 1
+  temperature limited to 5.000000e+03 in 1024 cells on zone 44402 in domain 1
+  temperature limited to 5.000000e+03 in 1210 cells on zone 44405 in domain 1
+  temperature limited to 5.000000e+03 in 1218 cells on zone 44408 in domain 1
+  temperature limited to 5.000000e+03 in 1252 cells on zone 44411 in domain 1
+  temperature limited to 5.000000e+03 in 1234 cells on zone 44414 in domain 1
+  temperature limited to 5.000000e+03 in 1091 cells on zone 44417 in domain 1
+  temperature limited to 5.000000e+03 in 1081 cells on zone 44420 in domain 1
+  temperature limited to 5.000000e+03 in 1189 cells on zone 44423 in domain 1
+  temperature limited to 1.000000e+00 in 763 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 on 4 faces
+ temperature limited to 1.000000e+00 in 738 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 2 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44348 in domain 1
+  temperature limited to 1.000000e+00 on 1 faces
+ temperature limited to 1.000000e+00 in 262 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   290  1.1296e+04  2.1794e-01  6.3185e-02  6.9660e-02  2.1558e-02  0:16:03  210
+
+ Reversed flow on 94 faces (71.9% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 69 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44348 in domain 1
+  temperature limited to 1.000000e+00 in 6 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 23 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 6 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 10 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44267 in domain 1
+  temperature limited to 1.000000e+00 in 5 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 12 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 31 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 78 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 1 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   300  1.3908e+03  3.2168e-02  2.6328e-02  1.9202e-02  4.7952e-03  0:13:36  200
+
+ Reversed flow on 100 faces (77.0% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 114 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 141 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 74 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 75 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 4 cells on zone 44267 in domain 1
+  temperature limited to 1.000000e+00 in 19 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 158 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 4 cells on zone 44267 in domain 1
+  temperature limited to 1.000000e+00 in 8 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 22 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44267 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 5 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   310  1.9383e+02  1.9694e-02  1.9874e-02  1.6337e-02  3.9321e-03  0:11:38  190
+
+ Reversed flow on 99 faces (76.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 12 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 32 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 78 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 197 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44267 in domain 1
+  temperature limited to 1.000000e+00 in 394 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 341 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 198 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 87 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44267 in domain 1
+  temperature limited to 1.000000e+00 in 29 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   320  4.8047e+01  1.7709e-02  1.7369e-02  1.5679e-02  2.6952e-03  0:10:03  180
+
+ Reversed flow on 97 faces (74.4% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 15 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 13 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 26 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 15 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 31 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 40 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 8 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 10 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 10 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 7 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   330  1.7084e+01  1.5528e-02  1.5799e-02  1.4198e-02  3.5047e-03  0:08:50  170
+
+ Reversed flow on 95 faces (72.7% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 4 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 2 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 13 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 30 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 20 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 36 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 9 cells on zone 44204 in domain 1
+ 
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   340  5.0723e+00  1.0949e-02  1.1478e-02  1.1023e-02  4.5015e-03  0:07:54  160
+
+ Reversed flow on 95 faces (72.7% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 10 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   350  1.3201e+00  4.8024e-03  5.6043e-03  4.2264e-03  4.3410e-03  0:07:08  150
+
+ Reversed flow on 97 faces (74.7% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   360  8.4698e-01  5.6000e-03  6.1748e-03  2.6593e-03  9.5437e-04  0:07:38  140
+
+ Reversed flow on 97 faces (74.7% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   370  6.5535e-01  4.6562e-03  5.2085e-03  2.1451e-03  1.7083e-04  0:08:28  130
+
+ Reversed flow on 96 faces (73.8% area) of pressure-outlet 308.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+        Stabilizing temperature to enhance linear solver robustness.
+ temperature limited to 1.000000e+00 in 189 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 19028 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 1194 cells on zone 44216 in domain 1
+  temperature limited to 5.000000e+03 in 1274 cells on zone 44243 in domain 1
+  temperature limited to 5.000000e+03 in 1188 cells on zone 44255 in domain 1
+  temperature limited to 5.000000e+03 in 1205 cells on zone 44321 in domain 1
+  temperature limited to 5.000000e+03 in 91 cells on zone 44339 in domain 1
+  temperature limited to 5.000000e+03 in 1140 cells on zone 44342 in domain 1
+  temperature limited to 5.000000e+03 in 684 cells on zone 44345 in domain 1
+  temperature limited to 5.000000e+03 in 1247 cells on zone 44348 in domain 1
+  temperature limited to 5.000000e+03 in 1262 cells on zone 44363 in domain 1
+  temperature limited to 5.000000e+03 in 1262 cells on zone 44366 in domain 1
+  temperature limited to 5.000000e+03 in 1234 cells on zone 44369 in domain 1
+  temperature limited to 5.000000e+03 in 1203 cells on zone 44372 in domain 1
+  temperature limited to 5.000000e+03 in 1196 cells on zone 44375 in domain 1
+  temperature limited to 1.000000e+00 in 49 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 4 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 155 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 59 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 1 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 1 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   380  6.1638e+01  1.2222e-01  5.6888e-02  4.3445e-02  1.5660e-02  0:08:58  120
+ temperature limited to 5.000000e+03 in 356 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 21 cells on zone 44279 in domain 1
+  temperature limited to 1.000000e+00 in 605 cells on zone 44204 in domain 1
+  temperature limited to 5.000000e+03 in 47 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 94 cells on zone 44276 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   390  8.6096e+00  2.7282e-02  2.3041e-02  1.4741e-02  5.4377e-03  0:07:18  110
+
+ Reversed flow on 108 faces (91.4% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   400  1.3901e+00  4.0990e-03  4.8511e-03  2.9859e-03  2.1926e-03  0:06:03  100
+
+ Reversed flow on 85 faces (64.7% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   410  9.8317e-01  9.1529e-03  9.9110e-03  3.9102e-03  3.5896e-04  0:05:47   90
+
+ Reversed flow on 91 faces (68.5% area) of pressure-outlet 308.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+ temperature limited to 1.000000e+00 in 5 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 9244 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 63 cells on zone 44267 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   420  1.1525e+02  1.3158e-01  4.2738e-02  4.3562e-02  1.5892e-03  0:05:46   80
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   430  1.0949e+01  1.7918e-02  1.6076e-02  1.2512e-02  2.4618e-04  0:04:31   70
+
+ Reversed flow on 9 faces (9.5% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   440  1.6183e+00  5.7027e-03  6.4526e-03  3.6878e-03  1.3990e-04  0:03:32   60
+
+ Reversed flow on 45 faces (49.7% area) of pressure-outlet 308.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   450  7.4742e-01  5.1111e-03  5.8069e-03  2.1319e-03  1.0717e-04  0:03:14   50
+
+ Reversed flow on 42 faces (50.0% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   460  5.7977e-01  4.4653e-03  4.8251e-03  1.7109e-03  8.8900e-05  0:02:58   40
+
+ Reversed flow on 26 faces (32.7% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 24 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 114 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   470  5.4461e-01  4.4415e-03  4.8948e-03  1.6737e-03  1.0353e-04  0:02:28   30
+
+ Reversed flow on 25 faces (30.9% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 3 cells on zone 44204 in domain 1
+  temperature limited to 1.000000e+00 in 10 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   480  7.8076e-01  6.5894e-03  7.2458e-03  2.3122e-03  1.1205e-04  0:01:47   20
+
+ Reversed flow on 24 faces (29.9% area) of pressure-outlet 308.
+ temperature limited to 1.000000e+00 in 14 cells on zone 44204 in domain 1
+ Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   490  5.3900e-01  4.2996e-03  4.7596e-03  1.6042e-03  1.0247e-04  0:00:56   10
+
+ Reversed flow on 23 faces (29.0% area) of pressure-outlet 308.
+Updating animation object animation-1 
+
+Creating animation sequence file: C:/Users/Owner/Documents/GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Second Test/with holes and with gas_files/dp0/FFF/Fluent/.//animation-1.cxa
+   500  6.9726e-01  5.8981e-03  6.4522e-03  2.1532e-03  1.0459e-04  0:00:00    0
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\Owner\\AppData\\Local\\Temp\\flntgz-119402 ...
+Done.
+
+Writing data to C:\\Users\\Owner\\Documents\\GitHub\\Cooling_Modelling\\Subpack Conjugate Heat Transfer\\Second Test\\with holes and with gas_files\\dp0\\FFF\\Fluent\\FFF.1.ip ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+	hyb_init-0
+	hyb_init-1
+Done.
+
+Performance Timer for 500 iterations on 4 compute nodes
+  Average wall-clock time per iteration:                5.135 sec
+  Global reductions per iteration:                       1496 ops
+  Global reductions time per iteration:                 0.000 sec (0.0%)
+  Message count per iteration:                          67158 messages
+  Data transfer per iteration:                         59.754 MB
+  LE solves per iteration:                                  2 solves
+  LE wall-clock time per iteration:                     3.983 sec (77.6%)
+  LE coupled wall-clock time per iteration:             3.699 sec (72.0%)
+  LE global solves per iteration:                           7 solves
+  LE global wall-clock time per iteration:              0.010 sec (0.2%)
+  LE global matrix maximum size:                          362
+  AMG cycles per iteration:                             7.488 cycles
+  AMG coupled cycles per iteration:                     6.112 cycles
+  Relaxation sweeps per iteration:                       9306 sweeps
+  Relaxation exchanges per iteration:                       0 exchanges
+  LE early protections (stall) per iteration:           0.270 times
+  LE early protections (divergence) per iteration:      0.016 times
+  Total SVARS touched:                                    396
+
+  Total wall-clock time:                             2567.458 sec
+
+Transcript Stop Time:  21:40:52, 02 Sep 2025 Pacific Daylight Time 
+Total Transcript Time: 45 Minute 8 Second.

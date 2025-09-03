@@ -1,0 +1,134 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="FFF")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+Update()
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: null
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: null
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(%py-exec \"meshing.ImportGeometry(FileName=r'C:\\Users\\Owner\\Documents\\GitHub\\Cooling_Modelling\\Subpack Conjugate Heat Transfer\\Second Test\\with holes and with gas_files\\dp0\\FFF\\DM\\FFF.dsco', LengthUnit=r'm', NumParts=74)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Import Geometry'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Local Sizing'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.AddLocalSizingWTM(AddChild=r'yes', BOICellsPerGap=1, BOIControlName=r'facesize_1', BOICurvatureNormalAngle=18, BOIExecution=r'Face Size', BOIFaceLabelList=[r'with-holes-solid'], BOIGrowthRate=1.2, BOISize=0.02, BOIZoneorLabel=r'label', CompleteFaceLabelList=[r'with-holes-solid'])\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['facesize_1'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].Warnings.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.GenerateTheSurfaceMeshWTM(CFDSurfaceMeshControls={r'MaxSize': 0.05,r'MinSize': 0.001,}, ExecuteShareTopology=r'Yes', OriginalZones=[r'with-holes-the-air-region', r'inlet', r'cells.20', r'cells.31', r'cells.42', r'cells.53', r'cells.64', r'cells.69', r'cells.70', r'cells.71', r'cells', r'cells.1', r'cells.2', r'cells.3', r'cells.4', r'cells.5', r'cells.6', r'cells.7', r'cells.8', r'cells.9', r'cells.10', r'cells.11', r'cells.12', r'cells.13', r'cells.14', r'cells.15', r'cells.16', r'cells.17', r'cells.18', r'cells.19', r'cells.21', r'cells.22', r'cells.23', r'cells.24', r'cells.25', r'cells.26', r'cells.27', r'cells.28', r'cells.29', r'cells.30', r'cells.32', r'cells.33', r'cells.34', r'cells.35', r'cells.36', r'cells.37', r'cells.38', r'cells.39', r'cells.40', r'cells.41', r'cells.43', r'cells.44', r'cells.45', r'cells.46', r'cells.47', r'cells.48', r'cells.49', r'cells.50', r'cells.51', r'cells.52', r'cells.54', r'cells.55', r'cells.56', r'cells.57', r'cells.58', r'cells.59', r'cells.60', r'cells.61', r'cells.62', r'cells.63', r'cells.65', r'cells.66', r'cells.67', r'cells.68', r'solid', r'outlet'])\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Surface Mesh'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.GeometrySetup(CappingRequired=r'No', InvokeShareTopology=r'Yes', Multizone=r'No', NonConformal=r'No', SMImprovePreferences={r'AdvancedImprove': r'no',r'AllowDefeaturing': r'no',r'SIQualityCollapseLimit': 0.85,r'SIQualityIterations': 5,r'SIQualityMaxAngle': 160,r'SIRemoveStep': r'no',r'SIStepQualityLimit': 0,r'SIStepWidth': 0,r'ShowSMImprovePreferences': False,}, SetupType=r'The geometry consists of both fluid and solid regions and/or voids', WallToInternal=r'No')\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Describe Geometry'].UpdateChildTasks(SetupTypeChanged=False)\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.ShareTopology(InterfaceSelect=r'Manual')\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Apply Share Topology'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command='(%py-exec "meshing.UpdateBoundaries()")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Boundaries'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command='(%py-exec "meshing.CreateRegions(NumberOfFlowVolumes=2)")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Create Regions'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command='(%py-exec "meshing.UpdateRegions()")')
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Update Regions'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Add Boundary Layers'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.AddBoundaryLayers(BLControlName=r'smooth-transition_1', BLRegionList=[r'with-holes-the-air-region', r'solid'], BLZoneList=[r'solid-with-holes-the-air-region', r'with-holes-solid:22-with-holes-the-air-region', r'with-holes-solid:24-with-holes-the-air-region', r'with-holes-solid:54-with-holes-the-air-region', r'with-holes-solid:25-with-holes-the-air-region', r'with-holes-solid:32-with-holes-the-air-region', r'with-holes-solid:59-with-holes-the-air-region', r'with-holes-solid:69-with-holes-the-air-region', r'with-holes-solid:50-with-holes-the-air-region', r'with-holes-solid:64-with-holes-the-air-region', r'with-holes-solid:6-with-holes-the-air-region', r'with-holes-solid:21-with-holes-the-air-region', r'with-holes-solid:33-with-holes-the-air-region', r'with-holes-solid:47-with-holes-the-air-region', r'with-holes-solid:63-with-holes-the-air-region', r'with-holes-solid:15-with-holes-the-air-region', r'with-holes-solid:3-with-holes-the-air-region', r'with-holes-solid:4-with-holes-the-air-region', r'with-holes-solid:14-with-holes-the-air-region', r'with-holes-solid:18-with-holes-the-air-region', r'with-holes-solid:62-with-holes-the-air-region', r'with-holes-solid:66-with-holes-the-air-region', r'with-holes-solid:70-with-holes-the-air-region', r'with-holes-solid:45-with-holes-the-air-region', r'with-holes-solid:8-with-holes-the-air-region', r'with-holes-solid:23-with-holes-the-air-region', r'with-holes-solid:61-with-holes-the-air-region', r'with-holes-solid:34-with-holes-the-air-region', r'with-holes-solid:43-with-holes-the-air-region', r'with-holes-solid:71-with-holes-the-air-region', r'with-holes-solid:7-with-holes-the-air-region', r'with-holes-solid:10-with-holes-the-air-region', r'with-holes-solid:49-with-holes-the-air-region', r'with-holes-solid:2-with-holes-the-air-region', r'with-holes-solid:30-with-holes-the-air-region', r'with-holes-solid:53-with-holes-the-air-region', r'with-holes-solid:46-with-holes-the-air-region', r'with-holes-solid:51-with-holes-the-air-region', r'with-holes-solid:5-with-holes-the-air-region', r'with-holes-solid:13-with-holes-the-air-region', r'with-holes-solid:41-with-holes-the-air-region', r'with-holes-solid:65-with-holes-the-air-region', r'with-holes-solid:29-with-holes-the-air-region', r'with-holes-solid:36-with-holes-the-air-region', r'with-holes-solid:58-with-holes-the-air-region', r'with-holes-solid:68-with-holes-the-air-region', r'with-holes-solid-with-holes-the-air-region', r'with-holes-solid:19-with-holes-the-air-region', r'with-holes-solid:55-with-holes-the-air-region', r'with-holes-solid:27-with-holes-the-air-region', r'with-holes-solid:44-with-holes-the-air-region', r'with-holes-solid:48-with-holes-the-air-region', r'with-holes-solid:26-with-holes-the-air-region', r'with-holes-solid:42-with-holes-the-air-region', r'with-holes-solid:52-with-holes-the-air-region', r'with-holes-solid:60-with-holes-the-air-region', r'with-holes-solid:17-with-holes-the-air-region', r'with-holes-solid:56-with-holes-the-air-region', r'with-holes-solid:9-with-holes-the-air-region', r'with-holes-solid:40-with-holes-the-air-region', r'with-holes-solid:37-with-holes-the-air-region', r'with-holes-solid:16-with-holes-the-air-region', r'with-holes-solid:67-with-holes-the-air-region', r'with-holes-solid:35-with-holes-the-air-region', r'with-holes-solid:1-with-holes-the-air-region', r'with-holes-solid:38-with-holes-the-air-region', r'with-holes-solid:12-with-holes-the-air-region', r'with-holes-solid:11-with-holes-the-air-region', r'with-holes-solid:28-with-holes-the-air-region', r'with-holes-solid:57-with-holes-the-air-region', r'with-holes-solid:31-with-holes-the-air-region', r'with-holes-solid:39-with-holes-the-air-region', r'with-holes-solid:20-with-holes-the-air-region', r'with-holes-the-air-region:1', r'solid:1'], CompleteRegionScope=[r'with-holes-the-air-region', r'solid'], LocalPrismPreferences={r'Continuous': r'Continuous',}, NumberOfLayers=10)\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['smooth-transition_1'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Volume Mesh'].Warnings.set_state(None)\")")
+setup1.SendCommand(Command="(%py-exec \"meshing.GenerateTheVolumeMeshWTM(ShowSolidFluidMeshed=True, VolumeFill=r'polyhedra', VolumeFillControls={r'MaxSize': 0.07646107789116535,})\")")
+setup1.SendCommand(Command="(%py-exec \"workflow.TaskObject['Generate the Volume Mesh'].State.set_state(r'Up-to-date')\")")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: null""")
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = -0.0895066, 0.358221, 0.0647399
+    Scale = 6.69123
+    Pan = 0.164461, 0.0710552
+    Rotation Quaternion = -0.462547, -0.324406, -0.379172, 0.732913
+    
+  END
+
+END
+
+VIEW:View 1
+  Light Angle = 50, 110
+END
+
+VIEW:View 2
+  Light Angle = 50, 110
+END
+
+VIEW:View 3
+  Light Angle = 50, 110
+END
+
+VIEW:View 4
+  Light Angle = 50, 110
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:solid 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = -0.0895066, 0.358221, 0.0647399
+    Scale = 6.69123
+    Pan = 0.164461, 0.0710552
+    Rotation Quaternion = -0.478566, -0.351151, -0.366987, 0.716319
+    
+  END
+
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:outlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:solid 1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:solid with holes the air region_1, view=/VIEW:View 1""")
+results1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = -0.0895066, 0.358221, 0.0647399
+    Scale = 6.69123
+    Pan = 0.164461, 0.0710552
+    Rotation Quaternion = -0.54356, -0.260961, -0.287505, 0.744249
+    
+  END
+
+END
+
+> update
+# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:inlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /DATA READER/CASE:Case FFF/BOUNDARY:inlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /DATA READER/CASE:Case FFF/BOUNDARY:inlet, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 4, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 5, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>show /CONTOUR:Contour 5, view=/VIEW:View 1""")
+results1.SendCommand(Command="""# Sending visibility action from ViewUtilities
+>hide /CONTOUR:Contour 3, view=/VIEW:View 1""")
+results1.Exit()
+Save(Overwrite=True)
+results1.Edit()
+results1.Exit()
+Save(Overwrite=True)
