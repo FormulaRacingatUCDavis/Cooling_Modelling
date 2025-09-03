@@ -1,4 +1,4 @@
-# State file created:  2025/09/01 19:27:17
+# State file created:  2025/09/02 19:01:29
 # CFX-25.2
 
 COMMENT:User Data
@@ -38,7 +38,7 @@ CONTOUR:Contour 1
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [K],1 [K]
-  Visibility = Off
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -89,7 +89,7 @@ CONTOUR:Contour 2
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [K],1 [K]
-  Visibility = Off
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -140,7 +140,7 @@ CONTOUR:Contour 3
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [K],1 [K]
-  Visibility = Off
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -191,7 +191,7 @@ CONTOUR:Contour 4
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [K],1 [K]
-  Visibility = Off
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -242,7 +242,58 @@ CONTOUR:Contour 5
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [K],1 [K]
-  Visibility = Off
+  Visibility = On
+  OBJECT VIEW TRANSFORM:
+    Apply Reflection = Off
+    Apply Rotation = Off
+    Apply Scale = Off
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0.0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 0 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
+END
+CONTOUR:holes
+  Apply Instancing Transform = On
+  Clip Contour = Off
+  Colour Map = Default Colour Map
+  Colour Scale = Linear
+  Colour Variable = Temperature
+  Colour Variable Boundary Values = Conservative
+  Constant Contour Colour = Off
+  Contour Range = Global
+  Culling Mode = No Culling
+  Domain List = /DOMAIN GROUP:All Domains
+  Draw Contours = On
+  Font = Sans Serif
+  Fringe Fill = On
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+  Lighting = On
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Location List = solid with holes the air region_1
+  Max = 0.0 [K]
+  Min = 0.0 [K]
+  Number of Contours = 11
+  Show Numbers = Off
+  Specular Lighting = On
+  Surface Drawing = Smooth Shading
+  Text Colour = 0, 0, 0
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Transparency = 0.0
+  Use Face Values = Off
+  Value List = 0 [K],1 [K]
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -293,7 +344,7 @@ CONTOUR:solid 62
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [K],1 [K]
-  Visibility = Off
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -344,7 +395,7 @@ CONTOUR:with holes solid blank
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [K],1 [K]
-  Visibility = Off
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -372,10 +423,12 @@ DATA READER:
   Clear All Objects = False
   Construct Variables From Fourier Coefficients = True
   Current Case List = Case FFF
-  Current Case Name = C:\Users\Owner\Downloads\with holes and with gas_files\\
-dp0\FFF\Fluent\FFF-2-00750.dat.h5
-  Current Results File = C:\Users\Owner\Downloads\with holes and with \
-gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
+  Current Case Name = C:\Users\Owner\Documents\GitHub\Cooling_Modelling\\
+Subpack Conjugate Heat Transfer\Second Test\with holes and with gas_files\dp0\\
+FFF\Fluent\FFF-2-00750.dat.h5
+  Current Results File = C:\Users\Owner\Documents\GitHub\Cooling_Modelling\\
+Subpack Conjugate Heat Transfer\Second Test\with holes and with gas_files\dp0\\
+FFF\Fluent\FFF-2-00750.dat.h5
   Current Timestep = -1
   Current Timevalue = 0
   Edit Case Names = false
@@ -402,10 +455,12 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
   Timevalue Match Criterion = Same Value
   CASE:Case FFF
     Construct Variables From Fourier Coefficients = True
-    Current Case Name = C:\Users\Owner\Downloads\with holes and with gas_files\\
-dp0\FFF\Fluent\FFF-2-00750.dat.h5
-    Current Results File = C:\Users\Owner\Downloads\with holes and with \
-gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
+    Current Case Name = C:\Users\Owner\Documents\GitHub\Cooling_Modelling\\
+Subpack Conjugate Heat Transfer\Second Test\with holes and with gas_files\dp0\\
+FFF\Fluent\FFF-2-00750.dat.h5
+    Current Results File = C:\Users\Owner\Documents\GitHub\Cooling_Modelling\\
+Subpack Conjugate Heat Transfer\Second Test\with holes and with gas_files\dp0\\
+FFF\Fluent\FFF-2-00750.dat.h5
     Current Timestep = -1
     Current Timevalue = 0
     File Angle Units = rad
@@ -4478,33 +4533,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 10 with holes the air region
       Apply Instancing Transform = On
@@ -4546,33 +4621,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 11 with holes the air region
       Apply Instancing Transform = On
@@ -4614,33 +4709,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 12 with holes the air region
       Apply Instancing Transform = On
@@ -4682,33 +4797,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 13 with holes the air region
       Apply Instancing Transform = On
@@ -4750,33 +4885,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 14 with holes the air region
       Apply Instancing Transform = On
@@ -4818,33 +4973,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 15 with holes the air region
       Apply Instancing Transform = On
@@ -4886,33 +5061,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 16 with holes the air region
       Apply Instancing Transform = On
@@ -4954,33 +5149,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 17 with holes the air region
       Apply Instancing Transform = On
@@ -5022,33 +5237,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 18 with holes the air region
       Apply Instancing Transform = On
@@ -5090,33 +5325,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 19 with holes the air region
       Apply Instancing Transform = On
@@ -5158,33 +5413,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 2 with holes the air region
       Apply Instancing Transform = On
@@ -5226,33 +5501,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 20 with holes the air region
       Apply Instancing Transform = On
@@ -5294,33 +5589,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 21 with holes the air region
       Apply Instancing Transform = On
@@ -5362,33 +5677,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 22 with holes the air region
       Apply Instancing Transform = On
@@ -5430,33 +5765,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 23 with holes the air region
       Apply Instancing Transform = On
@@ -5498,33 +5853,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 24 with holes the air region
       Apply Instancing Transform = On
@@ -5654,33 +6029,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 26 with holes the air region
       Apply Instancing Transform = On
@@ -5722,33 +6117,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 27 with holes the air region
       Apply Instancing Transform = On
@@ -5790,33 +6205,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 28 with holes the air region
       Apply Instancing Transform = On
@@ -5858,33 +6293,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 29 with holes the air region
       Apply Instancing Transform = On
@@ -6014,33 +6469,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 30 with holes the air region
       Apply Instancing Transform = On
@@ -6082,33 +6557,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 31 with holes the air region
       Apply Instancing Transform = On
@@ -6150,33 +6645,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 32 with holes the air region
       Apply Instancing Transform = On
@@ -6218,33 +6733,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 33 with holes the air region
       Apply Instancing Transform = On
@@ -6286,33 +6821,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 34 with holes the air region
       Apply Instancing Transform = On
@@ -6354,33 +6909,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 35 with holes the air region
       Apply Instancing Transform = On
@@ -6422,33 +6997,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 36 with holes the air region
       Apply Instancing Transform = On
@@ -6490,33 +7085,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 37 with holes the air region
       Apply Instancing Transform = On
@@ -6558,33 +7173,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 38 with holes the air region
       Apply Instancing Transform = On
@@ -6626,33 +7261,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 39 with holes the air region
       Apply Instancing Transform = On
@@ -6694,33 +7349,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 4 with holes the air region
       Apply Instancing Transform = On
@@ -6762,33 +7437,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 40 with holes the air region
       Apply Instancing Transform = On
@@ -6830,33 +7525,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 41 with holes the air region
       Apply Instancing Transform = On
@@ -6898,33 +7613,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 42 with holes the air region
       Apply Instancing Transform = On
@@ -6966,33 +7701,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 43 with holes the air region
       Apply Instancing Transform = On
@@ -7034,33 +7789,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 44 with holes the air region
       Apply Instancing Transform = On
@@ -7102,33 +7877,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 45 with holes the air region
       Apply Instancing Transform = On
@@ -7170,33 +7965,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 46 with holes the air region
       Apply Instancing Transform = On
@@ -7238,33 +8053,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 47 with holes the air region
       Apply Instancing Transform = On
@@ -7394,33 +8229,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 49 with holes the air region
       Apply Instancing Transform = On
@@ -7462,33 +8317,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 5 with holes the air region
       Apply Instancing Transform = On
@@ -7530,33 +8405,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 50 with holes the air region
       Apply Instancing Transform = On
@@ -7598,33 +8493,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 51 with holes the air region
       Apply Instancing Transform = On
@@ -7666,33 +8581,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 52 with holes the air region
       Apply Instancing Transform = On
@@ -7734,33 +8669,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 53 with holes the air region
       Apply Instancing Transform = On
@@ -7802,33 +8757,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 54 with holes the air region
       Apply Instancing Transform = On
@@ -7870,33 +8845,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 55 with holes the air region
       Apply Instancing Transform = On
@@ -7938,33 +8933,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 56 with holes the air region
       Apply Instancing Transform = On
@@ -8006,33 +9021,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 57 with holes the air region
       Apply Instancing Transform = On
@@ -8074,33 +9109,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 58 with holes the air region
       Apply Instancing Transform = On
@@ -8142,33 +9197,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 59 with holes the air region
       Apply Instancing Transform = On
@@ -8210,33 +9285,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 6 with holes the air region
       Apply Instancing Transform = On
@@ -8278,33 +9373,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 60 with holes the air region
       Apply Instancing Transform = On
@@ -8346,33 +9461,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 61 with holes the air region
       Apply Instancing Transform = On
@@ -8414,33 +9549,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 62 with holes the air region
       Apply Instancing Transform = On
@@ -8482,33 +9637,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 63 with holes the air region
       Apply Instancing Transform = On
@@ -8550,33 +9725,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 64 with holes the air region
       Apply Instancing Transform = On
@@ -8618,33 +9813,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 65 with holes the air region
       Apply Instancing Transform = On
@@ -8686,33 +9901,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 66 with holes the air region
       Apply Instancing Transform = On
@@ -8754,33 +9989,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 67 with holes the air region
       Apply Instancing Transform = On
@@ -8822,33 +10077,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 68 with holes the air region
       Apply Instancing Transform = On
@@ -8890,33 +10165,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 69 with holes the air region
       Apply Instancing Transform = On
@@ -8958,33 +10253,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 7 with holes the air region
       Apply Instancing Transform = On
@@ -9026,33 +10341,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 70 with holes the air region
       Apply Instancing Transform = On
@@ -9094,33 +10429,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 71 with holes the air region
       Apply Instancing Transform = On
@@ -9162,33 +10517,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 8 with holes the air region
       Apply Instancing Transform = On
@@ -9230,33 +10605,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid 9 with holes the air region
       Apply Instancing Transform = On
@@ -9298,33 +10693,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes solid with holes the air region_1
       Apply Instancing Transform = On
@@ -9366,33 +10781,53 @@ gas_files\dp0\FFF\Fluent\FFF-2-00750.dat.h5
       Blend Texture = On
       Colour = 0.2, 0.5, 1
       Colour Map = Default Colour Map
-      Colour Mode = Constant
+      Colour Mode = Variable
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Temperature
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
-      Draw Contours = Off
+      Draw Contours = On
       Draw Faces = On
       Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [K]
+      Min = 0.0 [K]
       Number of Contours = 11
       Range = Global
       Render Edge Angle = 0 [degree]
-      Specular Lighting = On
+      Specular Lighting = Off
       Surface Drawing = Smooth Shading
       Texture Angle = 0
-      Texture Direction = 0.0, 1.0, 0.0
+      Texture Direction = 0 , 1 , 0
       Texture Material = Metal
-      Texture Position = 0.0, 0.0
-      Texture Scale = 1.0
+      Texture Position = 0 , 0
+      Texture Scale = 1
       Texture Type = Predefined
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:with holes the air region 1
       Apply Instancing Transform = On
@@ -12218,7 +13653,7 @@ DEFAULT LEGEND:Default Legend View 1
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /STREAMLINE:Streamline 2
+  Legend Plot = /CONTOUR:Contour 3
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -12241,7 +13676,7 @@ DEFAULT LEGEND:Default Legend View 2
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /STREAMLINE:Streamline 2
+  Legend Plot = /CONTOUR:holes
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -12264,7 +13699,7 @@ DEFAULT LEGEND:Default Legend View 3
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /STREAMLINE:Streamline 2
+  Legend Plot = /CONTOUR:holes
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -12287,7 +13722,7 @@ DEFAULT LEGEND:Default Legend View 4
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /STREAMLINE:Streamline 2
+  Legend Plot = /CONTOUR:holes
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -13410,145 +14845,147 @@ VIEW:View 1
   Highlight Type = Surface Mesh
   Is A Figure = false
   Light Angle = 50, 110
-  Object Visibility List = /DATA READER/CASE:Case FFF/BOUNDARY:cells,/DATA \
-READER/CASE:Case FFF/BOUNDARY:cells.1,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.10,/DATA READER/CASE:Case FFF/BOUNDARY:cells.11,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.12,/DATA READER/CASE:Case FFF/BOUNDARY:cells.13,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.14,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.15,/DATA READER/CASE:Case FFF/BOUNDARY:cells.16,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.17,/DATA READER/CASE:Case FFF/BOUNDARY:cells.18,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.19,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.2,/DATA READER/CASE:Case FFF/BOUNDARY:cells.20,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.21,/DATA READER/CASE:Case FFF/BOUNDARY:cells.22,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.23,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.24,/DATA READER/CASE:Case FFF/BOUNDARY:cells.25,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.26,/DATA READER/CASE:Case FFF/BOUNDARY:cells.27,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.28,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.29,/DATA READER/CASE:Case FFF/BOUNDARY:cells.3,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.30,/DATA READER/CASE:Case FFF/BOUNDARY:cells.31,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.32,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.33,/DATA READER/CASE:Case FFF/BOUNDARY:cells.34,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.35,/DATA READER/CASE:Case FFF/BOUNDARY:cells.36,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.37,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.38,/DATA READER/CASE:Case FFF/BOUNDARY:cells.39,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.4,/DATA READER/CASE:Case FFF/BOUNDARY:cells.40,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.41,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.42,/DATA READER/CASE:Case FFF/BOUNDARY:cells.43,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.44,/DATA READER/CASE:Case FFF/BOUNDARY:cells.45,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.46,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.47,/DATA READER/CASE:Case FFF/BOUNDARY:cells.48,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.49,/DATA READER/CASE:Case FFF/BOUNDARY:cells.5,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.50,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.51,/DATA READER/CASE:Case FFF/BOUNDARY:cells.52,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.53,/DATA READER/CASE:Case FFF/BOUNDARY:cells.54,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.55,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.56,/DATA READER/CASE:Case FFF/BOUNDARY:cells.57,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.58,/DATA READER/CASE:Case FFF/BOUNDARY:cells.59,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.6,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.60,/DATA READER/CASE:Case FFF/BOUNDARY:cells.61,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.62,/DATA READER/CASE:Case FFF/BOUNDARY:cells.63,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.64,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.65,/DATA READER/CASE:Case FFF/BOUNDARY:cells.66,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.67,/DATA READER/CASE:Case FFF/BOUNDARY:cells.68,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.69,/DATA READER/CASE:Case FFF/\
-BOUNDARY:cells.7,/DATA READER/CASE:Case FFF/BOUNDARY:cells.70,/DATA READER/\
-CASE:Case FFF/BOUNDARY:cells.71,/DATA READER/CASE:Case FFF/BOUNDARY:cells.8,/\
-DATA READER/CASE:Case FFF/BOUNDARY:cells.9,/DATA READER/CASE:Case FFF/\
-BOUNDARY:inlet,/DATA READER/CASE:Case FFF/BOUNDARY:solid 1,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 1 with holes the air region shadow,/DATA \
-READER/CASE:Case FFF/BOUNDARY:with holes solid 10 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 11 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 12 with \
+  Object Visibility List = /CONTOUR:Contour 1,/CONTOUR:Contour 2,/\
+CONTOUR:Contour 3,/CONTOUR:Contour 4,/CONTOUR:Contour 5,/CONTOUR:holes,/\
+CONTOUR:solid 62,/CONTOUR:with holes solid blank,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells,/DATA READER/CASE:Case FFF/BOUNDARY:cells.1,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.10,/DATA READER/CASE:Case FFF/BOUNDARY:cells.11,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.12,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.13,/DATA READER/CASE:Case FFF/BOUNDARY:cells.14,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.15,/DATA READER/CASE:Case FFF/BOUNDARY:cells.16,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.17,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.18,/DATA READER/CASE:Case FFF/BOUNDARY:cells.19,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.2,/DATA READER/CASE:Case FFF/BOUNDARY:cells.20,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.21,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.22,/DATA READER/CASE:Case FFF/BOUNDARY:cells.23,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.24,/DATA READER/CASE:Case FFF/BOUNDARY:cells.25,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.26,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.27,/DATA READER/CASE:Case FFF/BOUNDARY:cells.28,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.29,/DATA READER/CASE:Case FFF/BOUNDARY:cells.3,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.30,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.31,/DATA READER/CASE:Case FFF/BOUNDARY:cells.32,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.33,/DATA READER/CASE:Case FFF/BOUNDARY:cells.34,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.35,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.36,/DATA READER/CASE:Case FFF/BOUNDARY:cells.37,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.38,/DATA READER/CASE:Case FFF/BOUNDARY:cells.39,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.4,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.40,/DATA READER/CASE:Case FFF/BOUNDARY:cells.41,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.42,/DATA READER/CASE:Case FFF/BOUNDARY:cells.43,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.44,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.45,/DATA READER/CASE:Case FFF/BOUNDARY:cells.46,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.47,/DATA READER/CASE:Case FFF/BOUNDARY:cells.48,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.49,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.5,/DATA READER/CASE:Case FFF/BOUNDARY:cells.50,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.51,/DATA READER/CASE:Case FFF/BOUNDARY:cells.52,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.53,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.54,/DATA READER/CASE:Case FFF/BOUNDARY:cells.55,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.56,/DATA READER/CASE:Case FFF/BOUNDARY:cells.57,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.58,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.59,/DATA READER/CASE:Case FFF/BOUNDARY:cells.6,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.60,/DATA READER/CASE:Case FFF/BOUNDARY:cells.61,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.62,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.63,/DATA READER/CASE:Case FFF/BOUNDARY:cells.64,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.65,/DATA READER/CASE:Case FFF/BOUNDARY:cells.66,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.67,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.68,/DATA READER/CASE:Case FFF/BOUNDARY:cells.69,/DATA READER/\
+CASE:Case FFF/BOUNDARY:cells.7,/DATA READER/CASE:Case FFF/BOUNDARY:cells.70,/\
+DATA READER/CASE:Case FFF/BOUNDARY:cells.71,/DATA READER/CASE:Case FFF/\
+BOUNDARY:cells.8,/DATA READER/CASE:Case FFF/BOUNDARY:cells.9,/DATA READER/\
+CASE:Case FFF/BOUNDARY:inlet,/DATA READER/CASE:Case FFF/BOUNDARY:solid 1,/DATA \
+READER/CASE:Case FFF/BOUNDARY:with holes solid 1 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 10 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 11 with \
 holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-13 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 14 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 15 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 16 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 17 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 18 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 19 with \
+12 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 13 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 14 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 15 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 16 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 17 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 18 with \
 holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-2 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 20 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 21 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 22 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 23 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 24 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 25 with \
+19 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 2 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 20 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 21 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 22 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 23 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 24 with \
 holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-26 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 27 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 28 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 29 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 3 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 30 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 31 with \
-holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-32 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 33 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 34 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 35 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 36 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 37 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 38 with \
-holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-39 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 4 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 40 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 41 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 42 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 43 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 44 with \
-holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-45 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 46 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 47 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 48 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 49 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 5 with holes the air \
-region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 50 with holes \
-the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 51 \
+25 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 26 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 27 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 28 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 29 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 3 with holes the air \
+region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 30 with holes \
+the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 31 \
 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes \
-solid 52 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 53 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 54 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 55 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 56 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 57 with \
+solid 32 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 33 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 34 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 35 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 36 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 37 with \
 holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-58 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 59 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 6 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 60 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 61 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 62 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 63 with \
+38 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 39 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 4 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 40 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 41 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 42 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 43 with \
 holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-64 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 65 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 66 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 67 with holes the air region shadow,/\
-DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 68 with holes the air region \
-shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 69 with holes the \
-air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 7 with \
+44 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 45 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 46 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 47 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 48 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 49 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 5 with \
 holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
-70 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
-holes solid 71 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
-BOUNDARY:with holes solid 8 with holes the air region shadow,/DATA READER/\
-CASE:Case FFF/BOUNDARY:with holes solid 9 with holes the air region shadow,/DATA \
-READER/CASE:Case FFF/BOUNDARY:with holes solid with holes the air region_1 \
-shadow,/DEFAULT LEGEND:Default Legend View 1,/STREAMLINE:Streamline 1,/\
+50 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 51 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 52 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 53 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 54 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 55 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 56 with \
+holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
+57 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 58 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 59 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 6 with holes the air region shadow,/DATA \
+READER/CASE:Case FFF/BOUNDARY:with holes solid 60 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 61 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 62 with \
+holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
+63 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 64 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 65 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 66 with holes the air region shadow,/\
+DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 67 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 68 with holes the \
+air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid 69 with \
+holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid \
+7 with holes the air region shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with \
+holes solid 70 with holes the air region shadow,/DATA READER/CASE:Case FFF/\
+BOUNDARY:with holes solid 71 with holes the air region shadow,/DATA READER/\
+CASE:Case FFF/BOUNDARY:with holes solid 8 with holes the air region shadow,/DATA \
+READER/CASE:Case FFF/BOUNDARY:with holes solid 9 with holes the air region \
+shadow,/DATA READER/CASE:Case FFF/BOUNDARY:with holes solid with holes the air \
+region_1 shadow,/DEFAULT LEGEND:Default Legend View 1,/STREAMLINE:Streamline 1,/\
 STREAMLINE:Streamline 2
   Projection = Orthographic
   Ruler Visibility = true
   Standard View = Isometric Y
   CAMERA:
     Option = Pivot Point and Quaternion
-    Pan = -0.0162799,0.0264079
-    Pivot Point = -0.14321,0.295462,0.0466992
+    Pan = 0.164461,0.0710552
+    Pivot Point = -0.0895066,0.358221,0.0647399
     Rotation = -90, 0, 0
-    Rotation Quaternion = -0.547168,-0.321677,-0.363041,0.682238
-    Scale = 11.4051
+    Rotation Quaternion = -0.480539,-0.258594,-0.358105,0.757686
+    Scale = 6.69123
     Send To Viewer = True
   END
 END
