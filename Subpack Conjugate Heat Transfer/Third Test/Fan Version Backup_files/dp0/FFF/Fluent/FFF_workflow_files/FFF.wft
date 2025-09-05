@@ -1,0 +1,478 @@
+{
+    "workflow": {
+        "version": "25.2",
+        "ROOT": {
+            "TaskObject:TaskObject1": {
+                "Arguments": {
+                    "FileName": "C:\\Users\\Owner\\Documents\\GitHub\\Cooling_Modelling\\Subpack Conjugate Heat Transfer\\Second Test\\with holes and with gas_files\\dp0\\FFF\\DM\\FFF.dsco",
+                    "LengthUnit": "m",
+                    "NumParts": "74"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "ImportGeometry",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Import Geometry"
+            },
+            "TaskObject:TaskObject2": {
+                "Arguments": {
+                    "AddChild": "yes"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject12"
+                ],
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Add Local Sizing"
+            },
+            "TaskObject:TaskObject3": {
+                "Arguments": {
+                    "CFDSurfaceMeshControls": {
+                        "MaxSize": "0.050000000000000003",
+                        "MinSize": "0.001"
+                    },
+                    "ExecuteShareTopology": "Yes",
+                    "OriginalZones": [
+                        "with-holes-the-air-region",
+                        "inlet",
+                        "cells.20",
+                        "cells.31",
+                        "cells.42",
+                        "cells.53",
+                        "cells.64",
+                        "cells.69",
+                        "cells.70",
+                        "cells.71",
+                        "cells",
+                        "cells.1",
+                        "cells.2",
+                        "cells.3",
+                        "cells.4",
+                        "cells.5",
+                        "cells.6",
+                        "cells.7",
+                        "cells.8",
+                        "cells.9",
+                        "cells.10",
+                        "cells.11",
+                        "cells.12",
+                        "cells.13",
+                        "cells.14",
+                        "cells.15",
+                        "cells.16",
+                        "cells.17",
+                        "cells.18",
+                        "cells.19",
+                        "cells.21",
+                        "cells.22",
+                        "cells.23",
+                        "cells.24",
+                        "cells.25",
+                        "cells.26",
+                        "cells.27",
+                        "cells.28",
+                        "cells.29",
+                        "cells.30",
+                        "cells.32",
+                        "cells.33",
+                        "cells.34",
+                        "cells.35",
+                        "cells.36",
+                        "cells.37",
+                        "cells.38",
+                        "cells.39",
+                        "cells.40",
+                        "cells.41",
+                        "cells.43",
+                        "cells.44",
+                        "cells.45",
+                        "cells.46",
+                        "cells.47",
+                        "cells.48",
+                        "cells.49",
+                        "cells.50",
+                        "cells.51",
+                        "cells.52",
+                        "cells.54",
+                        "cells.55",
+                        "cells.56",
+                        "cells.57",
+                        "cells.58",
+                        "cells.59",
+                        "cells.60",
+                        "cells.61",
+                        "cells.62",
+                        "cells.63",
+                        "cells.65",
+                        "cells.66",
+                        "cells.67",
+                        "cells.68",
+                        "solid",
+                        "outlet"
+                    ]
+                },
+                "CheckPoint": "default-on",
+                "CommandName": "GenerateTheSurfaceMeshWTM",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Generate the Surface Mesh"
+            },
+            "TaskObject:TaskObject4": {
+                "Arguments": {
+                    "CappingRequired": "No",
+                    "InvokeShareTopology": "Yes",
+                    "Multizone": "No",
+                    "NonConformal": "No",
+                    "SMImprovePreferences": {
+                        "AdvancedImprove": "no",
+                        "AllowDefeaturing": "no",
+                        "SIQualityCollapseLimit": "0.84999999999999998",
+                        "SIQualityIterations": "5",
+                        "SIQualityMaxAngle": "160",
+                        "SIRemoveStep": "no",
+                        "SIStepQualityLimit": "0",
+                        "SIStepWidth": "0",
+                        "ShowSMImprovePreferences": "false"
+                    },
+                    "SetupType": "The geometry consists of both fluid and solid regions and\/or voids",
+                    "WallToInternal": "No"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "GeometrySetup",
+                "Errors": "__________None",
+                "InactiveTaskList": [
+                    "TaskObject6"
+                ],
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject5",
+                    "TaskObject7",
+                    "TaskObject8"
+                ],
+                "TaskType": "Conditional",
+                "Warnings": "__________None",
+                "_name_": "Describe Geometry"
+            },
+            "TaskObject:TaskObject5": {
+                "Arguments": {
+                    "InterfaceSelect": "Manual"
+                },
+                "CheckPoint": "default-on",
+                "CommandName": "ShareTopology",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Apply Share Topology"
+            },
+            "TaskObject:TaskObject6": {
+                "Arguments": "",
+                "CheckPoint": "default-off",
+                "CommandName": "Capping",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Enclose Fluid Regions (Capping)"
+            },
+            "TaskObject:TaskObject7": {
+                "Arguments": "",
+                "CheckPoint": "default-off",
+                "CommandName": "UpdateBoundaries",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Update Boundaries"
+            },
+            "TaskObject:TaskObject8": {
+                "Arguments": {
+                    "NumberOfFlowVolumes": "2"
+                },
+                "CheckPoint": "default-on",
+                "CommandName": "CreateRegions",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Create Regions"
+            },
+            "TaskObject:TaskObject9": {
+                "Arguments": "",
+                "CheckPoint": "default-off",
+                "CommandName": "UpdateRegions",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Update Regions"
+            },
+            "TaskObject:TaskObject10": {
+                "Arguments": "",
+                "CheckPoint": "default-off",
+                "CommandName": "AddBoundaryLayers",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject13"
+                ],
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Add Boundary Layers"
+            },
+            "TaskObject:TaskObject11": {
+                "Arguments": {
+                    "ShowSolidFluidMeshed": "true",
+                    "VolumeFill": "polyhedra",
+                    "VolumeFillControls": {
+                        "MaxSize": "0.076461077891165352"
+                    }
+                },
+                "CheckPoint": "default-on",
+                "CommandName": "GenerateTheVolumeMeshWTM",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Generate the Volume Mesh"
+            },
+            "TaskObject:TaskObject12": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BOICellsPerGap": "1",
+                    "BOIControlName": "facesize_1",
+                    "BOICurvatureNormalAngle": "18",
+                    "BOIExecution": "Face Size",
+                    "BOIFaceLabelList": [
+                        "with-holes-solid"
+                    ],
+                    "BOIGrowthRate": "1.2",
+                    "BOISize": "0.02",
+                    "BOIZoneorLabel": "label",
+                    "CompleteFaceLabelList": [
+                        "with-holes-solid"
+                    ]
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "facesize_1"
+            },
+            "TaskObject:TaskObject13": {
+                "Arguments": {
+                    "BLControlName": "smooth-transition_1",
+                    "BLRegionList": [
+                        "with-holes-the-air-region",
+                        "solid"
+                    ],
+                    "BLZoneList": [
+                        "solid-with-holes-the-air-region",
+                        "with-holes-solid:22-with-holes-the-air-region",
+                        "with-holes-solid:24-with-holes-the-air-region",
+                        "with-holes-solid:54-with-holes-the-air-region",
+                        "with-holes-solid:25-with-holes-the-air-region",
+                        "with-holes-solid:32-with-holes-the-air-region",
+                        "with-holes-solid:59-with-holes-the-air-region",
+                        "with-holes-solid:69-with-holes-the-air-region",
+                        "with-holes-solid:50-with-holes-the-air-region",
+                        "with-holes-solid:64-with-holes-the-air-region",
+                        "with-holes-solid:6-with-holes-the-air-region",
+                        "with-holes-solid:21-with-holes-the-air-region",
+                        "with-holes-solid:33-with-holes-the-air-region",
+                        "with-holes-solid:47-with-holes-the-air-region",
+                        "with-holes-solid:63-with-holes-the-air-region",
+                        "with-holes-solid:15-with-holes-the-air-region",
+                        "with-holes-solid:3-with-holes-the-air-region",
+                        "with-holes-solid:4-with-holes-the-air-region",
+                        "with-holes-solid:14-with-holes-the-air-region",
+                        "with-holes-solid:18-with-holes-the-air-region",
+                        "with-holes-solid:62-with-holes-the-air-region",
+                        "with-holes-solid:66-with-holes-the-air-region",
+                        "with-holes-solid:70-with-holes-the-air-region",
+                        "with-holes-solid:45-with-holes-the-air-region",
+                        "with-holes-solid:8-with-holes-the-air-region",
+                        "with-holes-solid:23-with-holes-the-air-region",
+                        "with-holes-solid:61-with-holes-the-air-region",
+                        "with-holes-solid:34-with-holes-the-air-region",
+                        "with-holes-solid:43-with-holes-the-air-region",
+                        "with-holes-solid:71-with-holes-the-air-region",
+                        "with-holes-solid:7-with-holes-the-air-region",
+                        "with-holes-solid:10-with-holes-the-air-region",
+                        "with-holes-solid:49-with-holes-the-air-region",
+                        "with-holes-solid:2-with-holes-the-air-region",
+                        "with-holes-solid:30-with-holes-the-air-region",
+                        "with-holes-solid:53-with-holes-the-air-region",
+                        "with-holes-solid:46-with-holes-the-air-region",
+                        "with-holes-solid:51-with-holes-the-air-region",
+                        "with-holes-solid:5-with-holes-the-air-region",
+                        "with-holes-solid:13-with-holes-the-air-region",
+                        "with-holes-solid:41-with-holes-the-air-region",
+                        "with-holes-solid:65-with-holes-the-air-region",
+                        "with-holes-solid:29-with-holes-the-air-region",
+                        "with-holes-solid:36-with-holes-the-air-region",
+                        "with-holes-solid:58-with-holes-the-air-region",
+                        "with-holes-solid:68-with-holes-the-air-region",
+                        "with-holes-solid-with-holes-the-air-region",
+                        "with-holes-solid:19-with-holes-the-air-region",
+                        "with-holes-solid:55-with-holes-the-air-region",
+                        "with-holes-solid:27-with-holes-the-air-region",
+                        "with-holes-solid:44-with-holes-the-air-region",
+                        "with-holes-solid:48-with-holes-the-air-region",
+                        "with-holes-solid:26-with-holes-the-air-region",
+                        "with-holes-solid:42-with-holes-the-air-region",
+                        "with-holes-solid:52-with-holes-the-air-region",
+                        "with-holes-solid:60-with-holes-the-air-region",
+                        "with-holes-solid:17-with-holes-the-air-region",
+                        "with-holes-solid:56-with-holes-the-air-region",
+                        "with-holes-solid:9-with-holes-the-air-region",
+                        "with-holes-solid:40-with-holes-the-air-region",
+                        "with-holes-solid:37-with-holes-the-air-region",
+                        "with-holes-solid:16-with-holes-the-air-region",
+                        "with-holes-solid:67-with-holes-the-air-region",
+                        "with-holes-solid:35-with-holes-the-air-region",
+                        "with-holes-solid:1-with-holes-the-air-region",
+                        "with-holes-solid:38-with-holes-the-air-region",
+                        "with-holes-solid:12-with-holes-the-air-region",
+                        "with-holes-solid:11-with-holes-the-air-region",
+                        "with-holes-solid:28-with-holes-the-air-region",
+                        "with-holes-solid:57-with-holes-the-air-region",
+                        "with-holes-solid:31-with-holes-the-air-region",
+                        "with-holes-solid:39-with-holes-the-air-region",
+                        "with-holes-solid:20-with-holes-the-air-region",
+                        "with-holes-the-air-region:1",
+                        "solid:1"
+                    ],
+                    "CompleteRegionScope": [
+                        "with-holes-the-air-region",
+                        "solid"
+                    ],
+                    "LocalPrismPreferences": {
+                        "Continuous": "Continuous"
+                    },
+                    "NumberOfLayers": "10"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "AddBoundaryLayers",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "smooth-transition_1"
+            },
+            "Workflow": {
+                "CurrentTask": "TaskObject11",
+                "TaskList": [
+                    "TaskObject1",
+                    "TaskObject2",
+                    "TaskObject3",
+                    "TaskObject4",
+                    "TaskObject9",
+                    "TaskObject10",
+                    "TaskObject11"
+                ],
+                "WorkflowType": "Watertight Geometry"
+            }
+        }
+    },
+    "meshing": {
+        "version": "25.2",
+        "ROOT": {
+            "GlobalSettings": {
+                "AreaUnit": "m^2",
+                "CurrentTask": "",
+                "EnableCleanCAD": "true",
+                "EnableComplexMeshing": "false",
+                "EnableOversetMeshing": "false",
+                "EnablePrime2dMeshing": "false",
+                "EnablePrimeMeshing": "false",
+                "InitialVersion": "25.2",
+                "LengthUnit": "m",
+                "NormalMode": "false",
+                "OldSize": "0",
+                "UTLEnabled": "false",
+                "UseAllowedValues": "true",
+                "VolumeUnit": "m^3",
+                "FTMRegionData": {
+                    "AllOversetNameList": "__________None",
+                    "AllOversetSizeList": "__________None",
+                    "AllOversetTypeList": "__________None",
+                    "AllOversetVolumeFillList": "__________None",
+                    "AllRegionFilterCategories": "__________None",
+                    "AllRegionLeakageSizeList": "__________None",
+                    "AllRegionLinkedConstructionSurfaceList": "__________None",
+                    "AllRegionMeshMethodList": "__________None",
+                    "AllRegionNameList": "__________None",
+                    "AllRegionOversetComponenList": "__________None",
+                    "AllRegionSizeList": "__________None",
+                    "AllRegionSourceList": "__________None",
+                    "AllRegionTypeList": "__________None",
+                    "AllRegionVolumeFillList": "__________None"
+                }
+            },
+            "Graphics": {
+                "Bounds": {
+                    "BoundX": "false",
+                    "BoundY": "false",
+                    "BoundZ": "false",
+                    "DeltaValue": "0",
+                    "Selection": ""
+                }
+            }
+        }
+    },
+    "PartManagement": {
+        "version": "25.2",
+        "ROOT": {
+            "Node:Node1": {
+                "Name": "Meshing Model",
+                "_name_": "Meshing Model"
+            }
+        }
+    }
+}

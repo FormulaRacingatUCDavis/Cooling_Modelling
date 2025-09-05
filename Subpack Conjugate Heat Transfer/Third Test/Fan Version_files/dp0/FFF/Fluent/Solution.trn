@@ -1,0 +1,35 @@
+Transcript Start Time:  22:04:53, 03 Sep 2025 Pacific Daylight Time 
+Current Directory: "C:\Windows"
+
+Build Time: Jun 16 2025 10:42:46 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/ANSYSS~1/v252/fluent/ntbin/win64/fluent.exe
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n3    LAPTOP-DHFQ1JFI  4/16  Windows-x64  12716  AMD Ryzen 7 6800H with Radeon Graphics  
+n2    LAPTOP-DHFQ1JFI  3/16  Windows-x64  6780   AMD Ryzen 7 6800H with Radeon Graphics  
+n1    LAPTOP-DHFQ1JFI  2/16  Windows-x64  13392  AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   LAPTOP-DHFQ1JFI  1/16  Windows-x64  24448  AMD Ryzen 7 6800H with Radeon Graphics  
+host  LAPTOP-DHFQ1JFI        Windows-x64  11828  AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cortex Process ID: 28404 
+License Server Path: () 
+Reading "C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\Fan Version_files\dp0\FFF\Fluent\FFF.2.msh.h5" ...
+
+Error: CAR: invalid argument [1]: wrong type [not a pair]
+Error Object: ()
+("CAR: invalid argument [1]: wrong type [not a pair]")
+
+Error: CAR: invalid argument [1]: wrong type [not a pair]
+Error Object: #f
+("Error occurred while reading.")
+
+Error: Error occurred while reading.
+Error Object: #f
+Fast-loading "C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.

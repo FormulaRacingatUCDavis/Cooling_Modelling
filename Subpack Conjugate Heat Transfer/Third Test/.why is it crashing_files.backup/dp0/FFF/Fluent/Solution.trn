@@ -1,0 +1,45 @@
+Transcript Start Time:  17:06:51, 04 Sep 2025 Pacific Daylight Time 
+Current Directory: "C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test"
+
+Build Time: Jun 16 2025 10:42:46 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/ANSYSS~1/v252/fluent/ntbin/win64/fluent.exe
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n3    LAPTOP-DHFQ1JFI  4/16  Windows-x64  24812  AMD Ryzen 7 6800H with Radeon Graphics  
+n2    LAPTOP-DHFQ1JFI  3/16  Windows-x64  20436  AMD Ryzen 7 6800H with Radeon Graphics  
+n1    LAPTOP-DHFQ1JFI  2/16  Windows-x64  7436   AMD Ryzen 7 6800H with Radeon Graphics  
+n0*   LAPTOP-DHFQ1JFI  1/16  Windows-x64  18988  AMD Ryzen 7 6800H with Radeon Graphics  
+host  LAPTOP-DHFQ1JFI        Windows-x64  18528  AMD Ryzen 7 6800H with Radeon Graphics  
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cortex Process ID: 12484 
+License Server Path: () 
+Reading "C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\FFF.4.msh.h5" ...
+3D mesh
+nodes: 491220
+edges: 105944
+faces: 327491 
+cells: 0 
+reading 331 node zones
+reading 402 edge zones
+reading 247 face zones
+generating pointers...done.
+extracting boundary entities...
+ 491220 boundary nodes.
+ 327491 boundary faces.
+ 247 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Writing "C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\FFF.5.msh.h5" ...
+writing 0 node zones
+writing 0 edge zones 
+writing 0 face zones 
+done.Transcript Stop Time:  17:07:01, 04 Sep 2025 Pacific Daylight Time 
+Total Transcript Time: 0 Minute 9 Second.
