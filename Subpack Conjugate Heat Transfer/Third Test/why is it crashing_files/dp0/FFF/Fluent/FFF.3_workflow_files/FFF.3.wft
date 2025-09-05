@@ -30,7 +30,7 @@
                 "ObjectPath": "",
                 "State": "Out-of-date",
                 "TaskList": [
-                    "TaskObject12"
+                    "TaskObject14"
                 ],
                 "TaskType": "Compound",
                 "Warnings": "__________None",
@@ -299,32 +299,6 @@
                 "Warnings": "__________None",
                 "_name_": "Generate the Volume Mesh"
             },
-            "TaskObject:TaskObject12": {
-                "Arguments": {
-                    "AddChild": "yes",
-                    "BOICellsPerGap": "1",
-                    "BOIControlName": "facesize_1",
-                    "BOICurvatureNormalAngle": "18",
-                    "BOIExecution": "Face Size",
-                    "BOIFaceLabelList": [
-                        "cells2:walls"
-                    ],
-                    "BOIGrowthRate": "1.2",
-                    "BOISize": "0.0030000000000000001",
-                    "BOIZoneorLabel": "label",
-                    "CompleteFaceLabelList": [
-                        "cells2:walls"
-                    ]
-                },
-                "CheckPoint": "default-off",
-                "CommandName": "AddLocalSizingWTM",
-                "Errors": "__________None",
-                "ObjectPath": "",
-                "State": "Out-of-date",
-                "TaskType": "Compound Child",
-                "Warnings": "__________None",
-                "_name_": "facesize_1"
-            },
             "TaskObject:TaskObject13": {
                 "Arguments": {
                     "BLControlName": "smooth-transition_1",
@@ -427,14 +401,43 @@
                 "CheckPoint": "default-off",
                 "CommandName": "AddBoundaryLayers",
                 "Errors": "__________None",
+                "InactiveTaskList": "__________None",
                 "ObjectPath": "",
                 "State": "Out-of-date",
+                "TaskList": "__________None",
                 "TaskType": "Compound Child",
                 "Warnings": "__________None",
                 "_name_": "smooth-transition_1"
             },
+            "TaskObject:TaskObject14": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BOICellsPerGap": "1",
+                    "BOIControlName": "facesize_2",
+                    "BOICurvatureNormalAngle": "18",
+                    "BOIExecution": "Face Size",
+                    "BOIFaceLabelList": [
+                        "cells2:walls"
+                    ],
+                    "BOIGrowthRate": "1.2",
+                    "BOISize": "0.0030000000000000001",
+                    "BOIZoneorLabel": "label",
+                    "CompleteFaceLabelList": [
+                        "cells2:walls"
+                    ],
+                    "DrawSizeControl": "true"
+                },
+                "CheckPoint": "default-off",
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "facesize_2"
+            },
             "Workflow": {
-                "CurrentTask": "TaskObject11",
+                "CurrentTask": "TaskObject8",
                 "TaskList": [
                     "TaskObject1",
                     "TaskObject2",
