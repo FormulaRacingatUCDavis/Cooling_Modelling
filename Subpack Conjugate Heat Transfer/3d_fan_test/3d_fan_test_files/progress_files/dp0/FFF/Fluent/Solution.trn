@@ -1,0 +1,40 @@
+Transcript Start Time:  20:40:14, 02 Sep 2025 Mountain Daylight Time 
+Current Directory: "C:\Users\sean8"
+
+Build Time: Jun 16 2025 10:42:46 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/ANSYSS~1/v252/fluent/ntbin/win64/fluent.exe
+
+---------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                               
+---------------------------------------------------------------------------------------
+n3    DESKTOP-D190TQ3  4/16  Windows-x64  24264  AMD Ryzen 7 7700X 8-Core Processor   
+n2    DESKTOP-D190TQ3  3/16  Windows-x64  32340  AMD Ryzen 7 7700X 8-Core Processor   
+n1    DESKTOP-D190TQ3  2/16  Windows-x64  24792  AMD Ryzen 7 7700X 8-Core Processor   
+n0*   DESKTOP-D190TQ3  1/16  Windows-x64  31084  AMD Ryzen 7 7700X 8-Core Processor   
+host  DESKTOP-D190TQ3        Windows-x64  2764   AMD Ryzen 7 7700X 8-Core Processor   
+
+MPI Option Selected: intel
+Selected system interconnect: default
+---------------------------------------------------------------------------------------
+
+Cortex Process ID: 22016 
+License Server Path: () 
+Reading "C:\Users\sean8\AppData\Local\Temp\WB_sean8_8080_2\wbnew_files\dp0\FFF\Fluent\FFF.msh.h5" ...
+3D mesh
+nodes: 0
+edges: 0
+faces: 0 
+cells: 0 
+reading 0 node zones
+reading 0 edge zones
+reading 0 face zones
+
+Warning: no nodes readanalyzing boundary connectivity...done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v252\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Writing "C:\Users\sean8\AppData\Local\Temp\WB_sean8_8080_2\wbnew_files\dp0\FFF\Fluent\FFF.msh.h5" ...
+writing 0 node zones
+writing 0 edge zones 
+writing 0 face zones 
+done.Transcript Stop Time:  20:40:16, 02 Sep 2025 Mountain Daylight Time 
+Total Transcript Time: 0 Minute 1 Second.
