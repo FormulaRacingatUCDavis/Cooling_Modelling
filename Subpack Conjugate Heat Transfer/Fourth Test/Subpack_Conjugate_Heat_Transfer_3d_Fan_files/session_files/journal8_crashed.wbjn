@@ -1,0 +1,24 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="FFF")
+setup1 = system1.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}))
+tGridData1 = GetDataEntity("/Mesh/TGridData:TGridData")
+tGridData1.SetEntityProperties(Properties=Set(RunParallel=True, NumberOfProcs=4))
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+Fluent.Edit(Container=mesh1)
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command="""/file/set-tui-version \"25.2\"
+Graphics driver currently in use: dx11
+(cx-gui-do cx-activate-tab-index \"NavigationPane*Frame1(TreeTab)\" 0)""")
+setup1.SendCommand(Command="(newline)")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(-3.83029 -2.29895 1.5011) '(0 0 0) '(-0.263345 -0.26193 0.0318925) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(2.82948 -3.22108 -0.745131) '(0 0 0) '(-0.201701 -0.680159 0.584198) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.838537 1.21 0.939142) '(0 0 0) '(-0.0284077 0.12085 -0.12181) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.192642 0.465409 0.122063) '(0 0 0) '(0.000983477 0.0172074 -0.069237) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(dolly-camera -0.00139041 -0.00497095 0)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Mesh)*PushButton2(  Quality)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Mesh)*PushButton2(  Quality)")')
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(-0.173992 -0.82309 -0.416344) '(0 0 0) '(0.0233175 0.0877894 -0.171359) 0 0)(cx-use-window-id 51)(handle-key \"??\")(cx-use-window-id 51)(cx-set-camera-relative '(-0.067971 -0.10762 -0.149566) '(0 0 0) '(0.0249956 0.0932422 -0.0722878) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.0775596 0.052497 0.0948943) '(0 0 0) '(-0.0253809 -0.0846482 0.0736261) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.142602 0.581143 0.355874) '(0 0 0) '(-0.0167005 -0.150723 0.178086) 0 0)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(cx-use-window-id 51)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(cx-use-window-id 51)(cx-use-window-id 51)(handle-key \"control ??\")(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(-0.211653 -0.228783 -0.135609) '(0 0 0) '(0.0643423 0.12334 -0.319569) 0 0)(cx-use-window-id 51)(cx-use-window-id 51)(handle-key \"??\")")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+Save(Overwrite=True)

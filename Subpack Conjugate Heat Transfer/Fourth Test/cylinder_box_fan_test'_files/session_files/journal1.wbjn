@@ -1,0 +1,10 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+template1 = GetTemplate(TemplateName="Fluid Flow with Fluent Meshing")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+Save(Overwrite=True)
+Open(FilePath="C:/Users/Owner/Downloads/Subpack_Conjugate_Heat_Transfer_3d_Fan_files-20250910T003126Z-1-001/Subpack_Conjugate_Heat_Transfer_3d_Fan.wbpj")

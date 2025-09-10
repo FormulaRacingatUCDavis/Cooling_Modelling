@@ -1,0 +1,11 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="FFF")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+fileReference1 = GetFileReference(Name="F1")
+fileReference1.Repair(FilePath=GetAbsoluteUserPathName("GitHub/Cooling_Modelling/Subpack Conjugate Heat Transfer/Sean/Subpack_Conjugate_Heat_Transfer_3d_Fan_files/dp0/FFF/DM/without interloper.dsco"))
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.Exit()
+Save(Overwrite=True)

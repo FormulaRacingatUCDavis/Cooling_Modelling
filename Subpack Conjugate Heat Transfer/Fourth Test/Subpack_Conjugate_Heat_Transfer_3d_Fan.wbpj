@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Storage>
+  <Project Version="25.2.1.0">
+    <base-designpoint-name valType="String">0</base-designpoint-name>
+    <timestamp-max valType="Int64">23702</timestamp-max>
+    <framework-build-version valType="String">25.2.170.0</framework-build-version>
+    <external-version-string valType="String">2025 R2</external-version-string>
+    <last-saved-utc valType="String">09/10/2025 03:41:52</last-saved-utc>
+    <managed-categories valType="String">[report, misc, progress]</managed-categories>
+    <expression-scope-container valType="String">Parameters</expression-scope-container>
+    <project-type valType="String">WB2</project-type>
+    <project-id valType="String">c7442cbe-5d6b-48c7-8e0a-a061882c0be4</project-id>
+    <ReferenceCache>
+      <ProjectReferenceList>
+        <ReferenceList valType="String">{
+"84e209d0-9110-46f8-af7d-40f24055eab8": "/FileContainer/FileReference:F4",
+"d4f827dd-cb9a-4d0f-a42d-29ff5702b4ff": "/FileContainer/FileReference:F1",
+"dbac93c2-5997-4642-a068-526e89afd6b8": "/FileTypesContainer/FileType:GeometryFileType",
+"054c65ac-ee55-4d53-8ef0-a3ee2ee40a43": "/FileTypesContainer/FileType:project",
+"c40b13a6-0893-47c8-a7bd-dc12474583a8": "/FileTypesContainer/FileType:ACTDatabase",
+"e86376db-1c7d-4d3c-9a46-0761829810e9": "/Schematic/Component:Geometry",
+"1965362f-f242-411c-8c93-5ee1a4387452": "/Schematic/Component:Mesh",
+"8b5fc9b3-73ac-4434-8983-80823fae3449": "/Schematic/Component:Setup",
+"ecdf5e76-2bdf-4cd4-9c0e-b35510bdde18": "/Schematic/Component:Solution",
+"7a03abf5-a0c3-41b3-be3a-2ecf3a458b62": "/Schematic/Component:Results",
+"6afd12a1-9068-4198-b90d-ae71b1fc8c62": "/Schematic/Template:Fluid Flow with Fluent Meshing",
+"da41ca83-9fd8-48ff-8943-64dfa5de0cfb": "/Schematic/Template:Fluid Flow (CFX)",
+"4254bd3d-e682-4806-a6f2-7f53db08219d": "/Schematic/Template:Static Structural (ANSYS)",
+"3022fd84-42f0-4754-a18d-ac1f19a45972": "/Schematic/Template:Fluid Flow",
+"af9c9bfc-ea17-42f7-86b2-7c8571f34f7e": "/Schematic/Template:Steady-State Thermal (ANSYS)",
+"6af33592-b94c-4b93-bd7a-e831c614b919": "/Schematic/Template:Modal (ANSYS)",
+"a7c64b48-13c3-48ad-bcae-12f4f16672eb": "/Schematic/Template:Random Vibration (ANSYS)",
+"33c17991-56ec-4027-a6b8-60201c0820f3": "/Schematic/Template:Response Spectrum (ANSYS)",
+"d4e30ec7-a44d-40aa-b82f-9ebd7eaac967": "/Schematic/Template:Transient Thermal (ANSYS)",
+"637f3768-63bc-492d-a02f-152dcc71e445": "/Schematic/ComponentTemplate:GeometryCellTemplate",
+"11e7df15-a64a-4423-9ca0-b4f23aa97c45": "/Schematic/System:FFF",
+"5d56e2a7-b0be-4708-8506-225b1266d35b": "/Schematic/ComponentTemplate:FluentTGridCellTemplate",
+"7042c219-0a15-4e49-9903-b80537f5a596": "/Schematic/ComponentTemplate:FluentSetupCellTemplate",
+"b9edb98e-50f5-42a7-91f8-fd7bec5611a6": "/Schematic/ComponentTemplate:FluentResultsCellTemplate",
+"2443b5d3-cb9a-407c-9bfd-93d422a0dbed": "/Schematic/ComponentTemplate:CFDPostTemplate",
+"90a37dd9-149c-4ca8-9954-e392f8ff1a8b": "/FileTypesContainer/FileType:CFFMesh",
+"dbe628d2-363d-426e-aff0-b865c63832a5": "/FileTypesContainer/FileType:FLUENTBc",
+"c3394ac1-97ee-4961-9d54-e1e28d01cbf9": "/FileTypesContainer/FileType:FLUENTCase",
+"a756ccb7-9170-43d8-967d-b51d5da39bf4": "/FileContainer/FileReference:F19",
+"6f45c82a-e211-48ab-b230-4152217a0897": "/FileContainer/FileReference:F20",
+"374e4c13-0111-457e-b75d-098437e10039": "/FileContainer/FileReference:F21"
+}</ReferenceList>
+      </ProjectReferenceList>
+      <DesignPointReferenceListCollection>
+        <DesignPointReferenceList Name="0">
+          <ReferenceList valType="String">{
+"37d1a081-7d5a-4528-b6ba-2f9b992706a3": "/Geometry/Geometry:GeometryDataObject",
+"c5dc3aa9-506f-495a-8346-024460f9726b": "/Mesh/FluentTGridMesh:TGridDataProvider",
+"04c78306-b872-4a9a-ba21-b2e67043b219": "/Solution/FluentSolutionProperties:SolutionData",
+"9b944af7-2d1f-4811-bcb9-92ae95e548ed": "/Setup/SetupData:SetupData",
+"d473ef76-5ecd-4f97-bcbe-8e4a86d846eb": "/Solution/FluentSolution:SolutionDataProvider",
+"69167009-a275-4adb-99dd-6d41ac8c5ff4": "/Results/SolutionDataLink:SolutionDataProvider",
+"42aa93d1-2306-4c9f-a70c-64c9ca8d9e7f": "/Results/CFDResults:Results Source",
+"00ce7685-a0b0-4d51-9371-e0ffb7bb3f73": "/Solution/AxisContinuous:AxisX",
+"74b03460-7c86-47a6-8f16-78fc8799c45e": "/Solution/AxisContinuous:AxisY"
+}</ReferenceList>
+        </DesignPointReferenceList>
+      </DesignPointReferenceListCollection>
+    </ReferenceCache>
+  </Project>
+  <Addins>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.ProjectSchematic.ProjectSchematicAddin, Ansys.ProjectReporting.Addin, Ansys.Graphics.GraphicsAddin, Ansys.Units.Commands.Addin, Ansys.HPS.Addin, Ansys.PyAddin.Core.Addin, Ansys.ACT.WorkBench.Addin]</addin-list>
+    <Addin Name="Ansys.ParameterManager.ParameterManagerAddin" Version="7.3" />
+    <Addin Name="Ansys.ProjectSchematic.ProjectSchematicAddin" Version="14.0" />
+    <Addin Name="Ansys.ProjectReporting.Addin" Version="6.0" />
+    <Addin Name="Ansys.Graphics.GraphicsAddin" Version="1.1" />
+    <Addin Name="Ansys.Units.Commands.Addin" Version="7.1" />
+    <Addin Name="Ansys.HPS.Addin" Version="25.1.2.0">
+      <is-optional-on-resume valType="Boolean">true</is-optional-on-resume>
+    </Addin>
+    <Addin Name="Ansys.PyAddin.Core.Addin" Version="25.1.0.0" />
+    <Addin Name="Ansys.ACT.WorkBench.Addin" Version="4.2">
+      <ExtensionsLoaded valType="StringArray">
+        <ArrayEntry Index="0">1;LSDYNA;5f463412-bd3e-484b-87e7-cbc0a665e474;LSDYNA;wbex;2025;2</ArrayEntry>
+        <ArrayEntry Index="1">1;ANSYSMotion;20180725-3f81-49eb-9f31-41364844c769;ANSYSMotion;wbex;2025;2</ArrayEntry>
+      </ExtensionsLoaded>
+    </Addin>
+  </Addins>
+  <Containers>
+    <container-map valType="String">{"FileContainer": Project:FileContainer, "Messages": Project:Messages, "Parameters": Ansys.ParameterManager.ParameterManagerAddin:parameters, "Schematic": Ansys.ProjectSchematic.ProjectSchematicAddin:Default, "ReportDataContainer": Ansys.ProjectReporting.Addin:ReportDataContainer, "Graphics": Ansys.Graphics.GraphicsAddin:graphics, "Units": Ansys.Units.Commands.Addin:Units, "HpsContainer": Ansys.HPS.Addin:HpsContainer, "PyAddinManager": Ansys.PyAddin.Core.Addin:ManagerContainer}</container-map>
+    <static-container-ids valType="String">{"FileContainer": FileManager, "Parameters": Parameters, "Schematic": Schematic, "ReportDataContainer": ReportDataContainer, "Graphics": Graphics, "Units": Units, "HpsContainer": HpsContainer, "PyAddinManager": PyAddinManager}</static-container-ids>
+    <Container Name="FileContainer" Version="1.0">
+      <container-type valType="String">Project:FileContainer</container-type>
+      <static-id valType="String">FileManager</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 23698, "Input": 18558, "Output": 18558}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/FileContainer/FileReference:F1" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F1</object-name>
+        <member-data valType="String">{"DisplayText": "without interloper.dsco", "FileType": $$dbac93c2-5997-4642-a068-526e89afd6b8, "DependentFiles": [], "ContainerAssociations": ["Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\DM\without interloper.dsco", "ReferenceCount": 2}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F2" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F2</object-name>
+        <member-data valType="String">{"DisplayText": "Subpack_Conjugate_Heat_Transfer_3d_Fan.wbpj", "FileType": $$054c65ac-ee55-4d53-8ef0-a3ee2ee40a43, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": "$(ProjectName).wbpj", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F3" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F3</object-name>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$c40b13a6-0893-47c8-a7bd-dc12474583a8, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 21}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F4" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F4</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.dsco", "FileType": $$dbac93c2-5997-4642-a068-526e89afd6b8, "DependentFiles": [], "ContainerAssociations": ["Geometry", "Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\DM\FFF.dsco", "ReferenceCount": 29}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F21" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F21</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.10.set", "FileType": $$dbe628d2-363d-426e-aff0-b865c63832a5, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.10.set", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F19" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F19</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.10.msh.h5", "FileType": $$90a37dd9-149c-4ca8-9954-e392f8ff1a8b, "DependentFiles": [], "ContainerAssociations": ["Mesh", "Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.10.msh.h5", "ReferenceCount": 2}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F20" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F20</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.10-Setup-Output.cas.h5", "FileType": $$c3394ac1-97ee-4961-9d54-e1e28d01cbf9, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.10-Setup-Output.cas.h5", "ReferenceCount": 1}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Messages" Version="1.0">
+      <container-type valType="String">Project:Messages</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 23687, "Input": 18559, "Output": 18559}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Messages/StoredMessage:Message" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "The FLUENT Application is currently busy. Please try this operation again after some time.", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 12:21:18, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 1" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 1</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 12:42:07, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 2" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 2</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Update of the Solution component in Fluid Flow (Fluent with Fluent Meshing) failed: Command was cancelled: Solution Update Cancelled.", "Details": """Ansys.Fluent.Common.CommandCancelledException: Command was cancelled: Solution Update Cancelled.
+   at Ansys.Fluent.Commands.UpdateOrPretendToUpdateSolutionCommand.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Command was cancelled: Solution Update Cancelled.
+CommandName: Fluent.UpdateOrPretendToUpdateSolution(Container=\"Solution\", PendingMode=False)
+   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.Fluent.Commands.UpdateOrPretendToUpdateSolutionCommand.InvokeAndWait(IProtectedContext context, IProgressMonitor progressMonitor, DataContainerReference Container, Boolean PendingMode, Boolean IsUadpViaRsm, Boolean Restart)
+   at Ansys.Fluent.Commands.UpdateSolutionCommand.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: Command was cancelled: Solution Update Cancelled.
+CommandName: Fluent.UpdateSolution(Container=\"Solution\", UpdateOptions=Set(DpUpdateType=None, HeldLicenseId=None, LicenseStatsId=\"5ecd2f7d92e24cf486b9e5100e2c28d9\", DesignPointUpdateQueue=None, MaxNumberOfCores=0))
+   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   at Ansys.Core.Commands.CommandAsyncResult.WaitForSuspendOrComplete(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.ProjectSchematic.Data.ComponentTemplateEntity.Update(IFullContext context, IProgressMonitor progressMonitor, Int32 milliSecondsTimeout, DataContainerReference container, String dataGroup, UpdateOptions updateOptions, IEnumerable`1 downstream, IEnumerable`1 allRemaining)
+   at Ansys.ProjectSchematic.Update.UpdateTask.Update(IFullContext context, IProgressMonitor progressMonitor, Int32 milliSecondsTimeout, UpdateOptions updateOptions, IEnumerable`1 downstream, IEnumerable`1 allRemaining)
+   at Ansys.ProjectSchematic.Update.ComponentUpdatePlugin.updateComponent(IContextForUpdatePlugin callbacks, UpdateTask task, String trackToken, IProgressMonitor progressMonitor, Int32 milliSecondsTimeout, TaskHolder remainingTasksInThisDp, List`1 dependentTasks)
+   at Ansys.ProjectSchematic.Update.ComponentUpdatePlugin.&lt;&gt;c__DisplayClass0_0.&lt;UpdateComponent&gt;b__0()
+   at Ansys.ProjectSchematic.Update.ExecuteWithErrorBehaviour.Execute(IContextForUpdatePlugin callbacks, UpdateErrorBehavior behavior, Action op, UpdateTask forTask, Action opUponError)
+""", "Association": "", "DateTimeStamp": 09/04/2025 14:01:41, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$ecdf5e76-2bdf-4cd4-9c0e-b35510bdde18, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 3" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 3</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Update aborted", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 14:01:42, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 4" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 4</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"An I/O error occurred while saving the project: The process cannot access the file 'C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper.wbpj' because it is being used by another process. The project has not been completely saved.", "Details": r"""System.IO.IOException: The process cannot access the file 'C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper.wbpj' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at Ansys.Utilities.FileSystemStream.GetFileStream(String fullpath, Boolean append, FileAccess access)
+   at Ansys.Core.Persistence.ProjectPersister.WriteProjectFile(IFullContext context, XmlStorageWriter projectDataStorage, String projectFullPath)
+   at Ansys.Core.Persistence.ProjectSaveHandler.DoProjectSave()
+--- System.InvalidOperationException: An I/O error occurred while saving the project: The process cannot access the file 'C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper.wbpj' because it is being used by another process. The project has not been completely saved.
+   at Ansys.Core.Persistence.ProjectSaveHandler.DoProjectSave()
+   at Ansys.Core.Persistence.ProjectSaveHandler.ProjectSave()
+   at Ansys.Core.Persistence.Commands.SaveCommand.DoSave(IFullContext context, String filePath, Boolean overwrite, Boolean revertibleSave)
+   at Ansys.Core.Persistence.Commands.SaveCommand.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+--- Ansys.Core.Commands.CommandFailedException: An I/O error occurred while saving the project: The process cannot access the file 'C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper.wbpj' because it is being used by another process. The project has not been completely saved.
+CommandName: Save(Overwrite=True)
+   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
+   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
+   at Ansys.Core.Persistence.Commands.SaveCommand.InvokeAndWait(IProtectedContext context, IProgressMonitor progressMonitor, String FilePath, Boolean Overwrite)
+   at Ansys.UI.Standard.ProjectOperationUtility.ProjectNormalSave(IUserInteractor context, String filePath, Boolean overwrite)
+   at Ansys.UI.Standard.ProjectOperationUtility.ModifiedProjectHandler(IUserInteractor interactor, String actionMessage)
+   at Ansys.UI.Standard.ExitOperation.Invoke(GuiOperationContext context)
+   at Ansys.UI.GuiOperationContext.Invoke(GuiOperationMetaData operationData)
+   at Ansys.UI.UIManager.InvokeOperationCore(String pseudoname, OperationDelegate callback, Boolean allowOSMessages, Boolean coreTransaction, Boolean deferredRefreshOnly)
+""", "Association": "", "DateTimeStamp": 09/04/2025 16:22:41, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 5" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 5</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": "An attempt to restore the project to its original state has failed because some files and/or directories may be in use by other program, or disk is full or the files are read-only. You must make sure these files are not currently in use, disk is not full, and project directory has write permission.", "Details": """Ansys.Core.FileManagement.ProjectFilesRestoreException: An attempt to restore the project to its original state has failed because some files and/or directories may be in use by other program, or disk is full or the files are read-only. You must make sure these files are not currently in use, disk is not full, and project directory has write permission.
+   at Ansys.Core.FileManagement.ProjectFilesBackupEngine.RestoreProjectFiles(String projectFilePath, List`1 filesToDelete, List`1 directoriesToDelete)
+   at Ansys.Core.FileManagement.ProjectFilesBackupEngine.RevertProjectFiles(IQueryContext context)
+   at Ansys.Core.FileManagement.Commands.RevertFilesCommand.RevertProjectFiles(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
+""", "Association": "", "DateTimeStamp": 09/04/2025 16:23:14, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 6" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 6</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 16:41:19, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 7" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 7</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """saving container Setup: An error occurred in FLUENT during save
+An error occurred in FLUENT during save""", "Details": """Ansys.Fluent.Cortex.CortexCommandFailedException: An error occurred in FLUENT during save
+An error occurred in FLUENT during save
+   at Ansys.Fluent.Cortex.CortexCommunicator.SendMessage(String msg, String msgKey, String errorMessage, Boolean waitForReply)
+   at Ansys.Fluent.FluentCommunicator.Save()
+   at Ansys.Fluent.Data.FluentSetupContainer.Save(IStorageObjectWriter projectStorage, PersistenceContext context)
+   at Ansys.Core.DataModel.ProjectSystem.DataContainerRecord.SaveContainer(IStorageObjectWriter storage, PersistenceContext context, Exception&amp; error)
+""", "Association": "", "DateTimeStamp": 09/04/2025 17:02:02, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 8" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 8</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """The project has been partially saved, but some errors occured during the save.
+Failed container(s) from designpoint: Setup
+""", "Details": """   at Ansys.Core.Persistence.ProjectSaveHandler.DoProjectSave()
+   at Ansys.Core.Persistence.ProjectSaveHandler.ProjectSave()
+   at Ansys.Core.Persistence.Commands.SaveCommand.DoSave(IFullContext context, String filePath, Boolean overwrite, Boolean revertibleSave)
+   at Ansys.Core.Persistence.Commands.SaveCommand.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)""", "Association": "", "DateTimeStamp": 09/04/2025 17:02:48, "Visibility": "Standard", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 9" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 9</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\act.dat""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:03:33, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 10" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 10</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """saving container Setup: An error occurred in FLUENT during save
+An error occurred in FLUENT during save""", "Details": """Ansys.Fluent.Cortex.CortexCommandFailedException: An error occurred in FLUENT during save
+An error occurred in FLUENT during save
+   at Ansys.Fluent.Cortex.CortexCommunicator.SendMessage(String msg, String msgKey, String errorMessage, Boolean waitForReply)
+   at Ansys.Fluent.FluentCommunicator.Save()
+   at Ansys.Fluent.Data.FluentSetupContainer.Save(IStorageObjectWriter projectStorage, PersistenceContext context)
+   at Ansys.Core.DataModel.ProjectSystem.DataContainerRecord.SaveContainer(IStorageObjectWriter storage, PersistenceContext context, Exception&amp; error)
+""", "Association": "", "DateTimeStamp": 09/04/2025 17:03:36, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 11" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 11</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\designPoint.wbdp""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:03:40, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 12" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 12</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """The project has been partially saved, but some errors occured during the save.
+Failed container(s) from designpoint: Setup
+""", "Details": """   at Ansys.Core.Persistence.ProjectSaveHandler.DoProjectSave()
+   at Ansys.Core.Persistence.ProjectSaveHandler.ProjectSave()
+   at Ansys.Core.Persistence.Commands.SaveCommand.DoSave(IFullContext context, String filePath, Boolean overwrite, Boolean revertibleSave)
+   at Ansys.Core.Persistence.Commands.SaveCommand.Execute(IFullContext context)
+   at Ansys.Core.Commands.Concurrency.CommandWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
+   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)""", "Association": "", "DateTimeStamp": 09/04/2025 17:04:27, "Visibility": "Standard", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 13" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 13</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\Workflow\TaskObject11.msh.h5""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:05:31, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 14" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 14</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\Workflow\TaskObject3.msh.h5""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:05:31, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 15" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 15</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\Workflow\TaskObject5.msh.h5""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:05:31, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 16" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 16</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\Workflow\TaskObject8.msh.h5""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:05:31, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 17" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 17</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\fluent-0-error.log""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:05:31, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 18" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 18</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\without interloper_files\dp0\FFF\Fluent\fluent-999999-error.log""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:05:31, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 19" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 19</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """Ansys.Fluent.Cortex.CortexCommandFailedException: An error occured in FLUENT while applying case and settings informatins.
+An error occured in FLUENT while applying case and settings informatins.
+   at Ansys.Fluent.Cortex.CortexCommunicator.SendMessage(String msg, String msgKey, String errorMessage, Boolean waitForReply)
+   at Ansys.Fluent.FluentCommunicator.UpdateSetupInfo(Dictionary`2 info)
+   at Ansys.Fluent.Data.SetupData.ReadCaseModelInfo(IFullContext context)""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:06:00, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 20" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 20</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\why is it crashing_files\dp0\act.dat""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:26:12, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 21" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 21</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\why is it crashing_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 17:50:38, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 22" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 22</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\why is it crashing_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/04/2025 22:22:19, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 23" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 23</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Third Test\why is it crashing_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/05/2025 21:55:20, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 24" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 24</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Sean\Subpack_Conjugate_Heat_Transfer_3d_Fan_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/05/2025 23:07:07, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 25" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 25</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Model information is incompatible with incoming mesh.", "Details": """Following zones were missing in the mesh:
+walls:1 ,default-default:1 ,right-fluid-region ,walls.1 ,walls.2 ,left-fluid-region ,walls.3 ,default-default.1 ,default-default.2 ,default-default:1-with-holes-the-air-region ,cells2-walls:54-with-holes-the-air-region ,cells2-walls:56-with-holes-the-air-region ,cells2-walls:61-with-holes-the-air-region ,cells2-walls:41-with-holes-the-air-region ,cells2-walls-with-holes-the-air-region ,cells2-walls:67-with-holes-the-air-region ,cells2-walls:38-with-holes-the-air-region ,cells2-walls:53-with-holes-the-air-region ,cells2-walls:8-with-holes-the-air-region ,cells2-walls:50-with-holes-the-air-region ,cells2-walls:16-with-holes-the-air-region ,cells2-walls:11-with-holes-the-air-region ,cells2-walls:57-with-holes-the-air-region ,cells2-walls:17-with-holes-the-air-region ,cells2-walls:51-with-holes-the-air-region ,cells2-walls:49-with-holes-the-air-region ,cells2-walls:44-with-holes-the-air-region ,cells2-walls:18-with-holes-the-air-region ,cells2-walls:70-with-holes-the-air-region ,cells2-walls:32-with-holes-the-air-region ,cells2-walls:29-with-holes-the-air-region ,cells2-walls:6-with-holes-the-air-region ,cells2-walls:5-with-holes-the-air-region ,cells2-walls:66-with-holes-the-air-region ,cells2-walls:33-with-holes-the-air-region ,cells2-walls:20-with-holes-the-air-region ,cells2-walls:28-with-holes-the-air-region ,cells2-walls:21-with-holes-the-air-region ,cells2-walls:59-with-holes-the-air-region ,cells2-walls:52-with-holes-the-air-region ,cells2-walls:27-with-holes-the-air-region ,cells2-walls:64-with-holes-the-air-region ,cells2-walls:34-with-holes-the-air-region ,cells2-walls:19-with-holes-the-air-region ,cells2-walls:14-with-holes-the-air-region ,cells2-walls:12-with-holes-the-air-region ,cells2-walls:65-with-holes-the-air-region ,cells2-walls:62-with-holes-the-air-region ,cells2-walls:48-with-holes-the-air-region ,cells2-walls:37-with-holes-the-air-region ,cells2-walls:46-with-holes-the-air-region ,cells2-walls:39-with-holes-the-air-region ,cells2-walls:47-with-holes-the-air-region ,cells2-walls:60-with-holes-the-air-region ,cells2-walls:7-with-holes-the-air-region ,cells2-walls:3-with-holes-the-air-region ,cells2-walls:15-with-holes-the-air-region ,cells2-walls:4-with-holes-the-air-region ,cells2-walls:71-with-holes-the-air-region ,cells2-walls:63-with-holes-the-air-region ,cells2-walls:42-with-holes-the-air-region ,cells2-walls:40-with-holes-the-air-region ,cells2-walls:36-with-holes-the-air-region ,cells2-walls:26-with-holes-the-air-region ,cells2-walls:13-with-holes-the-air-region ,cells2-walls:23-with-holes-the-air-region ,cells2-walls:2-with-holes-the-air-region ,cells2-walls:58-with-holes-the-air-region ,cells2-walls:55-with-holes-the-air-region ,cells2-walls:69-with-holes-the-air-region ,cells2-walls:68-with-holes-the-air-region ,cells2-walls:45-with-holes-the-air-region ,cells2-walls:35-with-holes-the-air-region ,cells2-walls:43-with-holes-the-air-region ,cells2-walls:31-with-holes-the-air-region ,cells2-walls:9-with-holes-the-air-region ,cells2-walls:1-with-holes-the-air-region ,cells2-walls:30-with-holes-the-air-region ,cells2-walls:10-with-holes-the-air-region ,cells2-walls:25-with-holes-the-air-region ,cells2-walls:22-with-holes-the-air-region ,cells2-walls:24-with-holes-the-air-region ,solid-with-holes-the-air-region ,default-default-with-holes-the-air-region ,default-default:1-with-holes-the-air-region-shadow ,cells2-walls:54-with-holes-the-air-region-shadow ,cells2-walls:56-with-holes-the-air-region-shadow ,cells2-walls:61-with-holes-the-air-region-shadow ,cells2-walls:41-with-holes-the-air-region-shadow ,cells2-walls-with-holes-the-air-region-shadow ,cells2-walls:67-with-holes-the-air-region-shadow ,cells2-walls:38-with-holes-the-air-region-shadow ,cells2-walls:53-with-holes-the-air-region-shadow ,cells2-walls:8-with-holes-the-air-region-shadow ,cells2-walls:50-with-holes-the-air-region-shadow ,cells2-walls:16-with-holes-the-air-region-shadow ,cells2-walls:11-with-holes-the-air-region-shadow ,cells2-walls:57-with-holes-the-air-region-shadow ,cells2-walls:17-with-holes-the-air-region-shadow ,cells2-walls:51-with-holes-the-air-region-shadow ,cells2-walls:49-with-holes-the-air-region-shadow ,cells2-walls:44-with-holes-the-air-region-shadow ,cells2-walls:18-with-holes-the-air-region-shadow ,cells2-walls:70-with-holes-the-air-region-shadow ,cells2-walls:32-with-holes-the-air-region-shadow ,cells2-walls:29-with-holes-the-air-region-shadow ,cells2-walls:6-with-holes-the-air-region-shadow ,cells2-walls:5-with-holes-the-air-region-shadow ,cells2-walls:66-with-holes-the-air-region-shadow ,cells2-walls:33-with-holes-the-air-region-shadow ,cells2-walls:20-with-holes-the-air-region-shadow ,cells2-walls:28-with-holes-the-air-region-shadow ,cells2-walls:21-with-holes-the-air-region-shadow ,cells2-walls:59-with-holes-the-air-region-shadow ,cells2-walls:52-with-holes-the-air-region-shadow ,cells2-walls:27-with-holes-the-air-region-shadow ,cells2-walls:64-with-holes-the-air-region-shadow ,cells2-walls:34-with-holes-the-air-region-shadow ,cells2-walls:19-with-holes-the-air-region-shadow ,cells2-walls:14-with-holes-the-air-region-shadow ,cells2-walls:12-with-holes-the-air-region-shadow ,cells2-walls:65-with-holes-the-air-region-shadow ,cells2-walls:62-with-holes-the-air-region-shadow ,cells2-walls:48-with-holes-the-air-region-shadow ,cells2-walls:37-with-holes-the-air-region-shadow ,cells2-walls:46-with-holes-the-air-region-shadow ,cells2-walls:39-with-holes-the-air-region-shadow ,cells2-walls:47-with-holes-the-air-region-shadow ,cells2-walls:60-with-holes-the-air-region-shadow ,cells2-walls:7-with-holes-the-air-region-shadow ,cells2-walls:3-with-holes-the-air-region-shadow ,cells2-walls:15-with-holes-the-air-region-shadow ,cells2-walls:4-with-holes-the-air-region-shadow ,cells2-walls:71-with-holes-the-air-region-shadow ,cells2-walls:63-with-holes-the-air-region-shadow ,cells2-walls:42-with-holes-the-air-region-shadow ,cells2-walls:40-with-holes-the-air-region-shadow ,cells2-walls:36-with-holes-the-air-region-shadow ,cells2-walls:26-with-holes-the-air-region-shadow ,cells2-walls:13-with-holes-the-air-region-shadow ,cells2-walls:23-with-holes-the-air-region-shadow ,cells2-walls:2-with-holes-the-air-region-shadow ,cells2-walls:58-with-holes-the-air-region-shadow ,cells2-walls:55-with-holes-the-air-region-shadow ,cells2-walls:69-with-holes-the-air-region-shadow ,cells2-walls:68-with-holes-the-air-region-shadow ,cells2-walls:45-with-holes-the-air-region-shadow ,cells2-walls:35-with-holes-the-air-region-shadow ,cells2-walls:43-with-holes-the-air-region-shadow ,cells2-walls:31-with-holes-the-air-region-shadow ,cells2-walls:9-with-holes-the-air-region-shadow ,cells2-walls:1-with-holes-the-air-region-shadow ,cells2-walls:30-with-holes-the-air-region-shadow ,cells2-walls:10-with-holes-the-air-region-shadow ,cells2-walls:25-with-holes-the-air-region-shadow ,cells2-walls:22-with-holes-the-air-region-shadow ,cells2-walls:24-with-holes-the-air-region-shadow ,solid-with-holes-the-air-region-shadow ,default-default-with-holes-the-air-region-shadow
+Following new zones were found in the mesh:
+default-default1-1 ,default-actual-fan ,default-default1-2 ,default-default1 ,solid:2 ,solid:1 ,default-default-default-default1_1-shadow ,default-default-1-default-default1-1-shadow ,default-default1-2-solid:1-shadow ,default-default-default-default1-2-shadow ,default-default:1-solid:2-shadow ,default-default-1-with-holes-the-air-region-shadow ,cells2-walls:47-with-holes-the-air-region_1-shadow ,cells2-walls:65-with-holes-the-air-region_1-shadow ,cells2-walls:39-with-holes-the-air-region_1-shadow ,cells2-walls:68-with-holes-the-air-region_1-shadow ,cells2-walls:55-with-holes-the-air-region_1-shadow ,cells2-walls:11-with-holes-the-air-region_1-shadow ,cells2-walls:60-with-holes-the-air-region_1-shadow ,cells2-walls:16-with-holes-the-air-region_1-shadow ,cells2-walls:50-with-holes-the-air-region_1-shadow ,cells2-walls:64-with-holes-the-air-region_1-shadow ,cells2-walls:26-with-holes-the-air-region_1-shadow ,cells2-walls:70-with-holes-the-air-region_1-shadow ,cells2-walls:21-with-holes-the-air-region_1-shadow ,cells2-walls:48-with-holes-the-air-region_1-shadow ,cells2-walls:66-with-holes-the-air-region_1-shadow ,cells2-walls:63-with-holes-the-air-region_1-shadow ,cells2-walls:5-with-holes-the-air-region_1-shadow ,cells2-walls:56-with-holes-the-air-region_1-shadow ,cells2-walls:34-with-holes-the-air-region_1-shadow ,cells2-walls:9-with-holes-the-air-region_1-shadow ,cells2-walls:43-with-holes-the-air-region_1-shadow ,cells2-walls:7-with-holes-the-air-region_1-shadow ,cells2-walls:38-with-holes-the-air-region_1-shadow ,cells2-walls:19-with-holes-the-air-region_1-shadow ,cells2-walls:4-with-holes-the-air-region_1-shadow ,cells2-walls:53-with-holes-the-air-region_1-shadow ,cells2-walls:20-with-holes-the-air-region_1-shadow ,cells2-walls:17-with-holes-the-air-region_1-shadow ,cells2-walls:27-with-holes-the-air-region_1-shadow ,cells2-walls-with-holes-the-air-region_1-shadow ,cells2-walls:69-with-holes-the-air-region_1-shadow ,cells2-walls:36-with-holes-the-air-region_1-shadow ,cells2-walls:29-with-holes-the-air-region_1-shadow ,cells2-walls:14-with-holes-the-air-region_1-shadow ,cells2-walls:44-with-holes-the-air-region_1-shadow ,cells2-walls:18-with-holes-the-air-region_1-shadow ,cells2-walls:61-with-holes-the-air-region_1-shadow ,cells2-walls:58-with-holes-the-air-region_1-shadow ,cells2-walls:49-with-holes-the-air-region_1-shadow ,cells2-walls:40-with-holes-the-air-region_1-shadow ,cells2-walls:13-with-holes-the-air-region_1-shadow ,cells2-walls:12-with-holes-the-air-region_1-shadow ,cells2-walls:71-with-holes-the-air-region_1-shadow ,cells2-walls:15-with-holes-the-air-region_1-shadow ,cells2-walls:62-with-holes-the-air-region_1-shadow ,cells2-walls:33-with-holes-the-air-region_1-shadow ,cells2-walls:67-with-holes-the-air-region_1-shadow ,cells2-walls:57-with-holes-the-air-region_1-shadow ,cells2-walls:52-with-holes-the-air-region_1-shadow ,cells2-walls:46-with-holes-the-air-region_1-shadow ,cells2-walls:42-with-holes-the-air-region_1-shadow ,cells2-walls:32-with-holes-the-air-region_1-shadow ,cells2-walls:1-with-holes-the-air-region_1-shadow ,cells2-walls:37-with-holes-the-air-region_1-shadow ,cells2-walls:54-with-holes-the-air-region_1-shadow ,cells2-walls:51-with-holes-the-air-region_1-shadow ,cells2-walls:41-with-holes-the-air-region_1-shadow ,cells2-walls:2-with-holes-the-air-region_1-shadow ,cells2-walls:31-with-holes-the-air-region_1-shadow ,cells2-walls:10-with-holes-the-air-region_1-shadow ,cells2-walls:30-with-holes-the-air-region_1-shadow ,cells2-walls:8-with-holes-the-air-region_1-shadow ,cells2-walls:35-with-holes-the-air-region_1-shadow ,cells2-walls:3-with-holes-the-air-region_1-shadow ,cells2-walls:28-with-holes-the-air-region_1-shadow ,cells2-walls:45-with-holes-the-air-region_1-shadow ,cells2-walls:6-with-holes-the-air-region_1-shadow ,cells2-walls:25-with-holes-the-air-region_1-shadow ,cells2-walls:24-with-holes-the-air-region_1-shadow ,cells2-walls:59-with-holes-the-air-region_1-shadow ,cells2-walls:23-with-holes-the-air-region_1-shadow ,default-default-solid:1-shadow ,default-default-with-holes-the-air-region_1-shadow ,cells2-walls:22-with-holes-the-air-region_1-shadow ,default-default-default-default-2-shadow ,default-actual-fan-default-default-1-shadow ,default-default-1-default-default-3-shadow ,default-default-3-solid:2-shadow ,solid:1-with-holes-the-air-region_1-shadow ,solid:2-with-holes-the-air-region_1-shadow ,solid-with-holes-the-air-region_1-shadow ,default-default-3-with-holes-the-air-region-shadow ,default-default-2-default-default1-shadow ,default-actual-fan-default-default1-1-shadow ,default-default1-2-with-holes-the-air-region-shadow ,default-actual-fan-default-default-3-shadow ,default-default-2-default-default1-2-shadow ,walls.7 ,solid:1:1 ,solid.1 ,default-default-default-default1_1 ,default-default-1-default-default1-1 ,default-default1-2-solid:1 ,default-default-default-default1-2 ,default-default:1-solid:2 ,default-default-1-with-holes-the-air-region ,cells2-walls:47-with-holes-the-air-region_1 ,cells2-walls:65-with-holes-the-air-region_1 ,cells2-walls:39-with-holes-the-air-region_1 ,cells2-walls:68-with-holes-the-air-region_1 ,cells2-walls:55-with-holes-the-air-region_1 ,cells2-walls:11-with-holes-the-air-region_1 ,cells2-walls:60-with-holes-the-air-region_1 ,cells2-walls:16-with-holes-the-air-region_1 ,cells2-walls:50-with-holes-the-air-region_1 ,cells2-walls:64-with-holes-the-air-region_1 ,cells2-walls:26-with-holes-the-air-region_1 ,cells2-walls:70-with-holes-the-air-region_1 ,cells2-walls:21-with-holes-the-air-region_1 ,cells2-walls:48-with-holes-the-air-region_1 ,cells2-walls:66-with-holes-the-air-region_1 ,cells2-walls:63-with-holes-the-air-region_1 ,cells2-walls:5-with-holes-the-air-region_1 ,cells2-walls:56-with-holes-the-air-region_1 ,cells2-walls:34-with-holes-the-air-region_1 ,cells2-walls:9-with-holes-the-air-region_1 ,cells2-walls:43-with-holes-the-air-region_1 ,cells2-walls:7-with-holes-the-air-region_1 ,cells2-walls:38-with-holes-the-air-region_1 ,cells2-walls:19-with-holes-the-air-region_1 ,cells2-walls:4-with-holes-the-air-region_1 ,cells2-walls:53-with-holes-the-air-region_1 ,cells2-walls:20-with-holes-the-air-region_1 ,cells2-walls:17-with-holes-the-air-region_1 ,cells2-walls:27-with-holes-the-air-region_1 ,cells2-walls-with-holes-the-air-region_1 ,cells2-walls:69-with-holes-the-air-region_1 ,cells2-walls:36-with-holes-the-air-region_1 ,cells2-walls:29-with-holes-the-air-region_1 ,cells2-walls:14-with-holes-the-air-region_1 ,cells2-walls:44-with-holes-the-air-region_1 ,cells2-walls:18-with-holes-the-air-region_1 ,cells2-walls:61-with-holes-the-air-region_1 ,cells2-walls:58-with-holes-the-air-region_1 ,cells2-walls:49-with-holes-the-air-region_1 ,cells2-walls:40-with-holes-the-air-region_1 ,cells2-walls:13-with-holes-the-air-region_1 ,cells2-walls:12-with-holes-the-air-region_1 ,cells2-walls:71-with-holes-the-air-region_1 ,cells2-walls:15-with-holes-the-air-region_1 ,cells2-walls:62-with-holes-the-air-region_1 ,cells2-walls:33-with-holes-the-air-region_1 ,cells2-walls:67-with-holes-the-air-region_1 ,cells2-walls:57-with-holes-the-air-region_1 ,cells2-walls:52-with-holes-the-air-region_1 ,cells2-walls:46-with-holes-the-air-region_1 ,cells2-walls:42-with-holes-the-air-region_1 ,cells2-walls:32-with-holes-the-air-region_1 ,cells2-walls:1-with-holes-the-air-region_1 ,cells2-walls:37-with-holes-the-air-region_1 ,cells2-walls:54-with-holes-the-air-region_1 ,cells2-walls:51-with-holes-the-air-region_1 ,cells2-walls:41-with-holes-the-air-region_1 ,cells2-walls:2-with-holes-the-air-region_1 ,cells2-walls:31-with-holes-the-air-region_1 ,cells2-walls:10-with-holes-the-air-region_1 ,cells2-walls:30-with-holes-the-air-region_1 ,cells2-walls:8-with-holes-the-air-region_1 ,cells2-walls:35-with-holes-the-air-region_1 ,cells2-walls:3-with-holes-the-air-region_1 ,cells2-walls:28-with-holes-the-air-region_1 ,cells2-walls:45-with-holes-the-air-region_1 ,cells2-walls:6-with-holes-the-air-region_1 ,cells2-walls:25-with-holes-the-air-region_1 ,cells2-walls:24-with-holes-the-air-region_1 ,cells2-walls:59-with-holes-the-air-region_1 ,cells2-walls:23-with-holes-the-air-region_1 ,default-default-solid:1 ,default-default-with-holes-the-air-region_1 ,cells2-walls:22-with-holes-the-air-region_1 ,default-default-default-default-2 ,default-actual-fan-default-default-1 ,default-default-1-default-default-3 ,default-default-3-solid:2 ,solid:1-with-holes-the-air-region_1 ,solid:2-with-holes-the-air-region_1 ,solid-with-holes-the-air-region_1 ,walls.8 ,walls.6 ,default-default-3-with-holes-the-air-region ,default-default-2-default-default1 ,default-actual-fan-default-default1-1 ,default-default1-2-with-holes-the-air-region ,walls ,default-actual-fan-default-default-3 ,default-default-2-default-default1-2
+""", "Association": "", "DateTimeStamp": 09/05/2025 23:24:17, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 26" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 26</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Sean\Subpack_Conjugate_Heat_Transfer_3d_Fan_files\dp0\FFF\Fluent\FFF.3.msh.h5""", "Details": None, "Association": "", "DateTimeStamp": 09/05/2025 23:51:16, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 27" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 27</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"C:\Users\sean8\Documents\GitHub\Cooling_Modelling\Subpack Conjugate Heat Transfer\Sean\Subpack_Conjugate_Heat_Transfer_3d_Fan_files\dp0\FFF\DM\FFF.dsco  does not exist any more. The file might have been renamed, moved or deleted. You can use the Files View to specify the correct file location.", "Details": None, "Association": "", "DateTimeStamp": 09/09/2025 16:21:56, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 28" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 28</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Downloads\Subpack_Conjugate_Heat_Transfer_3d_Fan_files-20250910T003126Z-1-001\Subpack_Conjugate_Heat_Transfer_3d_Fan_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/09/2025 18:10:44, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 29" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 29</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Owner\Downloads\Subpack_Conjugate_Heat_Transfer_3d_Fan_files-20250910T003126Z-1-001\Subpack_Conjugate_Heat_Transfer_3d_Fan_files\dp0\FFF\DM\FFF.dsco""", "Details": None, "Association": "", "DateTimeStamp": 09/09/2025 19:20:24, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 30" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 30</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Model information is incompatible with incoming mesh.", "Details": """Following zones were missing in the mesh:
+default-actual-fan ,default-default-3 ,default-default-2 ,default-default1-2 ,walls.7 ,solid:1:1 ,default-default-default-default1-2 ,default-default1-2-solid:1 ,default-default:1-solid:2 ,default-default-solid:1 ,default-default-default-default-2 ,default-actual-fan-default-default-1 ,default-default-1-default-default-3 ,default-default-3-solid:2 ,default-actual-fan-default-default1-1 ,walls.8 ,default-default-2-default-default1 ,default-default1-2-with-holes-the-air-region ,default-default-3-with-holes-the-air-region ,default-actual-fan-default-default-3 ,default-default-2-default-default1-2 ,default-default-default-default1-2-shadow ,default-default1-2-solid:1-shadow ,default-default:1-solid:2-shadow ,default-default-solid:1-shadow ,default-default-default-default-2-shadow ,default-actual-fan-default-default-1-shadow ,default-default-1-default-default-3-shadow ,default-default-3-solid:2-shadow ,default-actual-fan-default-default1-1-shadow ,default-default-2-default-default1-shadow ,default-default1-2-with-holes-the-air-region-shadow ,default-default-3-with-holes-the-air-region-shadow ,default-actual-fan-default-default-3-shadow ,default-default-2-default-default1-2-shadow
+Following new zones were found in the mesh:
+interior-selections ,walls-1 ,default-default1-1-interior-selections-shadow ,solid:2-walls-1-shadow ,default-default-solid-shadow ,default-default-1-solid-shadow ,interior-selections-solid-shadow ,walls.3 ,default-default1-1-interior-selections ,walls.2 ,solid:2-walls-1 ,default-default-solid ,default-default-1-solid ,interior-selections-solid ,solid-wall
+""", "Association": "", "DateTimeStamp": 09/09/2025 20:19:21, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Parameters" Version="1.0">
+      <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
+      <static-id valType="String">Parameters</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <maxUpdateOrder valType="Double">1</maxUpdateOrder>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 19316, "Input": 18563, "Output": 18562}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Parameters/DesignPoint:0" Version="1.0">
+        <class-type valType="String">DesignPoint</class-type>
+        <object-name valType="String">0</object-name>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {"$$ecdf5e76-2bdf-4cd4-9c0e-b35510bdde18": "Update of the Solution component in Fluid Flow (Fluent with Fluent Meshing) failed: Command was cancelled: Solution Update Cancelled."}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Mesh in FFF, Setup in FFF, Solution in FFF"}, "Parameters": {}, "ParameterErrors": {}, "CurrentValues": {}, "ParameterStatus": {}, "Note": None, "IsUpToDate": False, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": False, "UpdateOrder": 1}</member-data>
+        <properties-setByUserFlag-data valType="String">["IsDataModelValid"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Parameters/DesignPointReportSetting:Design Points Report Setting" Version="1.0">
+        <class-type valType="String">DesignPointReportSetting</class-type>
+        <object-name valType="String">Design Points Report Setting</object-name>
+        <member-data valType="String">{"DisplayText": "Design Points Report Setting", "DesignPointReportImage": "None"}</member-data>
+      </Object>
+      <ParameterToPropertyMap />
+    </Container>
+    <Container Name="Schematic" Version="1.0">
+      <container-type valType="String">Ansys.ProjectSchematic.ProjectSchematicAddin:Default</container-type>
+      <static-id valType="String">Schematic</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 23675, "Input": 23532, "Output": 18565}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Schematic/System:FFF" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">FFF</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (Fluent with Fluent Meshing)", "Components": [$$e86376db-1c7d-4d3c-9a46-0761829810e9, $$1965362f-f242-411c-8c93-5ee1a4387452, $$8b5fc9b3-73ac-4434-8983-80823fae3449, $$ecdf5e76-2bdf-4cd4-9c0e-b35510bdde18, $$7a03abf5-a0c3-41b3-be3a-2ecf3a458b62], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$8b5fc9b3-73ac-4434-8983-80823fae3449, $$ecdf5e76-2bdf-4cd4-9c0e-b35510bdde18], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsTypeDisplayString": "Fluids", "Start from available data": "True", "SolverTypeDisplayString": "FLUENT", "IsCreated": "True", "VOLATILE:SystemName": "FFF"}, "SystemType": "Fluid Flow (Fluent with Fluent Meshing)", "HeaderText": "Fluid Flow (Fluent with Fluent Meshing)", "SystemTypeAbbreviation": "FFF", "UniqueSystemDirectoryName": "FFF", "Physics": ["Fluids"], "AnalysisType": None, "SystemHelpId": "wb2sb_FluidFlowWithFluentMeshing", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$6afd12a1-9068-4198-b90d-ae71b1fc8c62, "Notes": None, "LayoutChildren": [], "LayoutIndex": 1}</member-data>
+      </Object>
+      <Object Name="/Schematic/SchematicSettings:Schematic Settings" Version="1.0">
+        <class-type valType="String">SchematicSettings</class-type>
+        <object-name valType="String">Schematic Settings</object-name>
+        <member-data valType="String">{"DisplayText": "Schematic Settings", "WireBundling": False, "ShowSystemCoordinates": True, "Notes": None, "SuspendCollectingRSMResult": False}</member-data>
+      </Object>
+      <Object Name="/Schematic/DesignPointSolveSettings:Design Points Update Settings" Version="1.0">
+        <class-type valType="String">DesignPointSolveSettings</class-type>
+        <object-name valType="String">Design Points Update Settings</object-name>
+        <member-data valType="String">{"DisplayText": "Design Points Update Settings", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "UpdateMethod": "Foreground", "UpdateOrder": "UpdateFromCurrentDesignPoint", "PreRSMUpdate": "Geometry", "PartialUpdate": "None", "RetainPartialUpdate": "None", "ComponentExecutionMode": "Serial", "NumberOfCoresPerJob": 2, "RetainFailedDesignPoints": False, "DesignPointRetainedOrExportedUpdate": "Parameters", "DesignPointUpdateTimeout": 0, "JobStatusCheckIntervalInSeconds": 20, "NumberOfJobsToBeCreated": 1, "NumberOfTasksToBeCreated": 1}</member-data>
+      </Object>
+      <Object Name="/Schematic/Bookkeeper:Schematic bookkeeper" Version="1.0">
+        <class-type valType="String">Bookkeeper</class-type>
+        <object-name valType="String">Schematic bookkeeper</object-name>
+        <member-data valType="String">{"DisplayText": "Schematic bookkeeper", "UpfrontLicenseCheckoutSelection": []}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:FSI: Fluid Flow (CFX) -&gt; Static Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">FSI: Fluid Flow (CFX) -&gt; Static Structural</object-name>
+        <member-data valType="String">{"DisplayText": "FSI: Fluid Flow (CFX) -&gt; Static Structural", "SystemTemplates": [$$da41ca83-9fd8-48ff-8943-64dfa5de0cfb, $$4254bd3d-e682-4806-a6f2-7f53db08219d], "SystemNames": ["Fluid Flow (CFX)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Fluid Flow (CFX):Geometry", "Static Structural (ANSYS):Geometry"], ["Connect", "Fluid Flow (CFX):Solution:CFXTransferResultsTemplate", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Fluid Flow (CFX)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Fluid Flow (CFX)": ["Static Structural (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:FSI: Fluid Flow (FLUENT) -&gt; Static Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">FSI: Fluid Flow (FLUENT) -&gt; Static Structural</object-name>
+        <member-data valType="String">{"DisplayText": "FSI: Fluid Flow (FLUENT) -&gt; Static Structural", "SystemTemplates": [$$3022fd84-42f0-4754-a18d-ac1f19a45972, $$4254bd3d-e682-4806-a6f2-7f53db08219d], "SystemNames": ["Fluid Flow (FLUENT)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Fluid Flow (FLUENT):Geometry", "Static Structural (ANSYS):Geometry"], ["Connect", "Fluid Flow (FLUENT):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Fluid Flow (FLUENT)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Fluid Flow (FLUENT)": ["Static Structural (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Thermal-Stress" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Thermal-Stress</object-name>
+        <member-data valType="String">{"DisplayText": "Thermal-Stress", "SystemTemplates": [$$af9c9bfc-ea17-42f7-86b2-7c8571f34f7e, $$4254bd3d-e682-4806-a6f2-7f53db08219d], "SystemNames": ["Steady-State Thermal (ANSYS)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Steady-State Thermal (ANSYS):Engineering Data", "Static Structural (ANSYS):Engineering Data"], ["Share", "Steady-State Thermal (ANSYS):Geometry", "Static Structural (ANSYS):Geometry"], ["Share", "Steady-State Thermal (ANSYS):Model", "Static Structural (ANSYS):Model"], ["Connect", "Steady-State Thermal (ANSYS):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Steady-State Thermal (ANSYS)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Steady-State Thermal (ANSYS)": ["Static Structural (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Pre-Stress Modal" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Pre-Stress Modal</object-name>
+        <member-data valType="String">{"DisplayText": "Pre-Stress Modal", "SystemTemplates": [$$4254bd3d-e682-4806-a6f2-7f53db08219d, $$6af33592-b94c-4b93-bd7a-e831c614b919], "SystemNames": ["Static Structural (ANSYS)", "Modal (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Static Structural (ANSYS):Engineering Data", "Modal (ANSYS):Engineering Data"], ["Share", "Static Structural (ANSYS):Geometry", "Modal (ANSYS):Geometry"], ["Share", "Static Structural (ANSYS):Model", "Modal (ANSYS):Model"], ["Connect", "Static Structural (ANSYS):Solution", "Modal (ANSYS):Setup"]], "LayoutIndices": {"Static Structural (ANSYS)": 1, "Modal (ANSYS)": 0}, "LayoutChildren": {"Static Structural (ANSYS)": ["Modal (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Random Vibration" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Random Vibration</object-name>
+        <member-data valType="String">{"DisplayText": "Random Vibration", "SystemTemplates": [$$6af33592-b94c-4b93-bd7a-e831c614b919, $$a7c64b48-13c3-48ad-bcae-12f4f16672eb], "SystemNames": ["Modal (ANSYS)", "Random Vibration (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Modal (ANSYS):Engineering Data", "Random Vibration (ANSYS):Engineering Data"], ["Share", "Modal (ANSYS):Geometry", "Random Vibration (ANSYS):Geometry"], ["Share", "Modal (ANSYS):Model", "Random Vibration (ANSYS):Model"], ["Connect", "Modal (ANSYS):Solution", "Random Vibration (ANSYS):Setup"]], "LayoutIndices": {"Modal (ANSYS)": 1, "Random Vibration (ANSYS)": 0}, "LayoutChildren": {"Modal (ANSYS)": ["Random Vibration (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:Response Spectrum" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">Response Spectrum</object-name>
+        <member-data valType="String">{"DisplayText": "Response Spectrum", "SystemTemplates": [$$6af33592-b94c-4b93-bd7a-e831c614b919, $$33c17991-56ec-4027-a6b8-60201c0820f3], "SystemNames": ["Modal (ANSYS)", "Response Spectrum (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Modal (ANSYS):Engineering Data", "Response Spectrum (ANSYS):Engineering Data"], ["Share", "Modal (ANSYS):Geometry", "Response Spectrum (ANSYS):Geometry"], ["Share", "Modal (ANSYS):Model", "Response Spectrum (ANSYS):Model"], ["Connect", "Modal (ANSYS):Solution", "Response Spectrum (ANSYS):Setup"]], "LayoutIndices": {"Modal (ANSYS)": 1, "Response Spectrum (ANSYS)": 0}, "LayoutChildren": {"Modal (ANSYS)": ["Response Spectrum (ANSYS)"]}, "Attributes": {}, "SystemDisplayTexts": {}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:AM DED Process" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">AM DED Process</object-name>
+        <member-data valType="String">{"DisplayText": "AM DED Process", "SystemTemplates": [$$d4e30ec7-a44d-40aa-b82f-9ebd7eaac967, $$4254bd3d-e682-4806-a6f2-7f53db08219d], "SystemNames": ["Transient Thermal (ANSYS)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Transient Thermal (ANSYS):Engineering Data", "Static Structural (ANSYS):Engineering Data"], ["Share", "Transient Thermal (ANSYS):Geometry", "Static Structural (ANSYS):Geometry"], ["Share", "Transient Thermal (ANSYS):Model", "Static Structural (ANSYS):Model"]], "LayoutIndices": {"Transient Thermal (ANSYS)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Transient Thermal (ANSYS)": ["Static Structural (ANSYS)"]}, "Attributes": {"Transient Thermal (ANSYS)": {"IsAMDEDSystem": "True"}, "Static Structural (ANSYS)": {"IsAMDEDSystem": "True"}}, "SystemDisplayTexts": {"Transient Thermal (ANSYS)": "AM DED Thermal", "Static Structural (ANSYS)": "AM DED Structural"}, "DisabledOnPlatform": "Linux"}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:AM LPBF Thermal-Structural" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">AM LPBF Thermal-Structural</object-name>
+        <member-data valType="String">{"DisplayText": "AM LPBF Thermal-Structural", "SystemTemplates": [$$d4e30ec7-a44d-40aa-b82f-9ebd7eaac967, $$4254bd3d-e682-4806-a6f2-7f53db08219d], "SystemNames": ["Transient Thermal (ANSYS)", "Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [["Share", "Transient Thermal (ANSYS):Engineering Data", "Static Structural (ANSYS):Engineering Data"], ["Share", "Transient Thermal (ANSYS):Geometry", "Static Structural (ANSYS):Geometry"], ["Share", "Transient Thermal (ANSYS):Model", "Static Structural (ANSYS):Model"], ["Connect", "Transient Thermal (ANSYS):Solution", "Static Structural (ANSYS):Setup"]], "LayoutIndices": {"Transient Thermal (ANSYS)": 1, "Static Structural (ANSYS)": 0}, "LayoutChildren": {"Transient Thermal (ANSYS)": ["Static Structural (ANSYS)"]}, "Attributes": {"Transient Thermal (ANSYS)": {"IsAMSystem": "True"}, "Static Structural (ANSYS)": {"IsAMSystem": "True"}}, "SystemDisplayTexts": {"Transient Thermal (ANSYS)": "AM LPBF Thermal", "Static Structural (ANSYS)": "AM LPBF Structural"}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/CustomProjectTemplate:AM LPBF Inherent Strain" Version="1.0">
+        <class-type valType="String">CustomProjectTemplate</class-type>
+        <object-name valType="String">AM LPBF Inherent Strain</object-name>
+        <member-data valType="String">{"DisplayText": "AM LPBF Inherent Strain", "SystemTemplates": [$$4254bd3d-e682-4806-a6f2-7f53db08219d], "SystemNames": ["Static Structural (ANSYS)"], "ToolboxGroup": "Custom Systems", "AdditionalSystemHelpId": None, "PostCreationSteps": [], "LayoutIndices": {}, "LayoutChildren": {}, "Attributes": {"Static Structural (ANSYS)": {"IsAMSystem": "True"}}, "SystemDisplayTexts": {"Static Structural (ANSYS)": "AM LPBF Inherent Strain"}, "DisabledOnPlatform": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Geometry" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Geometry</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "cad_discovery", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Geometry", "_overwrittenUpdatable": None, "Template": $$637f3768-63bc-492d-a02f-152dcc71e445, "InSystem": $$11e7df15-a64a-4423-9ca0-b4f23aa97c45, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Mesh" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Mesh</object-name>
+        <member-data valType="String">{"DisplayText": "Mesh", "ImageName": "meshobj", "ComponentStateOnLastFailure": "OutOfDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Mesh", "_overwrittenUpdatable": None, "Template": $$5d56e2a7-b0be-4708-8506-225b1266d35b, "InSystem": $$11e7df15-a64a-4423-9ca0-b4f23aa97c45, "MasterSources": {"Sources": [[{"DataType": "Geometry", "Component": $$e86376db-1c7d-4d3c-9a46-0761829810e9, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {"cfd_base": 2, "cfd_preppost": 2, "cfd_preppost_pro": 2}, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup</object-name>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup", "_overwrittenUpdatable": None, "Template": $$7042c219-0a15-4e49-9903-b80537f5a596, "InSystem": $$11e7df15-a64a-4423-9ca0-b4f23aa97c45, "MasterSources": {"Sources": [[{"DataType": "FluentTGridMesh", "Component": $$1965362f-f242-411c-8c93-5ee1a4387452, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution", "ComponentStateOnLastFailure": "OutOfDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution", "_overwrittenUpdatable": None, "Template": $$b9edb98e-50f5-42a7-91f8-fd7bec5611a6, "InSystem": $$11e7df15-a64a-4423-9ca0-b4f23aa97c45, "MasterSources": {"Sources": [[{"DataType": "FluentSetup", "Component": $$8b5fc9b3-73ac-4434-8983-80823fae3449, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "FLUENT", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Results" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Results</object-name>
+        <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results", "_overwrittenUpdatable": None, "Template": $$2443b5d3-cb9a-407c-9bfd-93d422a0dbed, "InSystem": $$11e7df15-a64a-4423-9ca0-b4f23aa97c45, "MasterSources": {"Sources": [[{"DataType": "FluentSolution", "Component": $$ecdf5e76-2bdf-4cd4-9c0e-b35510bdde18, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="ReportDataContainer" Version="1.0">
+      <container-type valType="String">Ansys.ProjectReporting.Addin:ReportDataContainer</container-type>
+      <static-id valType="String">ReportDataContainer</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 18898, "Input": 18889, "Output": 18889}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+    </Container>
+    <Container Name="Graphics" Version="1.0">
+      <container-type valType="String">Ansys.Graphics.GraphicsAddin:graphics</container-type>
+      <static-id valType="String">Graphics</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 18899, "Input": 18899, "Output": 18899}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+    </Container>
+    <Container Name="Units" Version="1.0">
+      <container-type valType="String">Ansys.Units.Commands.Addin:Units</container-type>
+      <static-id valType="String">Units</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 18900, "Input": 18902, "Output": 18900}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Units/UnitSystemProjectSettings:UnitSystemProjectSettings" Version="1.0">
+        <class-type valType="String">UnitSystemProjectSettings</class-type>
+        <object-name valType="String">UnitSystemProjectSettings</object-name>
+        <member-data valType="String">{"DisplayText": "UnitSystemProjectSettings", "DataContainerUnitSystemRegistry": {}}</member-data>
+      </Object>
+      <Object Name="/Units/UnitSystem:UnitSys" Version="1.0">
+        <class-type valType="String">UnitSystem</class-type>
+        <object-name valType="String">UnitSys</object-name>
+        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
+      </Object>
+    </Container>
+    <Container Name="HpsContainer" Version="1.0">
+      <container-type valType="String">Ansys.HPS.Addin:HpsContainer</container-type>
+      <static-id valType="String">HpsContainer</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 18906, "Input": 18903, "Output": 18903}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/HpsContainer/HpsSettings:HPS Settings Entity" Version="1.0">
+        <class-type valType="String">HpsSettings</class-type>
+        <object-name valType="String">HPS Settings Entity</object-name>
+        <member-data valType="String">{"DisplayText": "HPS Settings Entity", "ServerUrl": "https://localhost:8443/hps", "ServerUserName": None, "ServerPassword": None, "ProjectId": None, "ExecutionTime": 300, "UpdateDesignPointInSteps": False}</member-data>
+      </Object>
+      <Object Name="/HpsContainer/HpsProjectIdMap:HPS ProjectId Map Entity" Version="1.0">
+        <class-type valType="String">HpsProjectIdMap</class-type>
+        <object-name valType="String">HPS ProjectId Map Entity</object-name>
+        <member-data valType="String">{"DisplayText": "HPS ProjectId Map Entity", "HpsProjectIdMap": {}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="PyAddinManager" Version="1.0">
+      <container-type valType="String">Ansys.PyAddin.Core.Addin:ManagerContainer</container-type>
+      <static-id valType="String">PyAddinManager</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 18907, "Input": 18908, "Output": 18907}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/PyAddinManager/ManagerDataObject:PyAddins" Version="1.0">
+        <class-type valType="String">ManagerDataObject</class-type>
+        <object-name valType="String">PyAddins</object-name>
+        <member-data valType="String">{"DisplayText": "PyAddins", "PyAddins": {}}</member-data>
+      </Object>
+    </Container>
+  </Containers>
+</Storage>
