@@ -183,11 +183,19 @@ legend
 
 %% Supporting Functions
 function q_gen_mc = mc_heat(V,I)
+    I = abs(I);
+    q_gen_mc = zeros(size(V));
     a = 0.000244;
     b = 1.073;
     c = 1.744;
     offset = 268; % this offset may be invalid for zero power consumption: something to look into
-    q_gen_mc = a.*V.^b .* I.^c + offset;
+    for i = 1:length(V)
+        if I(i) <= 5
+            q_gen_mc(i) = 0;
+        else
+            q_gen_mc(i) = a*V^b * I^c + offset;
+        end
+    end
 end
 
 function dydx = backwards_euler(y_1,y_2,x_1,x_2)
