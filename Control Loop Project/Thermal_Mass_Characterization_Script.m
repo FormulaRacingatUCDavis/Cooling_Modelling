@@ -14,7 +14,12 @@ water_air_temps = readmatrix("Water_Air_Temps.csv"); % [°C]
 water_motor_inlet = water_air_temps(:,2);
 water_mc_outlet = water_air_temps(:,3);
 water_time = water_air_temps(:,1);
-data = readmatrix("FE11 Endurance Full Data V2.xlsx");
+orig_data = readmatrix("FE11 Endurance Full Data V2.xlsx");
+
+data_zeros = nnz(orig_data(:,1) == 0);
+data_front_cut = orig_data(((data_zeros-1):end),:);
+
+data = average_duplicates(data_front_cut);
 
 voltage = data(:,2); % [V]
 current = data(:,3); % [A]
@@ -127,7 +132,6 @@ ylabel('Temperature [°C]')
 grid on
 legend
 
-figure % this figure shows motor, mc and water temps
 figure % this figure compares the reinterpolated water temps to the old water temps
 hold on
 plot(times,new_water_in_temps,'DisplayName','New Inlet Temps')
@@ -190,6 +194,18 @@ legend
 % obvious if something it is wrong.
 
 %% Supporting Functions
+function data_out = average_duplicates(data_in)
+    [num_rows,num_cols] = size(data_in);
+    unique_times = unique(data_in(:,1))';
+    data_out = zeros([length(unique_times),num_cols]);
+    for i = 1:length(unique_times)
+        log_ind_dupes = (data_in(:,1) == unique_times(i));
+        dupes = data_in(log_ind_dupes,2:end);
+        ave_dupes = mean(dupes,1);
+        data_out(i,:) = [unique_times(i),ave_dupes];
+    end
+end
+
 function q_gen_mc = mc_heat(V,I)
     I = abs(I);
     q_gen_mc = zeros(size(V));
@@ -201,7 +217,7 @@ function q_gen_mc = mc_heat(V,I)
         if I(i) <= 5
             q_gen_mc(i) = 0;
         else
-            q_gen_mc(i) = a*V^b * I^c + offset;
+            q_gen_mc(i) = a*V(i).^b .* I(i).^c + offset;
         end
     end
 end
