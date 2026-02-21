@@ -11,6 +11,9 @@ mc_temps = readmatrix("MC_Temps.csv"); % [°C]
 mc_times = mc_temps(:,1);
 motor_temps = readmatrix("Motor_Temps.csv"); % [°C]
 water_air_temps = readmatrix("Water_Air_Temps.csv"); % [°C]
+water_motor_inlet = water_air_temps(:,2);
+water_mc_outlet = water_air_temps(:,3);
+water_time = water_air_temps(:,1);
 data = readmatrix("FE11 Endurance Full Data V2.xlsx");
 
 voltage = data(:,2); % [V]
@@ -27,6 +30,7 @@ for i = 1:length(power)
     end
 end
 avg_power = sum(p)/(1000*counter);
+disp(mean(abs(power)))
 
 %% Heat Generation Calcs
 q_gen_mc = mc_heat(voltage,abs(current)); % taking absolute value of current since direction does not matter for heat generation
@@ -36,6 +40,10 @@ q_gen_motor_abs = abs(power).*(1-motor_efficiency);
 avg_motor_q_gen = mean(q_gen_motor);
 avg_mc_q_gen = mean(q_gen_mc);
 
+%% Radiator Heat Rejection
+m_dot = 0.0001166666666667; % [m^3/s]
+Cp_water = 4186; % Specific heat capacity of water [J/(kg*K)]
+Q_out = rad_q_out(m_dot,Cp_water,water_motor_inlet,water_mc_outlet,time_water);
 %% Cooldown Scenario
 cooldown_start_time = 1365; % [s] gotten from manually looking at cooldown start time
 cooldown_end_time = 1500; % [s] gotten from manually looking at cooldown end time
@@ -205,4 +213,24 @@ end
 function times_index = find_index_from_time(time,times)
     difference = times - time;
     [~,times_index] = min(abs(difference));
+end
+
+function Q_out = rad_q_out(m_dot,Cp,T_inlet,T_outlet,time_water)
+    % Outputs q_out in Joules
+    Q_out = trapz(time_water,m_dot*Cp.*(T_outlet-T_inlet));
+end
+
+function Cm = Cm_general(q_gen,Q_out,q_time,T_motor_initial,T_motor_final,T_mc_initial,T_mc_final,k)
+    % Funtion for solution of Cm for general case:
+    % Cm = (INTEGRAL{q_gen - q_out dt})/(T_m + k*T_mc)
+    Q = trapz(q_time,q_gen) - trapz(q_time,Q_out); 
+    T_m = T_motor_final-T_motor_initial;
+    T_mc = T_mc_final - T_mc_initial;
+    Cm = Q/(T_m - k*T_mc);
+end
+
+function k = k_cooldown(Q_out,C_motor,T_motor_initial,T_motor_final,T_mc_initial,T_mc_final)
+    T_m = T_motor_final-T_motor_initial;
+    T_mc = T_mc_final - T_mc_initial;
+    k = Q_out/(C_motor*T_mc) - T_m/T_mc;
 end
