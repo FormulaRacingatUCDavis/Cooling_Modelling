@@ -38,7 +38,7 @@ xlim([0,2700])
 figure()
 subplot(3,1,1)
 hold on
-Water_Air_Temps_smooth = smoothdata(Water_Air_Temps(:,2),
+Water_Air_Temps_smooth = smoothdata(Water_Air_Temps(:,2));
 plot(Water_Air_Temps(:,1),filloutliers(Water_Air_Temps(:,2),"previous","movmedian",5),'DisplayName','Inlet Temps')
 plot(Water_Air_Temps(:,1),filloutliers(Water_Air_Temps(:,3),"previous","movmedian",5),'DisplayName','Outlet Temps')
 xlabel('Time [s]')
