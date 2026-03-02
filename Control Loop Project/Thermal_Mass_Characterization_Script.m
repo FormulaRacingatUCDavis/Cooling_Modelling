@@ -5,7 +5,7 @@
 
 %% Workspace
 clc; close all
-% clear all
+clear all
 
 %% Data
 orig_data = readmatrix("FE11 Endurance Full Data V2.xlsx");
@@ -78,7 +78,7 @@ avg_motor_q_gen = mean(q_gen_motor); % [W]
 avg_mc_q_gen = mean(q_gen_mc); % [W]
 
 %% Radiator Heat Rejection
-v_dot = 7; % [LPM]
+v_dot = 2.39; % [LPM]
 Cp_water = 4186; % [J/(kg*K)]
 
 liters_to_meters_cubed = 1/1000; % [m^3/L]
@@ -261,6 +261,12 @@ legend
 % do not trust the offset. I guess when we simulate it it will become
 % obvious if something it is wrong.
 
+%% 
+m_dot_estimate = q_gen./(Cp_water.*(new_water_out_temps-new_water_in_temps));
+m_dot_calculated = mean(m_dot_estimate(3644:4044)*60); %
+figure()
+plot(times,m_dot_estimate)
+% q_diss_calculated =
 %% Supporting Functions
 function data_out = average_duplicates(data_in)
     [num_rows,num_cols] = size(data_in);
