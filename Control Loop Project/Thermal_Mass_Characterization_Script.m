@@ -114,6 +114,8 @@ cooldown_2_start_index = find_index_from_time(cooldown_2_start_time,times);
 cooldown_2_end_index = find_index_from_time(cooldown_2_end_time,times);
 
 %% Thermal Mass Iteration
+clc;
+
 ramp_1_times = times(ramp_1_start_index:ramp_1_end_index);
 q_gen_ramp = q_gen(ramp_1_start_index:ramp_1_end_index);
 q_out_ramp = q_out(ramp_1_start_index:ramp_1_end_index);
@@ -134,30 +136,34 @@ tol = 1e-3;
 res = Inf;
 k_guess = 1;
 k_old = k_guess;
-k_history = [];
+k_guess_history = [];
+k_new_history = [];
 C_motor_history = [];
 residual_history = [];
 counter = 0;
-max_iter = 1000;
+max_iter = 2000;
 while res > tol && counter < max_iter
-    C_motor = Cm_general(q_gen_ramp,q_out_ramp,ramp_1_times,T_motor_initial_ramp,T_motor_final_ramp,T_mc_initial_ramp,T_mc_final_ramp,k_guess);
-    k_new = k_cooldown(cooldown_1_times,q_out_cooldown,C_motor,T_motor_initial_cooldown,T_motor_final_cooldown,T_mc_initial_cooldown,T_mc_final_cooldown);
-    res = abs((k_new - k_old)/k_old); % Calculate the residual
-    k_history = [k_history; k_new]; % Store the history of k values
+    C_motor = abs(Cm_general(q_gen_ramp,q_out_ramp,ramp_1_times,T_motor_initial_ramp,T_motor_final_ramp,T_mc_initial_ramp,T_mc_final_ramp,k_guess));
+    if C_motor < 0
+        error("Negative C_motor detected")
+    end
+    k_new = abs(k_cooldown(cooldown_1_times,q_out_cooldown,C_motor,T_motor_initial_cooldown,T_motor_final_cooldown,T_mc_initial_cooldown,T_mc_final_cooldown));
+    res = abs((k_new - k_guess) / max(abs(k_guess),1e-12));
+    k_guess_history = [k_guess_history; k_guess]; % Store the history of k values
+    k_new_history = [k_new_history; k_new];
     C_motor_history = [C_motor_history;C_motor]; % Store C_motor history
     residual_history = [residual_history;res]; % Store residual data
     k_old = k_new;
-    k_guess = k_new;
+    k_guess = k_guess - 0.0001;
     counter = counter + 1;
-    if counter == max_iter
-        disp("Max Iterations Reached")
-    end
+end
+if counter == max_iter
+    disp("Max Iterations Reached")
 end
 fprintf('Iterations: %d\n',counter)
 fprintf('Final residual: %.6f\n',res)
 fprintf('Final k: %.6f\n',k_new)
-disp("k = " + num2str(k_new))
-disp("C_motor = " + num2str(C_motor))
+disp("Final C_motor = " + num2str(C_motor))
 
 figure
 semilogy(residual_history)
@@ -165,6 +171,18 @@ xlabel('Iteration')
 ylabel('Residual')
 title('Convergence History')
 grid on
+
+figure
+plot(k_history)
+xlabel('Iteration')
+ylabel('k')
+title('k Convergence History')
+
+figure
+plot(C_motor_history)
+xlabel('Iteration')
+ylabel('C_motor')
+title('C_motor Convergence History')
 %%
 % %% Cooldown Scenario
 % cooldown_start_time = 1365; % [s] gotten from manually looking at cooldown start time
