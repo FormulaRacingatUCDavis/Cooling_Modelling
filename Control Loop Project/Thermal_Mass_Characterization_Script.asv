@@ -84,9 +84,9 @@ Cp_water = 4186; % [J/(kg*K)]
 liters_to_meters_cubed = 1/1000; % [m^3/L]
 seconds_to_minutes = 1/60; % [min/s]
 density_water = 1000; % [kg/m^3]
-% m_dot = v_dot*liters_to_meters_cubed*seconds_to_minutes*density_water; % [kg/s]
-m_dot = q_gen./(Cp_water.*(new_water_out_temps-new_water_in_temps));
-q_out = m_dot.*Cp_water*(new_water_out_temps-new_water_in_temps); % [W]
+m_dot = v_dot*liters_to_meters_cubed*seconds_to_minutes*density_water; % [kg/s]
+
+q_out = m_dot*Cp_water*(new_water_out_temps-new_water_in_temps); % [W]
 Q_out_check = power_to_energy(times,q_out); % [J]
 Q_out = rad_q_out(m_dot,Cp_water,new_water_in_temps,new_water_out_temps,times); % [J]
 
@@ -113,11 +113,58 @@ cooldown_2_end_time = times(end); % [s]
 cooldown_2_start_index = find_index_from_time(cooldown_2_start_time,times);
 cooldown_2_end_index = find_index_from_time(cooldown_2_end_time,times);
 
-%% Thermal Mass Loop
-% res = 
-% tol = 
+%% Thermal Mass Iteration
+ramp_1_times = times(ramp_1_start_index:ramp_1_end_index);
+q_gen_ramp = q_gen(ramp_1_start_index:ramp_1_end_index);
+q_out_ramp = q_out(ramp_1_start_index:ramp_1_end_index);
+T_motor_initial_ramp = new_motor_temps(ramp_1_start_index);
+T_motor_final_ramp = new_motor_temps(ramp_1_end_index);
+T_mc_initial_ramp = new_mc_temps(ramp_1_start_index);
+T_mc_final_ramp = new_mc_temps(ramp_1_end_index);
 
 
+cooldown_1_times = times(cooldown_1_start_index:cooldown_1_end_index);
+q_out_cooldown = q_out(cooldown_1_start_index:cooldown_1_end_index);
+T_motor_initial_cooldown = new_motor_temps(cooldown_1_start_index);
+T_motor_final_cooldown = new_motor_temps(cooldown_1_end_index);
+T_mc_initial_cooldown = new_mc_temps(cooldown_1_start_index);
+T_mc_final_cooldown = new_mc_temps(cooldown_1_end_index);
+
+tol = 1e-3;
+res = Inf;
+k_guess = 1;
+k_history = [];
+C_motor_history = [];
+residual_history = [];
+counter = 0;
+max_iter = 1000;
+while res > tol && counter < max_iter
+    C_motor = Cm_general(q_gen_ramp,q_out_ramp,ramp_1_times,T_motor_initial_ramp,T_motor_final_ramp,T_mc_initial_ramp,T_mc_final_ramp,k_guess);
+    k_new = k_cooldown(cooldown_1_times,q_out_cooldown,C_motor,T_motor_initial_cooldown,T_motor_final_cooldown,T_mc_initial_cooldown,T_mc_final_cooldown);
+    res = abs((k_new - k_old)/k_old); % Calculate the residual
+    k_history = [k_history; k_new]; % Store the history of k values
+    C_motor_history = [C_motor_history;C_motor]; % Store C_motor history
+    residual_history = [residual_history;res]; % Store residual data
+    k_old = k_new;
+    k_guess = k_new;
+    counter = counter + 1;
+    if counter == max_iter
+        disp("Max Iterations Reached")
+    end
+end
+fprintf('Iterations: %d\n',counter)
+fprintf('Final residual: %.6f\n',res)
+fprintf('Final k: %.6f\n',k_new)
+disp("k = " + num2str(k_new))
+disp("C_motor = " + num2str(C_motor))
+
+figure
+semilogy(residual_history)
+xlabel('Iteration')
+ylabel('Residual')
+title('Convergence History')
+grid on
+%%
 % %% Cooldown Scenario
 % cooldown_start_time = 1365; % [s] gotten from manually looking at cooldown start time
 % cooldown_end_time = 1500; % [s] gotten from manually looking at cooldown end time
@@ -261,11 +308,13 @@ legend
 % do not trust the offset. I guess when we simulate it it will become
 % obvious if something it is wrong.
 
-%% 
-m_dot_estimate = q_gen./(Cp_water.*(new_water_out_temps-new_water_in_temps));
-m_dot_calculated = mean(m_dot_estimate(3644:4044)*60); %
-figure()
-plot(times,m_dot_estimate)
+%% Calculation of m_dot from testing data
+% m_dot_estimate = q_gen./(Cp_water.*(new_water_out_temps-new_water_in_temps));
+% m_dot_calculated = mean(m_dot_estimate(3644:4044)*60); %
+% figure()
+% plot(times,m_dot_estimate)
+% q_diss_calculated =
+
 
 %% Supporting Functions
 function data_out = average_duplicates(data_in)
@@ -321,17 +370,18 @@ function energy = power_to_energy(time,power)
     energy = trapz(time,power);
 end
 
-function Cm = Cm_general(q_gen,Q_out,q_time,T_motor_initial,T_motor_final,T_mc_initial,T_mc_final,k)
+function Cm = Cm_general(q_gen,q_out,q_time,T_motor_initial,T_motor_final,T_mc_initial,T_mc_final,k)
     % Funtion for solution of Cm for general case:
     % Cm = (INTEGRAL{q_gen - q_out dt})/(T_m + k*T_mc)
-    Q = trapz(q_time,q_gen)-trapz(q_time,Q_out); 
+    Q = trapz(q_time,q_gen)-trapz(q_time,q_out); 
     T_m = T_motor_final-T_motor_initial;
     T_mc = T_mc_final-T_mc_initial;
     Cm = Q/(T_m-k*T_mc);
 end
 
-function k = k_cooldown(Q_out,C_motor,T_motor_initial,T_motor_final,T_mc_initial,T_mc_final)
+function k = k_cooldown(q_time,q_out,C_motor,T_motor_initial,T_motor_final,T_mc_initial,T_mc_final)
     T_m = T_motor_final-T_motor_initial;
     T_mc = T_mc_final-T_mc_initial;
+    Q_out = trapz(q_time,q_out);
     k = Q_out/(C_motor*T_mc) - T_m/T_mc;
 end
