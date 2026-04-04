@@ -2,10 +2,21 @@
 % FE11 Blue Max Endurance Data 
 % Cooling Loop Configuration:   
 % Raditor -> Temp Sensor -> Motor -> MC -> Temp Sensor -> Radiator
+%
+% Assumptions:
+%   1.  The heat generation of the motor controller is described by the
+%       manufacturer provided equation for a similar, but not the same, 
+%       motor controller, with the zero current modification.
+%   2.  The operating efficiency of the motor is 94%.
+%   3.  There is negligible heat transfer between the system and the
+%       surrounding ambient air.
+%   4.  The mass flow rate of water is accurately determined from an
+%       energy balance for the entire duration of test data.
 
 %% Workspace
-clc; close all
-clear all
+clc;
+close all;
+clear all;
 
 %% Data
 orig_data = readmatrix("FE11 Endurance Full Data V2.xlsx");
@@ -113,6 +124,11 @@ cooldown_2_end_time = times(end); % [s]
 cooldown_2_start_index = find_index_from_time(cooldown_2_start_time,times);
 cooldown_2_end_index = find_index_from_time(cooldown_2_end_time,times);
 
+simulation_times = [ramp_1_start_time, ramp_1_end_time, cooldown_1_start_time, cooldown_1_end_time];
+simulation_indices = [ramp_1_start_index, ramp_1_end_index, cooldown_1_start_index, cooldown_1_end_index];
+simulation_labels = ["R1S", "R1E", "CD1S", "CD1E"];
+times_indices = table(simulation_times', simulation_indices', 'VariableNames', ["Time", "Index"], 'RowNames', simulation_labels);
+
 %% Thermal Mass Iteration
 clc;
 
@@ -123,7 +139,6 @@ T_motor_initial_ramp = new_motor_temps(ramp_1_start_index);
 T_motor_final_ramp = new_motor_temps(ramp_1_end_index);
 T_mc_initial_ramp = new_mc_temps(ramp_1_start_index);
 T_mc_final_ramp = new_mc_temps(ramp_1_end_index);
-
 
 cooldown_1_times = times(cooldown_1_start_index:cooldown_1_end_index);
 q_out_cooldown = q_out(cooldown_1_start_index:cooldown_1_end_index);
@@ -173,7 +188,7 @@ title('Convergence History')
 grid on
 
 figure
-plot(k_history)
+plot(k_guess_history)
 xlabel('Iteration')
 ylabel('k')
 title('k Convergence History')
@@ -183,35 +198,36 @@ plot(C_motor_history)
 xlabel('Iteration')
 ylabel('C_motor')
 title('C_motor Convergence History')
-%%
-% %% Cooldown Scenario
-% cooldown_start_time = 1365; % [s] gotten from manually looking at cooldown start time
-% cooldown_end_time = 1500; % [s] gotten from manually looking at cooldown end time
-% 
-% cooldown_start_time_index = find_index_from_time(cooldown_start_time,times); 
-% cooldown_end_time_index = find_index_from_time(cooldown_end_time,times);
-% cooldown_times = times(cooldown_start_time_index:cooldown_end_time_index);
-% 
-% final_cooldown_start_time = 2300; % [s] gotten from manually looking at cooldown start time
-% 
-% final_cooldown_start_time_index = find_index_from_time(final_cooldown_start_time,times); 
-% final_cooldown_times = times(final_cooldown_start_time_index:end);
 
-% old derivative code
-% y1_cooldown_mc_temps = new_mc_temps(cooldown_start_time_index:cooldown_end_time_index);
-% y2_cooldown_mc_temps = new_mc_temps(cooldown_start_time_index+1:cooldown_end_time_index+1);
-% y1_cooldown_motor_temps = new_motor_temps(cooldown_start_time_index:cooldown_end_time_index);
-% y2_cooldown_motor_temps = new_motor_temps(cooldown_start_time_index+1:cooldown_end_time_index+1);
-% x1_cooldown_times = times(cooldown_start_time_index:cooldown_end_time_index);
-% x2_cooldown_times = times(cooldown_start_time_index+1:cooldown_end_time_index+1);
+% %%
+% % %% Cooldown Scenario
+% % cooldown_start_time = 1365; % [s] gotten from manually looking at cooldown start time
+% % cooldown_end_time = 1500; % [s] gotten from manually looking at cooldown end time
+% % 
+% % cooldown_start_time_index = find_index_from_time(cooldown_start_time,times); 
+% % cooldown_end_time_index = find_index_from_time(cooldown_end_time,times);
+% % cooldown_times = times(cooldown_start_time_index:cooldown_end_time_index);
+% % 
+% % final_cooldown_start_time = 2300; % [s] gotten from manually looking at cooldown start time
+% % 
+% % final_cooldown_start_time_index = find_index_from_time(final_cooldown_start_time,times); 
+% % final_cooldown_times = times(final_cooldown_start_time_index:end);
 % 
-% d_mc_temp_dt = backwards_euler(y1_cooldown_mc_temps,y2_cooldown_mc_temps,x1_cooldown_times,x2_cooldown_times);
-% d_motor_temp_dt = backwards_euler(y1_cooldown_motor_temps,y2_cooldown_motor_temps,x1_cooldown_times,x2_cooldown_times);
-
-% cooldown_water_in_temps = new_water_in_temps(cooldown_start_time_index:cooldown_end_time_index);
-% cooldown_water_out_temps = new_water_out_temps(cooldown_start_time_index:cooldown_end_time_index);
+% % old derivative code
+% % y1_cooldown_mc_temps = new_mc_temps(cooldown_start_time_index:cooldown_end_time_index);
+% % y2_cooldown_mc_temps = new_mc_temps(cooldown_start_time_index+1:cooldown_end_time_index+1);
+% % y1_cooldown_motor_temps = new_motor_temps(cooldown_start_time_index:cooldown_end_time_index);
+% % y2_cooldown_motor_temps = new_motor_temps(cooldown_start_time_index+1:cooldown_end_time_index+1);
+% % x1_cooldown_times = times(cooldown_start_time_index:cooldown_end_time_index);
+% % x2_cooldown_times = times(cooldown_start_time_index+1:cooldown_end_time_index+1);
+% % 
+% % d_mc_temp_dt = backwards_euler(y1_cooldown_mc_temps,y2_cooldown_mc_temps,x1_cooldown_times,x2_cooldown_times);
+% % d_motor_temp_dt = backwards_euler(y1_cooldown_motor_temps,y2_cooldown_motor_temps,x1_cooldown_times,x2_cooldown_times);
 % 
-% delta_water_temps = cooldown_water_out_temps - cooldown_water_in_temps;
+% % cooldown_water_in_temps = new_water_in_temps(cooldown_start_time_index:cooldown_end_time_index);
+% % cooldown_water_out_temps = new_water_out_temps(cooldown_start_time_index:cooldown_end_time_index);
+% % 
+% % delta_water_temps = cooldown_water_out_temps - cooldown_water_in_temps;
 
 figure % this figure shows the voltage and current side-by-side
 subplot(1,2,1)
@@ -240,7 +256,7 @@ legend('Location','best')
 title('Heat Generation vs. Heat Dissipation')
 ylabel('Power [W]')
 xlabel('Time [s]')
-text(100,4500,("Q_{out} = "+num2str(Q_out/1000)+" kJ"+newline+"Q_{gen} = "+num2str(Q_gen/1000)+" kJ"));
+text(100,4250,("Q_{out} = "+num2str(Q_out/1000)+" kJ"+newline+"Q_{gen} = "+num2str(Q_gen/1000)+" kJ"));
 
 figure % this figure compares the reinterpolated motor and mc temps to the old motor and mc temps
 hold on
@@ -272,67 +288,68 @@ plot(times,new_water_in_temps,'DisplayName','New Inlet Temps')
 plot(times,new_water_out_temps,'DisplayName','New Outlet Temps')
 plot(times,new_mc_temps,'DisplayName','New MC Temps')
 plot(times,new_motor_temps,'DisplayName','New Motor Temps')
+add_simulation_times(simulation_times, simulation_labels)
 hold off
 xlabel('Time [s]')
 ylabel('Temperature [°C]')
 grid on
 legend
 
-% figure % this figure shows motor, mc and water temps for the cooldown period
-% hold on
-% plot(cooldown_times,y1_cooldown_mc_temps,'DisplayName','MC Temps')
-% plot(cooldown_times,y1_cooldown_motor_temps,'DisplayName','Motor Temps')
-% plot(cooldown_times,cooldown_water_in_temps,'DisplayName','Water In Temps')
-% plot(cooldown_times,cooldown_water_out_temps,'DisplayName','Water Out Temps')
-% hold off
-% xlabel('Time [s]')
-% ylabel('Temperature [°C]')
-% grid on
-% legend
-
-% figure % this figure shows dT/dt during cooldown for the motor and mc
-% subplot(2,1,1)
-% plot(cooldown_times,d_mc_temp_dt,'b')
-% xlabel('Time [s]')
-% xlim([cooldown_start_time,cooldown_end_time])
-% ylabel('Temperature Change [°C/s]')
-% title('MC Temp During Cooldown')
-% subplot(2,1,2)
-% plot(cooldown_times,d_motor_temp_dt,'b')
-% xlabel('Time [s]')
-% xlim([cooldown_start_time,cooldown_end_time])
-% ylabel('Temperature Change [°C/s]')
-% title('Motor Temp During Cooldown')
-
-% figure % this figure shows motor, mc and water temps for the final cooldown period
-% hold on
-% plot(final_cooldown_times,new_mc_temps(final_cooldown_start_time_index:end),'DisplayName','MC Temps')
-% plot(final_cooldown_times,new_motor_temps(final_cooldown_start_time_index:end),'DisplayName','Motor Temps')
-% plot(final_cooldown_times,new_water_in_temps(final_cooldown_start_time_index:end),'DisplayName','Water In Temps')
-% plot(final_cooldown_times,new_water_out_temps(final_cooldown_start_time_index:end),'DisplayName','Water Out Temps')
-% hold off
-% xlabel('Time [s]')
-% ylabel('Temperature [°C]')
-% grid on
-% legend
-
-% From the plots of the MC, motor and water temps during the cooldown
-% period, it seems that the thermal mass of the MC is negligible given the
-% MC temperature sensor chosen. Upon further inspection, it seems like the
-% same can be said regardless of the MC temperature sensor chosen. This
-% could simplify our calculation of C_p for the motor, however, we would
-% still need a C_p for our motor controller to predict its temperature.
-
-% Where does the power loss equation come from for the MC because I still
-% do not trust the offset. I guess when we simulate it it will become
-% obvious if something it is wrong.
-
-%% Calculation of m_dot from testing data
-% m_dot_estimate = q_gen./(Cp_water.*(new_water_out_temps-new_water_in_temps));
-% m_dot_calculated = mean(m_dot_estimate(3644:4044)*60); %
-% figure()
-% plot(times,m_dot_estimate)
-% q_diss_calculated =
+% % figure % this figure shows motor, mc and water temps for the cooldown period
+% % hold on
+% % plot(cooldown_times,y1_cooldown_mc_temps,'DisplayName','MC Temps')
+% % plot(cooldown_times,y1_cooldown_motor_temps,'DisplayName','Motor Temps')
+% % plot(cooldown_times,cooldown_water_in_temps,'DisplayName','Water In Temps')
+% % plot(cooldown_times,cooldown_water_out_temps,'DisplayName','Water Out Temps')
+% % hold off
+% % xlabel('Time [s]')
+% % ylabel('Temperature [°C]')
+% % grid on
+% % legend
+% 
+% % figure % this figure shows dT/dt during cooldown for the motor and mc
+% % subplot(2,1,1)
+% % plot(cooldown_times,d_mc_temp_dt,'b')
+% % xlabel('Time [s]')
+% % xlim([cooldown_start_time,cooldown_end_time])
+% % ylabel('Temperature Change [°C/s]')
+% % title('MC Temp During Cooldown')
+% % subplot(2,1,2)
+% % plot(cooldown_times,d_motor_temp_dt,'b')
+% % xlabel('Time [s]')
+% % xlim([cooldown_start_time,cooldown_end_time])
+% % ylabel('Temperature Change [°C/s]')
+% % title('Motor Temp During Cooldown')
+% 
+% % figure % this figure shows motor, mc and water temps for the final cooldown period
+% % hold on
+% % plot(final_cooldown_times,new_mc_temps(final_cooldown_start_time_index:end),'DisplayName','MC Temps')
+% % plot(final_cooldown_times,new_motor_temps(final_cooldown_start_time_index:end),'DisplayName','Motor Temps')
+% % plot(final_cooldown_times,new_water_in_temps(final_cooldown_start_time_index:end),'DisplayName','Water In Temps')
+% % plot(final_cooldown_times,new_water_out_temps(final_cooldown_start_time_index:end),'DisplayName','Water Out Temps')
+% % hold off
+% % xlabel('Time [s]')
+% % ylabel('Temperature [°C]')
+% % grid on
+% % legend
+% 
+% % From the plots of the MC, motor and water temps during the cooldown
+% % period, it seems that the thermal mass of the MC is negligible given the
+% % MC temperature sensor chosen. Upon further inspection, it seems like the
+% % same can be said regardless of the MC temperature sensor chosen. This
+% % could simplify our calculation of C_p for the motor, however, we would
+% % still need a C_p for our motor controller to predict its temperature.
+% 
+% % Where does the power loss equation come from for the MC because I still
+% % do not trust the offset. I guess when we simulate it it will become
+% % obvious if something it is wrong.
+% 
+% %% Calculation of m_dot from testing data
+% % m_dot_estimate = q_gen./(Cp_water.*(new_water_out_temps-new_water_in_temps));
+% % m_dot_calculated = mean(m_dot_estimate(3644:4044)*60); %
+% % figure()
+% % plot(times,m_dot_estimate)
+% % q_diss_calculated =
 
 
 %% Supporting Functions
@@ -403,4 +420,10 @@ function k = k_cooldown(q_time,q_out,C_motor,T_motor_initial,T_motor_final,T_mc_
     T_mc = T_mc_final-T_mc_initial;
     Q_out = trapz(q_time,q_out);
     k = Q_out/(C_motor*T_mc) - T_m/T_mc;
+end
+
+function add_simulation_times(times, labels)
+    for i = 1:length(times)
+        xline(times(i), '--r', 'Label', labels(i), 'DisplayName', labels(i));
+    end
 end
